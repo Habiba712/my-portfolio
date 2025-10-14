@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
 @import "tailwindcss";
 
@@ -19,12 +21,164 @@
   --font-mono: var(--font-geist-mono);
 } */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    #ba8ac7,
+    #beb5ec,
+    #bea4da,
+    #cc8db3,
+    #f6a5c0,
+    #f7c2ca
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+.animated-gradient-text {
+  background: linear-gradient(
+    -45deg,
+    #250e2c,
+    #9b93c6,
+    #bba6d1,
+    #cc8db3,
+    #f6a5c0,
+    #f7c2ca
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:animated-gradient;
+    --foreground: #1e202c;
+    --fancy-font-color: #7f7a91;
+    --main-text-color: #31323e;
+    --button-bg: #3b3e53;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.80); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes dropFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideShake {
+  0% {
+   
+    transform: translateX(-20px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slideLeft {
+  display: flex;
+  animation: slideLeft 20s linear infinite;
+}
+
+
+.animate-dropTop {
+  animation: dropFromTop 1s ease-out forwards;
+}
+
+.animate-dropBottom {
+  animation: dropFromBottom 1s ease-out forwards;
+}
+
+.animate-shake {
+  
+  animation: slideShake 1s ease-in-out forwards;
+   animation-delay: 1.2s;
+}
+
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out forwards;
+}
+
 
 body {
   background: var(--background);
@@ -34,4 +188,61 @@ body {
 
 header {
   font-family: var(--font-fancy);
+  color: var(--fancy-font-color);
+}
+
+div .main-text-color{
+  color: var(--main-text-color);
+}
+
+
+button[type="submit"]{
+  background-color: var(--button-bg);
+    @apply  text-center text-white px-4 py-4 rounded-lg;
+}
+
+button[type="button"]{
+
+    @apply bg-white border border-gray-800 text-center  px-4 py-4 rounded-lg;
+}
+input[type="textarea"]{
+  @apply border-gray-400 bg-gray-100 rounded-lg h-40 w-full text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent;
+}
+input[type="email"],[type="text"]{
+  @apply bg-gray-100 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent ;
+    @apply w-full py-4 px-4 border-2 border-gray-200 ;
+}
+button{
+  @apply flex  justify-center items-center;
+}
+
+label{
+  @apply text-gray-500 text-sm font-semibold ml-3
+}
+h3{
+   color: --var(foreground);
+
+  @apply text-2xl font-bold mb-4  tracking-[0.1rem];
+}
+h2{
+   color: --var(foreground);
+   font-family: var(--font-fancy);
+  @apply text-4xl mb-4  tracking-[0.1rem];
+}
+.tool-names{
+  @apply text-gray-800 text-sm font-bold text-2xl;
+}
+
+.skill-slide{
+   
+  background-color:  #f5eced;
+}
+
+/* .scrollbar-hidden:-webkit-scrollbar{
+  display: none;
+} */
+
+.scrollbar-hidden{
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
