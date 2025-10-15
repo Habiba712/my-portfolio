@@ -2,6 +2,25 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import {ThemeProvider} from "./components/AppContext";
+import { Nunito_Sans, Open_Sans, Quicksand } from "next/font/google";
+
+export const nunito = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["700"], // bold for titles
+  variable: "--font-nunito"
+});
+
+export const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400"], // regular for body
+  variable: "--font-open-sans"
+});
+
+export const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["500"], // medium for accents
+  variable: "--font-quicksand"
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +42,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth animated-gradient">
 
        <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+       className={`${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
       >
       <ThemeProvider>
         

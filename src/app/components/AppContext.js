@@ -12,8 +12,16 @@ export function ThemeProvider({ children }) {
             "/my_projects/food_ordering-app-homepageMobile.png",
             "/my_projects/food_ordering-app-homepage.png"
         ]},
-        { _id: 104270932, name: "ex2", pic: "/my_projects/food_ordering-app-homepage.png" },
-        { _id: 104270933,name: "ex4", pic: "/my_projects/food_ordering-app-orders.png" }
+        { _id: 104270932, name: "ex2", pic:[
+            "/my_projects/food_ordering-app-homepageD.png",
+            "/my_projects/food_ordering-app-homepageMobile.png",
+            "/my_projects/food_ordering-app-homepage.png"
+        ] },
+        { _id: 104270933,name: "ex4", pic:[
+            "/my_projects/food_ordering-app-homepageD.png",
+            "/my_projects/food_ordering-app-homepageMobile.png",
+            "/my_projects/food_ordering-app-homepage.png"
+        ] }
     ]
     const [myProjects, setMyProjects] = useState([])
 

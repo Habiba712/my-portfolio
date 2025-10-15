@@ -13,16 +13,16 @@ export default function Project() {
     const { id } = useParams()
     const { myProjects } = useContext(ThemeContext)
     const [myProject, setMyProject] = useState([])
- 
+
     useEffect(() => {
         if (myProjects && myProjects.length > 0) {
             const getMyProject = myProjects.find(item => item._id == id)
-             setMyProject(getMyProject)
+            setMyProject(getMyProject)
         }
 
 
     }, [id, myProjects])
-console.log('myProject', myProject)
+    console.log('myProject', myProject)
     if (!myProject) {
         return (
             <div>
@@ -35,70 +35,56 @@ console.log('myProject', myProject)
         <section className="w-full max-w-4xl p-4 mx-auto">
             <div>
                 <SectionHeader title={myProject.name} description={""} />
- {/* // grid grid-cols-2 gap-4  */}
+                {/* // grid grid-cols-2 gap-4  */}
                 <div className="rounded-lg 
                
-                w-full ">
-                    {/* <div>
-                       
-                                <div className="flex flex-col gap-3">
-                                    <div className="grid grid-cols-2 gap-2">
-                                        <div className="flex flex-col gap-4 justify-between">
- <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
-  <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
-                                        </div>
-                                        
-                                          <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
-                                    </div>
-                                    <div className="w-full">
-                                         <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
-                                    </div>
+                w-full grid grid-cols-2 justify-between gap-4 ">
 
-                                </div>
-                           
-                       
+
+                    <div className="px-4 py-6 font-poppins border border-gray-200 rounded-lg bg-[#ffecf7ff]">
+                        <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
+
+                        <p
+                            className="font-sans"
+
+                        >
+                            Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
+                        </p>
+                        <div className="my-4 italic text-gray-700 py-3 text-sm">
+                            <span >Tailwind Css, Next Js, MongoDB, Git, Stripe </span>
+                        </div>
+
+                        <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
+
+                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Project</button>
+                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Repo</button>
+                        </div>
+
                     </div>
                     <div>
 
-                        <p
-                         style={{
-                        "background": "linear-gradient(135deg,rgba (255,255,255,0.1),rgba(255,255,255,0))",
-                        "WebkitBackdropFilter": "blur(20px)",
-                        "backdropFilter": "blur(20px)",
-                        "boxShadow": "0 8px 20px 0 rgba(0,0,0,0.37)",
-                        "border": "1px solid rgba(255,255,255,0.18)",
-                        "borderRadius": "5px",
-                    }}
-                        className="p-3 border border-gray-200 rounded-lg"
-                        >
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
+                        <div className="flex flex-col gap-3">
+                            <div className="grid grid-cols-2 gap-2">
+                                <div className="flex flex-col gap-4 justify-between">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+                                    
+                                </div>
 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-                        </p>
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+                            </div>
+                            <div className="w-full">
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                            </div>
+ <div className="w-full">
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                            </div>
 
-                    </div> */}
-                    <div className="w-full">
-<Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={1200} height={1200} className="rounded-lg w-full" />
-                    </div>
-                    <div className="flex justify-center">
-                         <p
-                         style={{
-                        "background": "linear-gradient(135deg,rgba (255,255,255,0.1),rgba(255,255,255,0))",
-                        "WebkitBackdropFilter": "blur(20px)",
-                        "backdropFilter": "blur(20px)",
-                        "boxShadow": "0 8px 20px 0 rgba(0,0,0,0.37)",
-                        "border": "1px solid rgba(255,255,255,0.18)",
-                        "borderRadius": "5px",
-                        "width":"60%"
-                    }}
-                        className="relative -top-50 p-3 border border-gray-200 rounded-lg "
-                        >
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
+                        </div>
 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-                        </p>
+
                     </div>
                 </div>
             </div>

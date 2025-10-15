@@ -9,6 +9,9 @@ export default {
       extend: {
          fontFamily: {
         fancy: ['"Playfair Display"', 'serif'],
+        title: ["var(--font-nunito)", "sans-serif"],
+        body: ["var(--font-open-sans)", "sans-serif"],
+        accent: ["var(--font-quicksand)", "sans-serif"]
       }
         // colors: {
         //   primary: "red", // Custom primary color (change as needed)

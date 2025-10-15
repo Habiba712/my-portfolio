@@ -1,8 +1,8 @@
 'use client'
-import { useState } from "react";
-import SectionHeader from "../layout/SectionHeader";
+ import SectionHeader from "../layout/SectionHeader";
 import Image from "next/image";
-
+import { useContext, useState, useEffect } from "react"
+import { ThemeContext } from "../../components/AppContext"
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
 import { redirect } from "next/navigation";
@@ -16,13 +16,30 @@ export default function ProjectsSections() {
 
     const [expandIndex, setExpandIndex] = useState(2)
     const [expandText, setExpandText] = useState(false)
+    const {myProjects} = useContext(ThemeContext)
 
-    const [slides, setSlides] = useState([
-        { _id: 104270931, name: "ex1", pic: "/my_projects/food_ordering-app-homepageD.png" },
-        { _id: 104270932, name: "ex2", pic: "/my_projects/food_ordering-app-homepage.png" },
-        { _id: 104270933,name: "ex4", pic: "/my_projects/food_ordering-app-orders.png" }
+    const [myProjectsList, setMyProjectsList] = useState([])
 
-    ])
+    useEffect(()=>{
+        try{
+            if(myProjects && myProjects.length > 0){
+                setMyProjectsList(myProjects)
+            }
+        }
+        catch(error){
+            console.error('error', error)
+        }
+    },[myProjects])
+    console.log('myProject', myProjects)
+    if (!myProjects) {
+        return (
+            <div>
+                <h2 className="text-4xl font-bold text-center">Loading....</h2>
+            </div>
+        )
+    }
+console.log('myProjectsList', myProjectsList)
+    
     const handleExpandText = () => {
         setExpandText(!expandText)
     }
@@ -33,7 +50,10 @@ export default function ProjectsSections() {
 
          
 {/* <hr className="w-[60%] border border-gray-100"/> */}
-<motion.section
+{
+    myProjectsList.map((item, index)=>(
+        <motion.section
+        key={index}
  initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -45,7 +65,7 @@ export default function ProjectsSections() {
                 <div className="">
                     <Image
                         alt={"homepage_mobile"}
-                        src={"/my_projects/food_ordering-app-homepageMobile.png"}
+                        src={item.pic[1]}
                         className="animate-slideInRight object-cover h-100 poistion relative left-30 rounded-lg border z-3 
                         shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110 hover:scale-120 transition-all ease-in-out duration-500 .
                         "
@@ -55,7 +75,8 @@ export default function ProjectsSections() {
                     />
                 </div>
                 <div className="w-full animate-dropBottom">
-                    <Image src="/my_projects/food_ordering-app-homepageD.png"
+                    <Image  src={item.pic[0]}
+
                         width={2600}
                         height={400}
 
@@ -75,7 +96,7 @@ export default function ProjectsSections() {
                         "borderRadius": "5px",
                     }}
                 >
-                    <h3 className="text-center">Food Ordering App</h3>
+                    <h3 className="text-center">{item.name}</h3>
                     <span className="text-sm italic text-gray-700 ">#js #react #nextjs #tailwindcss #html #css #javascript #nodejs #expressjs</span>
                     <p className={`mt-4 font-sans text-gray-700
     whitespace-per-line-2 text-wrap `}
@@ -94,7 +115,7 @@ export default function ProjectsSections() {
                     <div className="w-full mt-4 flex justify-end">
                         <button onClick={()=>{
                             handleExpandText
-                                redirect(`/pages/projectss/${slides[0]._id}`)
+                                redirect(`/pages/projectss/${item._id}`)
                         }
                         } className="cursor-pointer transition-all duration-600 ease-in-out  hover:scale-104">{expandText ? `Less Details` : `More Details`}</button>
                     </div>
@@ -105,6 +126,10 @@ export default function ProjectsSections() {
             </div>
 
 </motion.section>
+    ))
+}
+
+
 
                  
    
