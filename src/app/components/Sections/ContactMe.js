@@ -33,7 +33,7 @@ export default function ContactMe() {
                 </div>
                  <div className="flex flex-col gap-2">
                      <label>Message</label>
-           <div className="border border-gray-200 border-2 rounded-lg "><input 
+           <div className="rounded-lg "><input 
             type="textarea"
             placeholder=""
             className="border-gray-400 rounded-lg h-40 w-full text-sm text-gray-700  focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent"
@@ -41,7 +41,7 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="w-full" type="submit">Send</button>
+                    <button className="w-full animate-shake" type="submit">Send</button>
                 </div>
                 
             </form>

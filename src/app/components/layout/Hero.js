@@ -27,11 +27,11 @@ export default function Hero() {
                     <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
                     <div>
                         <form className="flex flex-row justify-center items-center gap-3 mt-4">
-                            <input type="email" placeholder="Enter your email" />
+                            
                             <div className="flex gap-3">
                                   <button type="submit"
                             className="whitespace-nowrap"
-                            >Contact Me</button>
+                            >Hire Me</button>
                             <button type="button" className="button  whitespace-nowrap">
                                 Download CV
                             </button>

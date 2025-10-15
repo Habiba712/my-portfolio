@@ -198,18 +198,18 @@ div .main-text-color{
 
 button[type="submit"]{
   background-color: var(--button-bg);
-    @apply  text-center text-white px-4 py-4 rounded-lg;
+    @apply  text-center text-white px-5 py-3 rounded-full;
 }
 
 button[type="button"]{
 
-    @apply bg-white border border-gray-800 text-center  px-4 py-4 rounded-lg;
+    @apply bg-white border border-gray-800 text-center  px-4 py-4 rounded-full;
 }
 input[type="textarea"]{
-  @apply border-gray-400 bg-gray-100 rounded-lg h-40 w-full text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent;
+  @apply bg-gray-100 rounded-lg h-40 w-full text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent;
 }
 input[type="email"],[type="text"]{
-  @apply bg-gray-100 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent ;
+  @apply bg-gray-100 rounded-full text-sm text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:border-transparent ;
     @apply w-full py-4 px-4 border-2 border-gray-200 ;
 }
 button{
