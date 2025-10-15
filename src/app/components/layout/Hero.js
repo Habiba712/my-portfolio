@@ -22,17 +22,17 @@ export default function Hero() {
                      
                 </p>
 
-                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff]">
+                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
                     <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
                     <div>
                         <form className="flex flex-row justify-center items-center gap-3 mt-4">
                             
-                            <div className="flex gap-3">
+                            <div className="flex gap-3 w-full">
                                   <button type="submit"
-                            className="whitespace-nowrap"
+                            className="whitespace-nowrap w-50"
                             >Hire Me</button>
-                            <button type="button" className="button  whitespace-nowrap">
+                            <button type="button" className="button  whitespace-nowrap w-50">
                                 Download CV
                             </button>
                             </div>
