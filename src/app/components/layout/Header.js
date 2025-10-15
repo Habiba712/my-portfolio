@@ -24,10 +24,10 @@ export default function Header() {
   }
 
   return (
-    <><header className="desktop-header project-title w-full flex items-start justify-between py-6 px-10">
+    <><header className="desktop-header project-title w-full flex items-center justify-between  py-6 px-10">
       <div className="text-4xl font-bold  text-start ">
         {/* <Image src={logo_white} alt="logo" width={200} height={200}className="" /> */}
-        <h1 className="cursor-pointer "
+        <h1 className="cursor-pointer"
           onClick={() => {
             redirect('/')
           }}
@@ -75,7 +75,7 @@ export default function Header() {
 
     </header>
 {/* for mobile */}
-<header className="mt-5">
+<header className="mt-5 mobile-menu">
   <div className="flex flex-col">
   <div className="flex w-full justify-between">
       <div className="text-4xl font-bold text-start w-50">
