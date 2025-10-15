@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 
 export default function Hero() {
     return (
-        <div className="flex flex-row justify-between items-center w-full px-5 py-5 main-text-color mb-6 ">
+        <div className="desktop-hero flex flex-row justify-between items-center w-full px-5 py-5 main-text-color mb-6 ">
             <div className={`w-60 h-100 flex flex-col items-start   justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
                 <p className="text-5xl leading-[3rem] tracking-wide  animate-slideInLeft">
                     <span className="">Building digital worlds 
