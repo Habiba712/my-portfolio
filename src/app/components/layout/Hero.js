@@ -76,7 +76,7 @@ export default function Hero() {
 
                     <div className="w-50 mr-8 flex grow ">
                         {/* an edited photo of me */}
-                        <Image src={profile_pic} alt="me" width={500} height={300} className="rounded-full
+                        <Image src={profile_pic} alt="me" width={300} height={300} className="rounded-full
                 animate-fadeIn
                 
                 " />
@@ -90,8 +90,8 @@ export default function Hero() {
                 <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
                     <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
-                    <div>
-                        <form className="flex flex-row justify-center items-center gap-3 mt-4">
+                    <div className="w-full flex justify-center">
+                        <form className="flex flex-row justify-center items-center mt-4">
 
                             <div className="flex gap-3 w-full">
                                 <button type="submit"

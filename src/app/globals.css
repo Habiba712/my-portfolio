@@ -35,11 +35,11 @@
 
 .animated-gradient {
   background: linear-gradient(
-    -45deg,
-    #ba8ac7,
-    #beb5ec,
-    #bea4da,
-    #cc8db3,
+    135deg,
+    #ab87b6,
+    #837ab6,
+    #9d85b6,
+    #ec64b6,
     #f6a5c0,
     #f7c2ca
   );
