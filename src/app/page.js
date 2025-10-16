@@ -9,14 +9,14 @@ export default function Home() {
   return (
     // <div className="font-sans w-max-5xl mx-auto ">
     //   <section className="w-fit">
-    <>
+    <div className="overflow-x-hidden">
     <Hero/>
         <SkillsSections/>
         <ProjectsSections/>
 <AboutMe/>
         <ContactMe/>
         
-    </>
+    </div>
          
       // </section>
      

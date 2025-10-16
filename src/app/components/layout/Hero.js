@@ -61,10 +61,10 @@ export default function Hero() {
             </div>
 
             {/* mobile version */}
-            <div className="mobile-hero  w-full px-5 py-5 main-text-color mb-6 ">
-                <div className={`w-full grid grid-cols-2 justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
-                    <div>
-                        <p className="text-2xl italic text-start leading-[3rem] tracking-wide  animate-slideInLeft font-light">
+            <div className="mobile-hero w-fit px-2 py-5 main-text-color mb-6 ">
+                <div className={`w-fit grid grid-cols-2  grow italic items-center font-bold ${playfair.className}`}>
+                    <div className="w-50">
+                        <p className="text-md italic text-start leading-[3rem] tracking-wide  animate-slideInLeft font-light">
                             <span className="">❝ Building digital worlds
                             </span><br></br>
                             <span className="">
@@ -74,9 +74,9 @@ export default function Hero() {
                         </p>
                     </div>
 
-                    <div className="w-50 mr-8 flex grow ">
+                    <div className="w-fit h-fit flex flex justify-start items-center">
                         {/* an edited photo of me */}
-                        <Image src={profile_pic} alt="me" width={300} height={300} className="rounded-full
+                        <Image src={profile_pic} alt="me" width={150} height={150} className="rounded-full
                 animate-fadeIn
                 
                 " />
@@ -87,17 +87,17 @@ export default function Hero() {
 
                 </div>
 
-                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
+                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center w-fit">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
                     <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
-                    <div className="w-full flex justify-center">
+                    <div className="w-fit flex justify-center">
                         <form className="flex flex-row justify-center items-center mt-4">
 
-                            <div className="flex gap-3 w-full">
+                            <div className="flex gap-3 w-fit">
                                 <button type="submit"
-                                    className="whitespace-nowrap w-50"
+                                    className="w-40 whitespace-nowrap "
                                 >Hire Me</button>
-                                <button type="button" className="button  whitespace-nowrap w-50">
+                                <button type="button" className=" w-40 button  whitespace-nowrap">
                                     Download CV
                                 </button>
                             </div>
