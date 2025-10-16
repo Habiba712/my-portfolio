@@ -254,10 +254,13 @@ h2{
 
 /* @layer components {
    */
- @media( min-width: 640px) {
+ @media( min-width: 639px) {
   .mobile-menu{
     display: none;
   }
+  .mobile-hero{
+  display: none;
+}
  }
   
   @media (max-width: 639px) {
@@ -268,6 +271,7 @@ h2{
 .desktop-header{
   display: none;
 }
+
 .desktop-hero{
   display: none;
 }

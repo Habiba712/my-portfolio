@@ -75,7 +75,7 @@ export default function Header() {
 
     </header>
 {/* for mobile */}
-<header className="mt-5 mobile-menu">
+<header className="mt-5 mobile-menu px-6">
   <div className="flex flex-col">
   <div className="flex w-full justify-between">
       <div className="text-4xl font-bold text-start w-50">
@@ -98,7 +98,7 @@ export default function Header() {
   </div>
   {
     showMenu && (
-       <div className={`text-white mx-auto  text-sm w-full flex justify-end transition-all duration-700 ease-in-out
+       <div className={`fixed z-100 top-10 right-10 text-white mx-auto  text-sm w-full flex justify-end transition-all duration-700 ease-in-out
         ${showMenu ? 'translate-y-0 opacity-100':'-translate-y-full opacity-0'}
         `}
   

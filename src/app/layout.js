@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
       >
       <ThemeProvider>
         
-        <main className="relative mx-auto px-4 max-w-6xl ">
+        <main className="relative mx-auto ">
 
           <Header />
           {children}
