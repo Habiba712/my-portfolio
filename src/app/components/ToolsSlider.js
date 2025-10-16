@@ -19,7 +19,7 @@ const duplicated = [...tools, ...tools];
     slidesToShow: 6,          // visible at once (adjust)
     slidesToScroll: 1,
     autoplay: true,
-    speed: 20000,             // total ms it takes to go one full "loop" (adjust)
+    speed: 8000,             // total ms it takes to go one full "loop" (adjust)
     autoplaySpeed: 0,         // no delay between auto scrolls
     cssEase: "linear",
     arrows: false,

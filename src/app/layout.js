@@ -39,10 +39,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth animated-gradient">
+    <html lang="en" className="scroll-smooth ">
 
        <body
-       className={`${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
+       className={`animated-gradient ${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
       >
       <ThemeProvider>
         
