@@ -14,7 +14,7 @@ export default function ToolSlider({tools}) {
 
 const duplicated = [...tools, ...tools];
 
-  const settings = {
+  const settings_d = {
     infinite: true,
     slidesToShow: 6,          // visible at once (adjust)
     slidesToScroll: 1,
@@ -32,10 +32,29 @@ const duplicated = [...tools, ...tools];
     //   { breakpoint: 480, settings:  { slidesToShow: 2 } }
     // ],
   };
+   const settings_m = {
+    infinite: true,
+    slidesToShow: 3,          // visible at once (adjust)
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 8000,             // total ms it takes to go one full "loop" (adjust)
+    autoplaySpeed: 0,         // no delay between auto scrolls
+    cssEase: "linear",
+    arrows: false,
+    pauseOnHover: false,
+    draggable: false,
+    variableWidth: false,
+    // responsive: [
+    //   { breakpoint: 1024, settings: { slidesToShow: 5 } },
+    //   { breakpoint: 768, settings:  { slidesToShow: 3 } },
+    //   { breakpoint: 480, settings:  { slidesToShow: 2 } }
+    // ],
+  };
 
   return (
-    <div className="w-full overflow-hidden">
-      <Slider {...settings}>
+    <>
+     <div className="desktop-skills w-full overflow-hidden">
+      <Slider {...settings_d}>
         {duplicated.map((tool, i) => (
           <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">
             {/* use plain img for slider stability; swap to next/image if you need optimization */}
@@ -48,5 +67,22 @@ const duplicated = [...tools, ...tools];
         ))}
       </Slider>
     </div>
+
+    <div className="mobile-skills w-full overflow-hidden">
+      <Slider {...settings_m}>
+        {duplicated.map((tool, i) => (
+          <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">
+            {/* use plain img for slider stability; swap to next/image if you need optimization */}
+            <div className='flex justify-center '>
+               <img src={tool.logo} alt={tool.name} className="w-16 h-16 object-contain mb-2" />
+            </div>
+           
+            <p className="tool-names text-center">{tool.name}</p>
+          </div>
+        ))}
+      </Slider>
+    </div>
+    </>
+   
   );
 }

@@ -261,6 +261,9 @@ h2{
   .mobile-hero{
   display: none;
 }
+.mobile-skills{
+  display: none;
+}
  }
   
   @media (max-width: 639px) {
@@ -275,6 +278,9 @@ h2{
 .desktop-hero{
   display: none;
 }
+.desktop-skills{
+  display: none;
+  }
 .project-title {
     text-align: left;
     border: 1px solid red;
