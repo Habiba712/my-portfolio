@@ -61,8 +61,8 @@ export default function Hero() {
             </div>
 
             {/* mobile version */}
-            <div className="mobile-hero w-fit px-2 py-5 main-text-color mb-6 ">
-                <div className={`w-fit grid grid-cols-2  grow italic items-center font-bold ${playfair.className}`}>
+            <div className="mobile-hero w-fit py-5 main-text-color mb-6 mx-2">
+                <div className={`w-fit grid grid-cols-2 px-2 grow italic items-center justify-between font-bold ${playfair.className}`}>
                     <div className="w-50">
                         <p className="text-md italic text-start leading-[3rem] tracking-wide  animate-slideInLeft font-light">
                             <span className="">❝ Building digital worlds
@@ -74,10 +74,10 @@ export default function Hero() {
                         </p>
                     </div>
 
-                    <div className="w-fit h-fit flex flex justify-start items-center">
+                    <div className="w-fit h-fit flex flex justify-end  items-center">
                         {/* an edited photo of me */}
                         <Image src={profile_pic} alt="me" width={150} height={150} className="rounded-full
-                animate-fadeIn
+                animate-fadeIn ml-10
                 
                 " />
 
