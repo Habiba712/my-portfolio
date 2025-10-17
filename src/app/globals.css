@@ -254,7 +254,7 @@ h2{
 
 /* @layer components {
    */
- @media( min-width: 639px) {
+ @media( min-width: 640px) {
   .mobile-menu{
     display: none;
   }
@@ -263,6 +263,10 @@ h2{
 }
 .mobile-skills{
   display: none;
+}
+.mobile-projects{
+  display: none;
+
 }
  }
   
@@ -281,6 +285,10 @@ h2{
 .desktop-skills{
   display: none;
   }
+  .desktop-projects{
+    display: none;
+    }
+
 .project-title {
     text-align: left;
     border: 1px solid red;
