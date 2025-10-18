@@ -188,7 +188,7 @@ body {
 
 header {
   font-family: var(--font-fancy);
-  color: var(--fancy-font-color);
+  color: #1e202c;
 }
 
 div .main-text-color{
@@ -197,7 +197,7 @@ div .main-text-color{
 
 
 button[type="submit"]{
-  background-color: var(--button-bg);
+  background-color:  #202331;
     @apply  text-center text-white px-5 py-3 rounded-full ;
 }
 
