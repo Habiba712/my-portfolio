@@ -4,7 +4,7 @@ import SectionHeader from "../layout/SectionHeader"
 
 export default function ContactMe() {
     return(
-        <section id="contact" className="w-full flex flex-col gap-10 items-center">
+        <section id="contact" className="w-full flex flex-col gap-3 items-center">
 
 <SectionHeader title={"Contact Me"} description={"You can use the form bellow in case you wanted to contact me"}/>
         <div className="desktop-about w-[60%] p-10 border border-gray-300 rounded-lg bg-white">

@@ -6,7 +6,7 @@ import profile_pic from "../../../../public/Minimalist Chic Hijab Style _ Cream 
 import Link from "next/link";
 export default function AboutMe() {
     return(
-        <section id="about" className="w-full flex flex-col gap-10 items-center">
+        <section id="about" className="w-full flex flex-col gap-3 items-center">
 
 <SectionHeader title={"About Me"} description={"A small introduction about me"}/>
         <div className="desktop-about w-[80%] p-2 h-full border border-gray-300 rounded-lg bg-white grid grid-cols-2 gap-4 items-center">

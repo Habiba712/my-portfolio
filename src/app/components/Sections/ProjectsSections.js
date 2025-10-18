@@ -6,6 +6,7 @@ import { ThemeContext } from "../../components/AppContext"
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
 import { redirect } from "next/navigation";
+import LinkArrow from "../../../../public/icons/SVG/link_arrow";
 
 const playfair = Playfair_Display({
     subsets: ["latin"],
@@ -120,7 +121,13 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer transition-all duration-600 ease-in-out  hover:scale-104">{expandText ? `Less Details` : `More Details`}</button>
+                                        } className="cursor-pointer py-3 px-3 border border-gray-100 rounded-lg transition-all duration-600 flex gap-3 justify-between text-gray-100 items-centerease-in-out  hover:scale-104">
+                                            
+                                            
+                                            {!expandText && <span>More Details</span>}
+                                            <LinkArrow className="w-5 h-5"/>
+                                            
+                                            </button>
                                     </div>
 
 
@@ -138,7 +145,7 @@ export default function ProjectsSections() {
 
             </section>
             {/* mobile version */}
-            <section id="projects" className="mobile-projects w-full  flex flex-col  items-center smooth-scroll transition-all duration-500 ease-in-out">
+            <section id="projects" className="mobile-projects w-full  flex flex-col gap-3 items-center smooth-scroll transition-all duration-500 ease-in-out">
                 <SectionHeader title={'My Projects'} description={'Here are some of my projects I have worked on.'} />
 
 
@@ -204,7 +211,13 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer transition-all duration-600 ease-in-out  hover:scale-104">{expandText ? `Less Details` : `More Details`}</button>
+                                        } className="cursor-pointer py-3 px-3 border border-gray-100 rounded-lg transition-all duration-600 flex gap-3 justify-between items-centerease-in-out  hover:scale-104">
+                                            
+                                            
+                                            {!expandText && <span>More Details</span>}
+                                            <LinkArrow className="w-5 h-5"/>
+                                            
+                                            </button>
                                     </div>
 
 

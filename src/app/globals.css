@@ -271,6 +271,7 @@ h2{
 .mobile-about{
   display: none;
 }
+
  }
   
   @media (max-width: 639px) {
@@ -281,6 +282,7 @@ h2{
 .desktop-header{
   display: none;
 }
+
 
 .desktop-hero{
   display: none;

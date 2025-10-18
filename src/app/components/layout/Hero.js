@@ -12,6 +12,7 @@ const playfair = Playfair_Display({
 export default function Hero() {
     return (
         <>
+        {/* deskptop version */}
             <div className="desktop-hero flex flex-row justify-between items-center w-full px-5 py-5 main-text-color mb-6 ">
                 <div className={`w-60 h-100 flex flex-col items-start   justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
                     <p className="text-5xl leading-[3rem] tracking-wide  animate-slideInLeft">
@@ -61,7 +62,7 @@ export default function Hero() {
             </div>
 
             {/* mobile version */}
-            <div className="mobile-hero w-fit py-5 main-text-color mb-6 mx-2">
+            <div className="mobile-hero main-text-color px-3 flex flex-col justify-center">
                 <div className={`w-fit grid grid-cols-2 px-2 grow italic items-center justify-between font-bold ${playfair.className}`}>
                     <div className="w-50">
                         <p className="text-md italic text-start leading-[3rem] tracking-wide  animate-slideInLeft font-light">
@@ -87,7 +88,7 @@ export default function Hero() {
 
                 </div>
 
-                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center w-fit">
+                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
                     <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
                     <div className="w-fit flex justify-center">
