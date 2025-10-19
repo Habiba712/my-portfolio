@@ -32,12 +32,7 @@ export function ThemeProvider({ children }) {
             "/my_projects/MI_itinerary.png"
         ], page:'https://moroccoimmersion.com/'
     
-    },
-        { _id: 104270933,name: "ex4", pic:[
-            "/my_projects/food_ordering-app-homepageD.png",
-            "/my_projects/food_ordering-app-homepageMobile.png",
-            "/my_projects/food_ordering-app-homepage.png"
-        ] }
+    }
     ]
     const [myProjects, setMyProjects] = useState([])
 
