@@ -9,8 +9,15 @@ export function ThemeProvider({ children }) {
     const defautlProjects = [
         { _id: 104270931, name: "ex1", pic:[
             "/my_projects/food_ordering-app-homepageD.png",
-            "/my_projects/food_ordering-app-homepageMobile.png",
-            "/my_projects/food_ordering-app-homepage.png"
+            "/my_projects/PO_desktopmycart.png",
+            "/my_projects/PO_newhomepage.jpeg",
+            "/my_projects/PO_newlogin.jpeg",
+            "/my_projects/PO_newcart.jpeg",
+            "/my_projects/PO_newmenuitem.jpeg",
+            "/my_projects/PO_newaboutus.jpeg",
+            ""
+
+            
         ]},
         { _id: 104270932, name: "ex2", pic:[
             "/my_projects/food_ordering-app-homepageD.png",

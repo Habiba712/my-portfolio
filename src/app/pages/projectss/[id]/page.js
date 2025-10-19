@@ -41,7 +41,7 @@ export default function Project() {
                 w-full grid grid-cols-2 justify-between gap-4 ">
 
 
-                    <div className="px-4 py-6 font-poppins border border-gray-200 rounded-lg bg-[#ffecf7ff]">
+                    <div className="px-4 py-6 font-poppins border border-gray-200 rounded-lg bg-[#ffecf7ff] h-fit">
                         <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
 
                         <p
@@ -68,18 +68,36 @@ export default function Project() {
 
                         <div className="flex flex-col gap-3">
                             <div className="grid grid-cols-2 gap-2">
-                                <div className="flex flex-col gap-4 justify-between">
-                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
-                                    
+                                <div className="">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[2] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg w-full" />
+
+
+                                </div>
+                                <div>
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[3] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg " />
+
                                 </div>
 
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+
+                            </div>
+                            <div className="grid grid-cols-2 gap-2">
+                                <div className="w-full flex justify-between wrap-1">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg w-full" />
+
+
+                                </div>
+                                <div>
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[5] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />
+
+                                </div>
+
+
                             </div>
                             <div className="w-full">
                                 <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
- <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                            <div className="w-full">
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
 
                         </div>
@@ -87,8 +105,14 @@ export default function Project() {
 
                     </div>
                 </div>
-{/* mobile version */}
-                  <div className="rounded-lg mobile-hero
+
+
+
+
+
+
+                {/* mobile version */}
+                <div className="rounded-lg mobile-hero
                
                 w-full flex flex-col justify-center gap-4 ">
 
@@ -118,19 +142,38 @@ export default function Project() {
                     </div>
                     <div>
 
-                        <div className="flex flex-col gap-3">
-                            <div className="grid grid-cols-2 gap-2">
-                                <div className="flex flex-col gap-4 justify-between">
-                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
-                                    
+                        <div className="flex flex-col gap-3 ">
+                            <div className="grid grid-cols-2 gap-2  ">
+                                <div className="h-full">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[2] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />
+
+                                </div>
+                                <div className="h-full">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[3] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg " />
+
                                 </div>
 
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+
                             </div>
+
+                              <div className="grid grid-cols-2 gap-2  ">
+                                <div className="h-full">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />
+
+                                </div>
+                                <div className="">
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[5] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+
+                                </div>
+
+
+                            </div>
+
                             <div className="w-full">
                                 <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
- <div className="w-full">
+
+                            <div className="w-full">
                                 <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
 

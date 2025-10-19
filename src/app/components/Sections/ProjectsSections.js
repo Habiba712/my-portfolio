@@ -69,12 +69,12 @@ export default function ProjectsSections() {
                                 <div className="">
                                     <Image
                                         alt={"homepage_mobile"}
-                                        src={item.pic[1]}
-                                        className="animate-slideInRight object-cover h-100 poistion relative left-30 rounded-lg border z-3 
+                                        src={item.pic[2]}
+                                        className="animate-slideInRight  h-100 poistion relative left-30 rounded-lg border z-3 
                         shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110 hover:scale-120 transition-all ease-in-out duration-500 .
                         "
-                                        width={900}
-                                        height={700}
+                                        width={600}
+                                        height={500}
 
                                     />
                                 </div>
@@ -144,6 +144,8 @@ export default function ProjectsSections() {
 
 
             </section>
+
+
             {/* mobile version */}
             <section id="projects" className="mobile-projects w-full  flex flex-col gap-3 items-center smooth-scroll transition-all duration-500 ease-in-out">
                 <SectionHeader title={'My Projects'} description={'Here are some of my projects I have worked on.'} />
@@ -171,7 +173,7 @@ export default function ProjectsSections() {
                                 <div className="w-full px-3 py-3">
                                     <Image
                                         alt={"homepage_mobile"}
-                                        src={item.pic[1]}
+                                        src={item.pic[0]}
                                         className="w-full animate-slideInRight object-cover rounded-lg border
                         shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110
                         transition-all ease-in-out duration-500
