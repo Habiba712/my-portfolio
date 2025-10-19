@@ -10,9 +10,9 @@ export default function AboutMe() {
 
 <SectionHeader title={"About Me"} description={"A small introduction about me"}/>
         <div className="desktop-about w-[80%] p-2 h-full border border-gray-300 rounded-lg bg-white grid grid-cols-2 gap-4 items-center">
-            <div>
+            <div className="h-full ">
              <Image src={profile_pic} alt="me" width={500} height={300} className="
-                            animate-fadeIn
+                            animate-fadeIn h-full w-full object-cover
                             
                             " />
             </div>

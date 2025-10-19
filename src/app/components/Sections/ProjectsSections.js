@@ -122,12 +122,12 @@ export default function ProjectsSections() {
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
                                         } className="cursor-pointer py-3 px-3 border border-gray-100 rounded-lg transition-all duration-600 flex gap-3 justify-between text-gray-100 items-centerease-in-out  hover:scale-104">
-                                            
-                                            
+
+
                                             {!expandText && <span>More Details</span>}
-                                            <LinkArrow className="w-5 h-5"/>
-                                            
-                                            </button>
+                                            <LinkArrow className="w-5 h-5" />
+
+                                        </button>
                                     </div>
 
 
@@ -163,18 +163,18 @@ export default function ProjectsSections() {
                             className="px-3 py-3"
 
                         >
-                            <div className="flex flex-col border rounded-lg  px-3 py-3 justify-center gap-3 w-full" 
-                             style={{
-                                         
-                                        "border": "1px solid rgba(255,255,255,0.18)",
-                                      
-                                    }}
+                            <div className="flex flex-col border rounded-lg  px-3 py-3 justify-center gap-3 w-full"
+                                style={{
+
+                                    "border": "1px solid rgba(255,255,255,0.18)",
+
+                                }}
                             >
                                 <div className="w-full px-3 py-3">
                                     <Image
                                         alt={"homepage_mobile"}
                                         src={item.pic[0]}
-                                        className="w-full animate-slideInRight object-cover rounded-lg border
+                                        className="w-full animate-slideInRight object-cover cover[top_right] rounded-lg border
                         shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110
                         transition-all ease-in-out duration-500
                         "
@@ -183,7 +183,7 @@ export default function ProjectsSections() {
 
                                     />
                                 </div>
-                         
+
 
                                 <div className="animate-slideInLeft text-gray-100  px-3 py-3 w-full "
                                     style={{
@@ -214,12 +214,12 @@ export default function ProjectsSections() {
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
                                         } className="cursor-pointer py-3 px-3 border border-gray-100 rounded-lg transition-all duration-600 flex gap-3 justify-between items-centerease-in-out  hover:scale-104">
-                                            
-                                            
+
+
                                             {!expandText && <span>More Details</span>}
-                                            <LinkArrow className="w-5 h-5"/>
-                                            
-                                            </button>
+                                            <LinkArrow className="w-5 h-5" />
+
+                                        </button>
                                     </div>
 
 

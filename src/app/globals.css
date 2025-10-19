@@ -35,26 +35,27 @@
 
 .animated-gradient {
   background: linear-gradient(
-    135deg,
-    #ab87b6,
-    #837ab6,
-    #9d85b6,
-    #a85b88,
-    #d1688b,
-    #f7c2ca
+    265deg,
+   #2d4c75,
+    #2281bd,
+    #26658c,
+    #54acbf,
+    #7cc9d2,
+    #79a3a7
   );
   background-size: 400% 400%;
   animation: gradientMove 15s ease infinite;
 }
 .animated-gradient-text {
   background: linear-gradient(
-    -45deg,
-    #250e2c,
-    #9b93c6,
-    #bba6d1,
-    #cc8db3,
-    #f6a5c0,
-    #f7c2ca
+    265deg,
+   #2d4c75,
+    #2281bd,
+    #26658c,
+    #54acbf,
+    #7cc9d2,
+    #79a3a7
+   
   );
   background-size: 400% 400%;
   animation: gradientMove 15s ease infinite;
