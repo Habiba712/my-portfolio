@@ -9,13 +9,8 @@ export default function AboutMe() {
         <section id="about" className="w-full flex flex-col gap-3 items-center">
 
 <SectionHeader title={"About Me"} description={"A small introduction about me"}/>
-        <div className="desktop-about w-[80%] p-2 h-full border border-gray-300 rounded-lg bg-white grid grid-cols-2 gap-4 items-center">
-            <div className="h-full ">
-             <Image src={profile_pic} alt="me" width={500} height={300} className="
-                            animate-fadeIn h-full w-full object-cover
-                            
-                            " />
-            </div>
+        <div className="desktop-about w-[60%] p-4 h-full border border-gray-300 rounded-lg bg-white ">
+             
            <div>
                <h2 className="text-normal animate-dropTop">Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h2>
                <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>

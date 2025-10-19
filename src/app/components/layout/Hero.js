@@ -26,7 +26,7 @@ export default function Hero() {
 
                     <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
                         <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
-                        <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
+                         <p className="animated-gradient-text text-3xl font-bold  text-gray-600 text-center font-serif">SEO manager & Full Stack Developper</p>
                         <div>
                             <form className="flex flex-row justify-center items-center gap-3 mt-4">
 
@@ -63,34 +63,11 @@ export default function Hero() {
 
             {/* mobile version */}
             <div className="mobile-hero main-text-color px-3 flex flex-col justify-center">
-                <div className={`w-fit grid grid-cols-2 px-2 grow italic items-center justify-between font-bold ${playfair.className}`}>
-                    <div className="w-50">
-                        <p className="text-md italic text-start leading-[3rem] tracking-wide  animate-slideInLeft font-light">
-                            <span className="">❝ Building digital worlds
-                            </span><br></br>
-                            <span className="">
-                                one clue at a time.❞
-                            </span>
-
-                        </p>
-                    </div>
-
-                    <div className="w-fit h-fit flex flex justify-end  items-center">
-                        {/* an edited photo of me */}
-                        <Image src={profile_pic} alt="me" width={150} height={150} className="rounded-full
-                animate-fadeIn ml-10
                 
-                " />
-
-                    </div>
-
-
-
-                </div>
 
                 <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
-                    <p className="font-normal font-sans text-gray-600 ">Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
+                    <p className="animated-gradient-text text-3xl font-bold  text-gray-600 text-center font-serif">SEO manager & Full Stack Developper</p>
                     <div className="w-fit flex justify-center">
                         <form className="flex flex-row justify-center items-center mt-4">
 
@@ -109,7 +86,21 @@ export default function Hero() {
                     </div>
 
                 </div>
+<div className={`w-full px-2 mt-8 grow italic items-center justify-between font-bold ${playfair.className}`}>
+                    <div className="w-full">
+                        <p className="text-3xl italic text-center leading-[3rem] tracking-wide  animate-slideInLeft font-bold">
+                            <span className="">❝ Building digital worlds one clue at a time.❞
+                            </span>
 
+                        </p>
+                    </div>
+
+                   
+                    
+
+
+
+                </div>
 
             </div>
         </>
