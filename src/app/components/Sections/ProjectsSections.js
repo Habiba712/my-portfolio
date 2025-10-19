@@ -68,7 +68,7 @@ export default function ProjectsSections() {
                             <div className=" flex justify-center gap-3 h-full mx-auto w-full ">
                                 <div className="w-full">
                                     <Image
-                                        alt={"homepage_mobile"}
+                                        alt={"homepage_desktop"}
                                         src={item.pic[2]}
                                         className="animate-slideInRight  h-100 poistion relative left-30 rounded-lg border z-3 
                         shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110 hover:scale-120 transition-all ease-in-out duration-500 object-cover
