@@ -5,6 +5,7 @@ import { ThemeContext } from "../../../components/AppContext"
 import { useParams } from "next/navigation"
 import SectionHeader from "@/app/components/layout/SectionHeader"
 import Image from "next/image"
+import Link from "next/link"
 
 
 
@@ -12,7 +13,7 @@ import Image from "next/image"
 export default function Project() {
     const { id } = useParams()
     const { myProjects } = useContext(ThemeContext)
-    const [myProject, setMyProject] = useState([])
+    const [myProject, setMyProject] = useState(null)
 
     useEffect(() => {
         if (myProjects && myProjects.length > 0) {
@@ -59,7 +60,9 @@ export default function Project() {
 
                         <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
 
-                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Project</button>
+                            
+                                <Link className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap" href={myProject.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
+
                             <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Repo</button>
                         </div>
 
@@ -82,19 +85,19 @@ export default function Project() {
                             </div>
                             <div className="grid grid-cols-2 gap-2">
                                 <div className="w-full flex justify-between wrap-1">
-                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg w-full" />
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg w-full" />
 
 
                                 </div>
                                 <div>
-                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[5] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic[3]} alt="project" width={400} height={400} className="rounded-lg h-full" />
 
                                 </div>
 
 
                             </div>
                             <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
                             <div className="w-full">
                                 <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
@@ -134,8 +137,10 @@ export default function Project() {
                         </div>
 
                         <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
+                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">
+                                <Link href={myProject.page} target="_blank" rel="noopener noreferrer" />View Project                        </button>
 
-                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Project</button>
+
                             <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#9b93c2] text-white whitespace-nowrap">View Repo</button>
                         </div>
 
@@ -156,13 +161,13 @@ export default function Project() {
 
                             </div>
 
-                              <div className="grid grid-cols-2 gap-2  ">
+                            <div className="grid grid-cols-2 gap-2  ">
                                 <div className="h-full">
                                     <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />
 
                                 </div>
                                 <div className="">
-                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[5] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
+                                    <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg" />
 
                                 </div>
 
@@ -170,11 +175,11 @@ export default function Project() {
                             </div>
 
                             <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[4] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
 
                             <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[2] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
 
                         </div>

@@ -57,7 +57,7 @@ export default function ProjectsSections() {
                 {
                     myProjectsList.map((item, index) => (
                         <motion.section
-                            key={index}
+                            key={index || item._id}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -66,12 +66,12 @@ export default function ProjectsSections() {
 
                         >
                             <div className=" flex justify-center gap-3 h-full mx-auto w-full ">
-                                <div className="">
+                                <div className="w-full">
                                     <Image
                                         alt={"homepage_mobile"}
                                         src={item.pic[2]}
                                         className="animate-slideInRight  h-100 poistion relative left-30 rounded-lg border z-3 
-                        shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110 hover:scale-120 transition-all ease-in-out duration-500 .
+                        shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110 hover:scale-120 transition-all ease-in-out duration-500 object-cover
                         "
                                         width={600}
                                         height={500}
