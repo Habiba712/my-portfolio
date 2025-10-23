@@ -9,6 +9,7 @@ export function ThemeProvider({ children }) {
     const defautlProjects = [
         {
             _id: 104270931, name: "Korean Food Ordering App", pic: [
+                "/my_projects/loptop_frame_foodordering.png",
                 "/my_projects/food_ordering-app-homepageD.png",
                 "/my_projects/PO_desktopmycart.png",
                 "/my_projects/PO_newhomepage.jpeg",
@@ -26,7 +27,10 @@ export function ThemeProvider({ children }) {
             _id: 104270932, name: "Moroccan Travel Agency",
 
             pic: [
+                 "/my_projects/laptop_frame_travelagency.png",
+                
                 "/my_projects/moroccoimmersion_hopepage.png",
+
                 "/my_projects/MI_trips.png",
 
                 "/my_projects/MI_privatetours.png",

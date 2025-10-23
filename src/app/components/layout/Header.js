@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import logo_black from "../../../../public/icons/logo_in_black.svg";
+import logo_black from "../../../../public/icons/logo1.png";
 // import logo_white from "../../public/icons/logo_in_white.svg";
 // import { Cinzel_Decorative } from 'next/font/google';
 // const cinzel = Cinzel_Decorative({ subsets: ['latin'], weight: '700' });
@@ -58,26 +58,34 @@ export default function Header() {
     <header className="desktop-header project-title w-full flex items-center justify-between  py-6 px-10">
       <div className="text-4xl font-bold  text-start ">
         {/* <Image src={logo_white} alt="logo" width={200} height={200}className="" /> */}
-        <h1 className="cursor-pointer"
-          onClick={() => {
-            redirect('/')
-          }}
-        >VexAura</h1>
+       
+        <div className="">
+          <Image src={logo_black} alt="logo" width={200} height={200} className="cursor-pointer"
+            onClick={() => {
+              redirect('/')
+            }}
+          />
+        </div>
 
       </div>
       <div className="">
         <nav className="font-semibold menu-items-nav">
           <ul className="flex gap-4">
-            <li>
-              <a href="/#projects">Projects</a>
+            <li className="relative group pb-5">
+              <a href="/#projects">Projects
+              <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span>
+              </a>
+              
             </li>
 
-            <li>
-              <a href="/#about">About</a>
+            <li className="relative group pb-5">
+              <a href="/#about">About  <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
             </li>
 
-            <li>
-              <a href="/#contact">Contact</a>
+            <li className="relative group pb-5">
+              <a href="/#contact">Contact 
+               <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -85,18 +93,18 @@ export default function Header() {
 
       <div className="menu-items-socials flex gap-3 items-center ">
         <Link href="https://github.com/Habiba712" target="blank">
-          <img src="/icons/github (1).png" alt="email" width={30} height={30} className="rounded-full" />
+          <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
         </Link>
         <a
           target="blank"
           href={`mailto:habiba.taliby@gmail.com?subject=${encodeURIComponent('Hello from your site')}&body=${encodeURIComponent('Hi Habiba,\n\nI saw your portfolio and...')}`}
           className="text-blue-600 hover:underline"
         >
-          <img src="/icons/email (1).png" alt="email" width={30} height={30} className="rounded-full" />
+          <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
         </a>
 
         <Link target="blank" href="https://www.linkedin.com/in/habiba-taliby/">
-          <img src="/icons/linkedin.png" alt="linkedin" width={30} height={30} className="rounded-full" />
+          <img src="/icons/linkedin1.png" alt="linkedin1" width={30} height={30} className="rounded-full" />
         </Link>
 
       </div>
@@ -110,11 +118,13 @@ export default function Header() {
   <div className="flex flex-col">
   <div className="flex w-full justify-between">
       <div className="text-4xl font-bold text-start w-50">
-        <h1 className="cursor-pointer "
-          onClick={() => {
-            redirect('/')
-          }}
-        >VexAura</h1>
+        <div className="">
+          <Image src={logo_black} alt="logo" width={200} height={200} className="cursor-pointer"
+            onClick={() => {
+              redirect('/')
+            }}
+          />
+        </div>
 
       </div>
       <div className="w-50 flex justify-end">

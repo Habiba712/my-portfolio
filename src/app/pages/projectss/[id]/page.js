@@ -61,9 +61,9 @@ export default function Project() {
                         <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
 
                             
-                                <Link className="cursor-pointer border rounded-lg px-4 py-2 bg-[#26658c] text-white whitespace-nowrap" href={myProject.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
+                                <Link className="button-light whitespace-nowrap" href={myProject.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
 
-                            <button className="cursor-pointer border rounded-lg px-4 py-2 bg-[#26658c] text-white whitespace-nowrap">View Repo</button>
+                            <button className="button-dark cursor-pointer border rounded-lg px-4 py-2 bg-[#26658c] text-white whitespace-nowrap">View Repo</button>
                         </div>
 
                     </div>

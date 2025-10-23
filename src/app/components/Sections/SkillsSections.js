@@ -23,11 +23,11 @@ export default function SkillsSections() {
 
     return (
         <>
-         <section className="relative gap-3 mb-4 mt-3 overflow-hidden" 
+         <section className="overflow-hidden" 
        >
             <SectionHeader title={'My Tools'} description={'Here are some of my skills and technologies I work with.'} />
 
-            <div className="w-full mt-3 flex flex-row justify-between items-center gap-8 p-4 shadow-lg overflow-x-auto  bg-[#ffecf7ff] ">
+            <div className="w-full flex flex-row justify-between items-center py-5 shadow-lg overflow-x-auto ">
                 {/* a slide of skills and logos ?  */}
                <ToolSlider tools={tools} />
             </div>

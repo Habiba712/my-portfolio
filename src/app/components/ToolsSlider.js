@@ -36,7 +36,7 @@ const duplicated = [...tools, ...tools];
 
   return (
     <>
-     <div className="desktop-skills w-full overflow-hidden">
+     <div className="bg-white py-5 desktop-skills w-full overflow-hidden">
       <Slider {...settings}>
         {duplicated.map((tool, i) => (
           <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">
@@ -51,7 +51,7 @@ const duplicated = [...tools, ...tools];
       </Slider>
     </div>
 
-    <div className="mobile-skills w-full overflow-hidden">
+    <div className="mobile-skills bg-white w-full overflow-hidden">
       <Slider {...{...settings, slidesToShow: 4}}>
         {duplicated.map((tool, i) => (
           <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">

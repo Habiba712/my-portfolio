@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth ">
 
        <body
-       className={`animated-gradient ${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
+       className={`${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
       >
       <ThemeProvider>
         

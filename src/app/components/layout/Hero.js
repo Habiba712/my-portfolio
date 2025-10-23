@@ -14,25 +14,24 @@ export default function Hero() {
         <>
         {/* deskptop version */}
             <div className="desktop-hero flex flex-row justify-between items-center w-full px-5 py-5 main-text-color mb-6 ">
-                <div className={`w-60 h-100 flex flex-col items-start   justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
-                    <p className="text-5xl leading-[3rem] tracking-wide  animate-slideInLeft">
-                        <span className="">❝ Building digital worlds
-                        </span><br></br>
-                        <span className="">
+                <div className={`w-60 h-100 flex flex-col items-center   justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
+                    <h4 className="leading-[3rem] tracking-wide  animate-slideInLeft ">
+                       ❝ Building digital worlds
+                      
                             one clue at a time.❞
-                        </span>
+                     
 
-                    </p>
+                    </h4>
 
-                    <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
+                    <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white items-center ">
                         <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
-                         <p className="animated-gradient-text text-3xl font-bold  text-gray-600 text-center font-serif">SEO manager & Full Stack Developper</p>
+                         <p className="text-3xl font-bold  text-gray-600 text-center font-serif animated-gradient-text">SEO manager & Full Stack Developper</p>
                         <div>
                             <form className="flex flex-row justify-center items-center gap-3 mt-4">
 
                                 <div className="flex gap-3 w-full">
                                     <button type="submit"
-                                        className="whitespace-nowrap w-50"
+                                        className="button whitespace-nowrap w-50"
                                     >Hire Me</button>
                                     <button type="button" className="button  whitespace-nowrap w-50">
                                         Download CV
@@ -65,7 +64,7 @@ export default function Hero() {
             <div className="mobile-hero main-text-color px-3 flex flex-col justify-center">
                 
 
-                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-[#ffecf7ff] items-center">
+                <div className="p-4 rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white items-center">
                     <h3>Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span></h3>
                     <p className="animated-gradient-text text-3xl font-bold  text-gray-600 text-center font-serif">SEO manager & Full Stack Developper</p>
                     <div className="w-fit flex justify-center">
@@ -73,9 +72,9 @@ export default function Hero() {
 
                             <div className="flex gap-3 w-fit">
                                 <button type="submit"
-                                    className="w-40 whitespace-nowrap "
+                                    className="button-light w-40 whitespace-nowrap "
                                 >Hire Me</button>
-                                <button type="button" className=" w-40 button  whitespace-nowrap">
+                                <button type="button" className="button-dark w-40 button  whitespace-nowrap">
                                     Download CV
                                 </button>
                             </div>
@@ -86,13 +85,12 @@ export default function Hero() {
                     </div>
 
                 </div>
-<div className={`w-full px-2 mt-8 grow italic items-center justify-between font-bold ${playfair.className}`}>
+<div className={`w-full px-2 mt-8 mb-8 grow italic items-center justify-between font-bold ${playfair.className}`}>
                     <div className="w-full">
-                        <p className="text-3xl italic text-center leading-[3rem] tracking-wide  animate-slideInLeft font-bold">
-                            <span className="">❝ Building digital worlds one clue at a time.❞
-                            </span>
+                        <h4 className="italic text-center leading-[3rem] tracking-wide  animate-slideInLeft font-bold ">❝ Building digital worlds one clue at a time.❞
+                           
 
-                        </p>
+                        </h4>
                     </div>
 
                    

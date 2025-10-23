@@ -4,10 +4,12 @@ import SectionHeader from "../layout/SectionHeader"
 
 export default function ContactMe() {
     return(
-        <section id="contact" className="w-full flex flex-col gap-3 items-center">
+        <section id="contact" className="w-full flex flex-col
+        items-center">
 
 <SectionHeader title={"Contact Me"} description={"You can use the form bellow in case you wanted to contact me"}/>
-        <div className="desktop-about w-[60%] p-10 border border-gray-300 rounded-lg bg-white">
+<div  className="desktop-about w-[60%] py-5" >
+ <div className="border border-gray-300 rounded-lg bg-white p-10 ">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
@@ -41,7 +43,7 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="w-full animate-shake" type="submit">Send</button>
+                    <button className="button-dark w-full animate-shake" type="submit">Send</button>
                 </div>
                 
             </form>
@@ -49,7 +51,9 @@ export default function ContactMe() {
            
         </div>
 
-         <div className="mobile-about w-[80%] p-10 border border-gray-300 rounded-lg bg-white">
+        
+</div>
+        <div className="mobile-about w-[90%] p-10 border border-gray-300 rounded-lg bg-white">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
@@ -83,13 +87,14 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="w-full animate-shake" type="submit">Send</button>
+                    <button className="button-dark w-full animate-shake" type="submit">Send</button>
                 </div>
                 
             </form>
             </div>
            
         </div>
+
 </section>
     )
 }
