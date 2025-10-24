@@ -10,14 +10,9 @@ export function ThemeProvider({ children }) {
         {
             _id: 104270931, name: "Korean Food Ordering App", pic: [
                 "/my_projects/loptop_frame_foodordering.png",
-                "/my_projects/food_ordering-app-homepageD.png",
-                "/my_projects/PO_desktopmycart.png",
-                "/my_projects/PO_newhomepage.jpeg",
-                "/my_projects/PO_newlogin.jpeg",
-                "/my_projects/PO_newcart.jpeg",
-                "/my_projects/PO_newmenuitem.jpeg",
-                "/my_projects/PO_newaboutus.jpeg",
-                ""
+                "/my_projects/phoneframe_foodorderingapp.png"
+
+               
 
 
             ],
@@ -28,15 +23,9 @@ export function ThemeProvider({ children }) {
 
             pic: [
                  "/my_projects/laptop_frame_travelagency.png",
+                 "/my_projects/phoneframe_travel_agency.png"
                 
-                "/my_projects/moroccoimmersion_hopepage.png",
-
-                "/my_projects/MI_trips.png",
-
-                "/my_projects/MI_privatetours.png",
-                "/my_projects/MI_tripexample.png",
-                "/my_projects/MI_itinerary.png",
-                "/my_projects/MI_booklinks.png",
+              
             ], page: 'https://moroccoimmersion.com/'
 
         }

@@ -163,7 +163,7 @@ export default function ProjectsSections() {
                                         alt={"homepage_mobile"}
                                         src={item.pic[0]}
                                         className="w-full animate-slideInRight object-cover cover[top_right] rounded-lg border
-                        shadow-[0_10px_40px_rgba(0,0,0,0.25)] scale-110
+                       scale-110
                         transition-all ease-in-out duration-500
                         "
                                         width={200}
