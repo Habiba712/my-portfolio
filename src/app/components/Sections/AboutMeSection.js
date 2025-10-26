@@ -29,7 +29,7 @@ export default function AboutMe() {
            
         </div>
 
-           <div className="mobile-about w-[90%] p-2 h-full border border-gray-300 rounded-lg bg-white items-center">
+           <div className="mobile-about w-[90%] p-3 h-full border border-gray-300 rounded-lg bg-white items-center">
             <div>
              <Image src={profile_pic} alt="me" width={500} height={300} className="
                             animate-fadeIn rounded-lg

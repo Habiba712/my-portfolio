@@ -53,7 +53,7 @@ export default function ContactMe() {
 
         
 </div>
-        <div className="mobile-about w-[90%] p-10 border border-gray-300 rounded-lg bg-white">
+        <div className="mobile-about w-[90%] p-3 border border-gray-300 rounded-lg bg-white">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
