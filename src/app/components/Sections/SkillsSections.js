@@ -14,7 +14,7 @@ export default function SkillsSections() {
         {_id:6, name: "Laravel", logo: "./icons/laravel.svg" },
         {_id:7, name: "MongoDB", logo: "./icons/mongodb-icon-2.svg" },
         {_id:8, name: "MySQL", logo: "./icons/mysql.svg" },
-        {_id:9, name: "Git", logo: "./icons/git.svg" },
+
         {_id:10, name: "Github", logo: "./icons/github-2.svg" },
         {_id:11, name: "Figma", logo: "./icons/figma-icon.svg" },
         {_id:12, name: "Adobe Illustrator", logo: "./icons/adobe-illustrator.svg" },    

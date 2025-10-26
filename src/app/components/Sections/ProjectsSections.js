@@ -73,7 +73,7 @@ export default function ProjectsSections() {
                                         alt={"homepage_desktop"}
                                         src={item.pic[0]}
                                         className=" animate-slideInRight  rounded-lg border 
-                        scale-110 hover:scale-120 transition-all ease-in-out duration-500 object-cover
+                         object-cover
                         "
                                         width={300}
                                         height={400}
@@ -107,11 +107,11 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer py-3 px-3  transition-all duration-600 flex gap-3 justify-between  items-center ease-in-out border-b-2 border-transparent hover:scale-104 hover:link-icon">
+                                        } className="cursor-pointer  transition-all duration-600 flex gap-3 justify-between  items-center ease-in-out button-dark hover:scale-104 ">
 
 
-                                            {!expandText && <span className="link-icon">More Details</span>}
-                                            <LinkArrow className="link-icon w-5 h-5" />
+                                            {!expandText && <span className="">More Details</span>}
+                                            <LinkArrow className="w-5 h-5" />
 
                                         </button>
                                     </div>
@@ -163,8 +163,8 @@ export default function ProjectsSections() {
                                         alt={"homepage_mobile"}
                                         src={item.pic[0]}
                                         className="w-full animate-slideInRight object-cover cover[top_right] rounded-lg border
-                       scale-110
-                        transition-all ease-in-out duration-500
+                      
+                       
                         "
                                         width={200}
                                         height={200}
@@ -173,7 +173,7 @@ export default function ProjectsSections() {
                                 </div>
 
 
-                                <div className="animate-slideInLeft text-gray-100  px-3 py-3 w-full "
+                                <div className="animate-slideInLeft  px-3 py-3 w-full "
                                     style={{
                                         // "background": "#ffffff",
                                         // "border": "1px solid rgba(255,255,255,0.18)",
@@ -196,21 +196,19 @@ export default function ProjectsSections() {
                                     >This is a food ordering app that allows users to order food from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database
                                         and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the databaseand MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the databaseand MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database
                                     </p>
-                                    <div className="w-full mt-4 flex justify-end">
+                                      <div className="w-full mt-4 flex justify-end">
                                         <button onClick={() => {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer py-3 px-3 transition-all duration-600 flex gap-3 justify-between items-centerease-in-out  hover:scale-104">
+                                        } className="cursor-pointer  transition-all duration-600 flex gap-3 justify-between  items-center ease-in-out button-dark hover:scale-104 ">
 
 
-                                         
-                                            {!expandText && <span className="link-icon">More Details</span>}
-                                            <LinkArrow className="link-icon w-5 h-5" />
+                                            {!expandText && <span className="">More Details</span>}
+                                            <LinkArrow className="w-5 h-5" />
 
                                         </button>
                                     </div>
-
 
 
                                 </div>

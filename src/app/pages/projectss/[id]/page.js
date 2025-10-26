@@ -35,8 +35,7 @@ export default function Project() {
     return (
         <section className="w-full max-w-4xl p-4 mx-auto">
             <div>
-                <SectionHeader title={myProject.name} description={""} />
-                {/* // grid grid-cols-2 gap-4  */}
+                
                 <div className="desktop-hero rounded-lg 
                
                 w-full ">
@@ -58,8 +57,9 @@ export default function Project() {
 
                         </div>
 
-
-                        <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
+<SectionHeader title={myProject.name} description={""} />
+             
+                     
 
                         <p
                             className="font-sans"
@@ -71,7 +71,7 @@ export default function Project() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
                         </p>
                         <div className="my-4 italic text-gray-700 py-3 text-sm">
-                            <span >Tailwind Css, Next Js, MongoDB, Git, Stripe </span>
+                            <span >Tools: Tailwind Css, Next Js, MongoDB, Git, Stripe </span>
                         </div>
 
                         <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
@@ -129,7 +129,7 @@ export default function Project() {
                     </div>
                     <div>
 
-                         <div className="flex flex-col gap-3 bg-white rounded-lg py-3">
+                         <div className="flex flex-col gap-3 bg-white rounded-lg py-3 px-3">
                             {/* <div className="grid grid-cols-2 gap-2">
                                 <div className="">
                                     <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />

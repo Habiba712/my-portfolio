@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth ">
 
        <body
-       className={`${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
+       className={`aurora-top ${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
       >
       <ThemeProvider>
         
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
          
          
           <footer
-            className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center border-t border-gray-100 justify-center w-full p-6 mt-10"
+            className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center justify-center w-full p-6 mt-10"
           >
             VexAura © 2025
           </footer>

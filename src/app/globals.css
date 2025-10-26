@@ -9,9 +9,9 @@
 
 .animated-gradient {
   background: linear-gradient(
-    90deg,
-   #2e280fcd,
-    #9d7b17d6
+   120deg,
+    #F7A5A5,
+    #FFDBB6
  
   );
   /* background-size: 400% 400%; */
@@ -19,15 +19,17 @@
 }
  
  :root {
-     --background:#212018;
-    --fore-ground: #5d3f26;
-    --fancy-font-color: #946f53;
-    --main-text-color: #212018;
+     --background:#1A2A4F;
+    --fore-ground: #1A2A4F;
+    --fancy-font-color: #F7A5A5;
+    --main-text-color: #02021e;
+
     --button-bg: #3b3e53;
     --font-fancy: 'Playfair Display', serif;
-    --button-text: #f4ece3;
-    --button-bg: #5d3f26;
-    --button-border:#946f53;
+    --button-text: #FFF2EF;
+    --button-bg: #F7A5A5;
+    --button-border:#0D1164;
+    --hero-text-color:#FFDBB6;
   }
 /* @theme inline {
   --color-background: var(--background);
@@ -36,6 +38,9 @@
   --font-mono: var(--font-geist-mono);
 } */
 
+body{
+  color: var(--main-text-color);
+}
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -51,9 +56,11 @@
 
 .animated-gradient-text {
   background: linear-gradient(
-     90deg,
-   #2e280fcd,
-    #9d7b17d6
+   120deg,
+    #F7A5A5,
+    #FFDBB6
+ 
+  
   
    
   );
@@ -182,48 +189,38 @@ body {
 
 header {
   font-family: var(--font-fancy);
-  color: var(--fore-ground);
+  color: var(--fancy-font-color);
 }
 
 div .main-text-color{
-  color: var(--fore-ground);
-}
-
-
-button[type="submit"]{
- @apply flex justify-center items-center cursor-pointer;
-  color: var(--button-bg);
-  background-color: var(--button-text);
-  border: 1px solid var(--button-border);
-
-    @apply  text-center px-5 py-3 rounded-full ;
-}
-
-.link-icon{
-  color: var(--button-border)
-}
-
-button[type="button"]{
- @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold;
-  color: var(--button-text);
-  background-color: var(--button-bg);
-  border: 1px solid var(--button-border);
-
+  
 }
 
 .button-dark{
    @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold;
   color: var(--button-text);
   background-color: var(--button-bg);
-  border: 1px solid var(--button-border);
+  border: 1px solid var(--button-text);
 }
 
 .button-light{
    @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold;
-  color: var(--button-bg);
+  color: var(--fancy-font-color);
   background-color: var(--button-text);
-  border: 1px solid var(--button-border);
+  border: 1px solid var(--fancy-font-color);
 }
+
+ 
+
+div .link-icon{
+  color: var(--button-border);
+  border: 1px solid var(--fancy-font-color);
+  @apply rounded-lg py-3 px-3;
+  
+}
+
+ 
+
 
 
 input[type="textarea"]{
@@ -240,17 +237,28 @@ button{
 label{
   @apply text-gray-500 text-sm font-semibold ml-3
 }
+h1{
+   
+  font-family: var(--font-fancy);
+  
+}
+
+h1:hover{
+  @apply scale-120 transition-all ease-in-out duration-500 ;
+}
 h3{
-   color: var(--fore-ground);
+    
 font-size: 18px;
-  @apply text-xl font-semibold mb-4  tracking-[0.1rem];
+  @apply font-serif;
+
+  @apply text-xl font-semibold mb-4  ;
 }
 h4{
   @apply text-2xl font-bold mb-4  tracking-[0.1rem];
-  color: var(--button-border);
+  
 }
 h2{
-    color: var(--fore-ground);
+   
 font-size: 32px;
    font-family: sans-serif;
   @apply text-4xl mb-4  tracking-[0.1rem];
@@ -258,14 +266,16 @@ font-size: 32px;
 
 span, div{
   @apply font-sans;
-  color: var(--fore-ground);
+
 
 }
 span{
-  font-size: 18px;
+  font-size: 15px;
 }
 p{
-  font-size: 20px;
+  font-size: 16px;
+ 
+  @apply font-serif;
 
 }
 .tool-names{
@@ -275,6 +285,16 @@ p{
 .skill-slide{
    
   background-color:  #f5eced;
+}
+.section-header{
+color: var(--fancy-font-color);
+}
+
+.quote-text{
+  color: var(--hero-text-color);
+}
+.section-header p{
+  color: var(--hero-text-color);
 }
 
 /* .scrollbar-hidden:-webkit-scrollbar{
@@ -294,6 +314,9 @@ p{
  @media( min-width: 640px) {
   nav ul li{
   @apply text-xl font-sans;
+  
+
+
  
  
 }
@@ -325,7 +348,8 @@ p{
    
     nav ul li{
   @apply text-sm text-center font-semibold py-2 cursor-pointer;
-   color: var(--button-border);
+  color: var(--fore-ground);
+   
    border-bottom-color:var(--button-border);
  
 }

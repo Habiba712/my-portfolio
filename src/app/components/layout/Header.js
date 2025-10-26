@@ -60,31 +60,35 @@ export default function Header() {
         {/* <Image src={logo_white} alt="logo" width={200} height={200}className="" /> */}
        
         <div className="">
-          <Image src={logo_black} alt="logo" width={200} height={200} className="cursor-pointer"
+          <h1 className="cursor-pointer"
             onClick={() => {
               redirect('/')
             }}
-          />
+            >VexAura
+          </h1>
         </div>
 
       </div>
-      <div className="">
-        <nav className="font-semibold menu-items-nav">
+      <div className="relative -bottom-4">
+        <nav className="menu-items-nav">
           <ul className="flex gap-4">
             <li className="relative group pb-5">
               <a href="/#projects">Projects
-              <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"
+             
+              
+              ></span>
               </a>
               
             </li>
 
             <li className="relative group pb-5">
-              <a href="/#about">About  <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
+              <a href="/#about">About  <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
             </li>
 
             <li className="relative group pb-5">
               <a href="/#contact">Contact 
-               <span className="absolute left-0 bottom-1 h-1 w-0 bg-[#946f53] rounded-full transition-all duration-500 group-hover:w-full"></span>
+               <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -119,11 +123,12 @@ export default function Header() {
   <div className="flex w-full justify-between">
       <div className="text-4xl font-bold text-start w-50">
         <div className="">
-          <Image src={logo_black} alt="logo" width={200} height={200} className="cursor-pointer"
+        <h1 className="cursor-pointer"
             onClick={() => {
               redirect('/')
             }}
-          />
+            >VexAura
+          </h1>
         </div>
 
       </div>

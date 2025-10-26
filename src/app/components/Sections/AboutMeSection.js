@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import SectionHeader from "../layout/SectionHeader"
-import profile_pic from "../../../../public/Minimalist Chic Hijab Style _ Cream Blazer & Black Outfit.jpeg";
+import profile_pic from "../../../../public/profile.jpeg";
 import Link from "next/link";
 export default function AboutMe() {
     return(
@@ -13,7 +13,7 @@ export default function AboutMe() {
              
            <div  className="h-full rounded-lg bg-white p-5 " >
               
-               <p className="font-normal font-sans text-gray-600 ">Hi, I'm <span className="font-bold animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
+               <p className="font-normal font-sans ">Hi, I'm <span className="font-bold animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
               <div className="flex justify-end  items-start gap-3   ">
         <Link href="/my-portfolio">
           <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
@@ -37,7 +37,7 @@ export default function AboutMe() {
                             " />
             </div>
            <div>
-               <p className="font-normal font-sans text-gray-600 text-sm py-3">Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f </p>
+               <p className="font-normal font-sans text-sm py-3">Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f </p>
               <div className="flex justify-center items-end gap-3 mt-3  ">
         <Link href="/my-portfolio">
           <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
