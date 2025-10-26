@@ -7,7 +7,7 @@ import ProjectsSections from "./components/Sections/ProjectsSections";
 import SkillsSections from "./components/Sections/SkillsSections";
 
 const handleScrolltoTop = ()=>{
-  window.scrollTo({top:0, behavior:'smooth'})
+  window.scrollTo({top:-10, behavior:'smooth'})
 }
 export default function Home() {
   return (

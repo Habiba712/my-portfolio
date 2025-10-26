@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
       >
       <ThemeProvider>
         
-        <main className="relative mx-auto overflow-x-hidden">
+        <main className="relative mx-auto overflow-x-hidden ">
 
           <Header />
           {children}
