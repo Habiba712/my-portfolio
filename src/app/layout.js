@@ -6,6 +6,7 @@ import Header from "./components/layout/Header";
 import {ThemeProvider} from "./components/AppContext";
 import { Nunito_Sans, Open_Sans, Quicksand } from "next/font/google";
 import ScrollTop from "../../public/icons/SVG/scroll-totop";
+import ScrolltoTop from "./components/Sections/ScrollToTop";
 
 export const nunito = Nunito_Sans({
   subsets: ["latin"],
@@ -55,7 +56,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
          
-        
+        <ScrolltoTop/>
           <footer
             className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center justify-center w-full p-6 border-t border-[#F7A5A5]"
           >
