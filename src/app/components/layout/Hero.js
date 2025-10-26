@@ -72,11 +72,11 @@ Ernest Hemingway
                     <h3 className="leading-[3rem] text-sm text-center">Habiba Taliby <br/> SEO manager & Full Stack Developper</h3>
                    
                    
-                            <div className="flex gap-3 w-fit">
-                                <button type="submit"
+                            <div className="flex gap-3 w-full justify-center ">
+                                <button 
                                     className="button-light w-40 whitespace-nowrap "
                                 >Hire Me</button>
-                                <button type="button" className="button-dark w-40 button  whitespace-nowrap">
+                                <button className="button-dark w-40 button  whitespace-nowrap">
                                     Download CV
                                 </button>
                             </div>
