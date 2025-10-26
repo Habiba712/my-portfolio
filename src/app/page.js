@@ -19,7 +19,7 @@ export default function Home() {
         <ProjectsSections/>
 <AboutMe/>
         <ContactMe/>
-         <div className=" w-full flex justify-end py-3 px-6">
+         <div className="overflow-x-hidden w-full flex justify-end py-3 px-6">
           <button onClick={()=>handleScrolltoTop()}>
              <ScrollTop className="cursor-pointer  p-2 w-10 h-10 flex bg-[#F7A5A5] text-white rounded-full " />
           </button>
