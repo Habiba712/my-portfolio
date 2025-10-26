@@ -6,7 +6,7 @@ import profile_pic from "../../../../public/profile.jpeg";
 import Link from "next/link";
 export default function AboutMe() {
     return(
-        <section id="about" className="w-full flex flex-col items-center">
+        <section id="about" className="w-full flex flex-col items-center ">
 
 <SectionHeader title={"About Me"} description={"A small introduction about me"}/>
         <div className="desktop-about w-[60%] py-5 flex items-center">

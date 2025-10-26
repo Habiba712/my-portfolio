@@ -48,12 +48,13 @@ export default function ProjectsSections() {
     return (
         <>
 
-
+ <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
             <section id="projects" className="desktop-projects w-full  flex flex-col items-center smooth-scroll transition-all duration-500 ease-in-out">
-                <SectionHeader title={'My Projects'} description={'Here are some of my projects I have worked on.'} />
+                
 
 
                 {/* <hr className="w-[60%] border border-gray-100"/> */}
+                
                 {
                     myProjectsList.map((item, index) => (
                         <div className="w-[60%]">
@@ -135,11 +136,13 @@ export default function ProjectsSections() {
 
 
             {/* mobile version */}
-            <section id="projects" className="mobile-projects w-full  flex flex-col gap-3 items-center smooth-scroll transition-all duration-500 ease-in-out">
-                <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
+          <div className="mobile-about flex w-full justify-center">  <section id="projects" className="flex flex-col items-end justify-end  psmooth-scroll transition-all duration-500 ease-in-out  w-[90%]">
+               
 
 
                 {/* <hr className="w-[60%] border border-gray-100"/> */}
+
+                
                 {
                     myProjectsList.map((item, index) => (
                         <motion.section
@@ -148,10 +151,11 @@ export default function ProjectsSections() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                             viewport={{ once: false, amount: 0.3 }}
-                            className="px-3 py-3"
+                            className="py-3"
 
                         >
-                            <div className="flex flex-col border rounded-lg  px-3 py-3 justify-center gap-3 w-full bg-white "
+                          
+                             <div className=" h-full border border-gray-300 rounded-lg bg-white items-cente"
                                 style={{
 
                                     "border": "1px solid rgba(255,255,255,0.18)",
@@ -213,6 +217,10 @@ export default function ProjectsSections() {
 
                                 </div>
                             </div>
+                        
+                                 
+                           
+                          
 
                         </motion.section>
                     ))
@@ -221,9 +229,9 @@ export default function ProjectsSections() {
 
 
 
-
             </section>
 
+  </div>
         </>
 
     )

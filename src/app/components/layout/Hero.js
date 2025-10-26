@@ -65,10 +65,9 @@ Ernest Hemingway
             </div>
 
             {/* mobile version */}
-            <div className="mobile-hero main-text-color px-3 flex flex-col justify-center">
-                
-
-                <div className="p-4 tracking-wide text-sm rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white justify-center ">
+            <div className="mobile-hero main-text-color flex flex-col justify-center items-center w-full ">
+                <div className="w-[90%]">
+                       <div className="py-4 tracking-wide text-sm rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white justify-center ">
                     <h3 className="leading-[3rem] text-sm text-center">Habiba Taliby <br/> SEO manager & Full Stack Developper</h3>
                    
                    
@@ -105,6 +104,9 @@ Ernest Hemingway
 
                 </div>
 
+                </div>
+
+             
             </div>
         </>
 
