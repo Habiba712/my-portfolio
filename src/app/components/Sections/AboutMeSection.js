@@ -4,54 +4,110 @@ import Image from "next/image"
 import SectionHeader from "../layout/SectionHeader"
 import profile_pic from "../../../../public/profile.jpeg";
 import Link from "next/link";
+import { useState } from "react";
+import LinkArrow from "../../../../public/icons/SVG/link_arrow";
+import { redirect } from "next/navigation";
+
 export default function AboutMe() {
-    return(
-        <section id="about" className="w-full flex flex-col items-center ">
 
-<SectionHeader title={"About Me"} description={"A small introduction about me"}/>
-        <div className="desktop-about w-[60%] py-5 flex items-center">
-             
-           <div  className="h-full rounded-lg bg-white p-5 " >
-              
-               <p className="font-normal font-sans ">Hi, I'm <span className="font-bold animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv yd </p>
-              <div className="flex justify-end  items-start gap-3   ">
-        <Link href="/my-portfolio">
-          <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
-        </Link>
-        <Link href="/my-portfolio">
-          <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
-        </Link>  <Link href="/my-portfolio">
-          <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
-        </Link>
+  const [expandText, setExpandText] = useState(false)
 
-      </div>
-           </div>
-           
+
+  const handleExpandText = () => {
+    setExpandText(!expandText)
+  }
+  return (
+    <section id="about" className="w-full flex flex-col items-center">
+
+      <SectionHeader title={"About Me"} description={"A little sneak peek into who I am"} />
+      <div className="desktop-about w-[60%] py-5 flex items-center font-serif ">
+
+        <div className="h-full rounded-lg bg-white p-5 " >
+
+          <p className="font-normal  whitespace-per-line-2 text-wrap"
+
+
+            style={{
+              overflow: 'hidden',
+              display: '-webkit-box',
+              WebkitBoxOrient: 'vertical',
+              WebkitLineClamp: expandText ? 'none' : 5
+
+
+            }
+            }
+          >Hey, I'm <span className="font-bold animated-gradient-text">Habiba Taliby</span>, — a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, <span className="font-bold animated-gradient-text">Next.js</span>, <span className="font-bold animated-gradient-text">Tailwind CSS</span>, and <span className="font-bold animated-gradient-text">MongoDB</span>, and I love combining logic and design to create things that just flow.
+
+            I’ve always had a curiosity for how things work — whether it’s debugging a stubborn API call, cleaning up messy code, or making an interface feel more intuitive. My approach is pretty simple: write code that’s clear, scalable, and actually enjoyable to use.
+
+            I also have experience working with SEO optimization, site performance, and even the occasional WordPress project when it makes sense for the client <span className="font-bold animated-gradient-text">(Elementor, Yoast SEO, caching tools — the whole stack)</span>.
+
+            When I’m not coding, you’ll probably find me experimenting with new UI ideas, reading about cybersecurity and OSINT, or just having coffee while breaking something in my dev environment (and then fixing it, obviously).
+
+
+          </p>
+<div className=" w-full text-end py-3">
+   <button onClick={() => {
+            handleExpandText
+            redirect(`/pages/about`)
+          }
+          } className=" hover:scale-104 ">
+
+
+            {!expandText &&
+
+              <span className="button-dark gap-2">Read More
+                <LinkArrow className="w-5 h-5" /></span>}
+
+          </button>
+
+</div>
+         
+
+          <div className="flex justify-center  items-start gap-3   ">
+            <Link href="/my-portfolio">
+              <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
+            </Link>
+            <Link href="/my-portfolio">
+              <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
+            </Link>  <Link href="/my-portfolio">
+              <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
+            </Link>
+
+          </div>
         </div>
 
-           <div className="mobile-about w-[90%] p-3 h-full border border-gray-300 rounded-lg bg-white items-center">
-            <div>
-             <Image src={profile_pic} alt="me" width={500} height={300} className="
+      </div>
+
+      <div className="mobile-about w-[90%] p-2 h-full border border-gray-300 rounded-lg bg-white items-center">
+        <div>
+          <Image src={profile_pic} alt="me" width={500} height={300} className="
                             animate-fadeIn rounded-lg
                             
                             " />
-            </div>
-           <div>
-               <p className="font-normal font-sans text-sm py-3">Hi, I'm <span className="animated-gradient-text">Habiba Taliby</span>, Lorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f eo fpqjre fpqer mmvut ncbtuomw fnreqoif qoi frqijerojfq orfq ohrfoq hrfoqhrq oioijoijohoihpoj poj pjpj0 yfy trd vyv ydorem f </p>
-              <div className="flex justify-center items-end gap-3 mt-3  ">
-        <Link href="/my-portfolio">
-          <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
-        </Link>
-        <Link href="/my-portfolio">
-          <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
-        </Link>  <Link href="/my-portfolio">
-          <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
-        </Link>
+        </div>
+        <div>
+          <p className="font-normal font-sans text-sm py-3  whitespace-per-line-2 text-wrap">Hey, I'm <span className="animated-gradient-text">Habiba Taliby</span>,— a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, Next.js, Tailwind CSS, and MongoDB, and I love combining logic and design to create things that just flow.
+
+            I’ve always had a curiosity for how things work — whether it’s debugging a stubborn API call, cleaning up messy code, or making an interface feel more intuitive. My approach is pretty simple: write code that’s clear, scalable, and actually enjoyable to use.
+
+            I also have experience working with SEO optimization, site performance, and even the occasional WordPress project when it makes sense for the client (Elementor, Yoast SEO, caching tools — the whole stack). Recently, I redesigned a full travel agency website from 2016, giving it a modern structure, improved SEO, and better mobile usability.
+
+            When I’m not coding, you’ll probably find me experimenting with new UI ideas, reading about cybersecurity and OSINT, or just having coffee while breaking something in my dev environment (and then fixing it, obviously). </p>
+          <div className="flex justify-center items-end gap-3 mt-3  ">
+            <Link href="/my-portfolio">
+              <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
+            </Link>
+            <Link href="/my-portfolio">
+              <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
+            </Link>  <Link href="/my-portfolio">
+              <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
+            </Link>
+
+          </div>
+        </div>
 
       </div>
-           </div>
-           
-        </div>
-</section>
-    )
+    </section>
+  )
 }

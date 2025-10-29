@@ -37,11 +37,11 @@ export default function Project() {
             <div>
                 
                 <div className="desktop-hero rounded-lg 
-               
+               font-sans 
                 w-full ">
 
 
-                    <div className="px-4 py-10 font-poppins border border-gray-200 rounded-lg bg-white h-fit flex flex-col gap-4">
+                    <div className="px-4 py-10 border border-gray-200 rounded-lg bg-white  h-fit flex flex-col gap-4">
 
 
       <div className="flex justify-center gap-3 bg-white rounded-lg py-3 relative">
@@ -57,21 +57,28 @@ export default function Project() {
 
                         </div>
 
-<SectionHeader title={myProject.name} description={""} />
+<SectionHeader title={myProject?.name} description={""}
+
+/>
+                        <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
              
                      
-
-                        <p
-                            className="font-sans"
-
-                        >
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-                        </p>
-                        <div className="my-4 italic text-gray-700 py-3 text-sm">
-                            <span >Tools: Tailwind Css, Next Js, MongoDB, Git, Stripe </span>
+<p>{myProject?.description[0]}</p><br/>
+<h3>{myProject?.description[1]}</h3>
+                     {
+                            myProject?.description.slice(2).map((para, index) => (
+                                <div key={index}>  <h5 className="font-semibold">{para?.subTitle}</h5>
+                                <p className="text-sm">{para?.texto}</p></div>
+                              
+                            ))
+                     }
+                        <div className="my-4 italic text-gray-500 py-3 text-sm"><span className="text-2xl">Tools:
+                            </span>
+                             {
+                                myProject?.tools ? myProject?.tools.map((tool, index) => (
+                                    <span className="mr-3" key={index}>{tool}</span>
+                                )) : null
+                            }
                         </div>
 
                         <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
@@ -79,7 +86,7 @@ export default function Project() {
                             
                                 <Link className="button-light whitespace-nowrap" href={myProject.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
 
-                            <button className="button-dark cursor-pointer border rounded-lg px-4 py-2 bg-[#26658c] text-white whitespace-nowrap">View Repo</button>
+                            <button className="button-dark cursor-pointer border rounded-lg px-4 py-2 bg-white text-white whitespace-nowrap">View Repo</button>
                         </div>
 
                     </div>
@@ -102,34 +109,40 @@ export default function Project() {
                 w-full flex flex-col justify-center gap-4 ">
 
 
-                    <div className="px-4 py-6 font-poppins border border-gray-200 rounded-lg bg-white">
-                        <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
-
-                        <p
-                            className="font-sans"
-
-                        >
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec gravida enim erat at sapien.
-                        </p>
-                        <div className="my-4 italic text-gray-700 py-3 text-sm">
-                            <span >Tailwind Css, Next Js, MongoDB, Git, Stripe </span>
+                    <div className="px-4 py-6  border border-gray-200 rounded-lg bg-white font-sans ">
+                         <h3 className="font-sans font-semibold text-gray-800">Overview</h3>
+             
+                     
+<p>{myProject?.description[0]}</p><br/>
+<h3>{myProject?.description[1]}</h3>
+                     {
+                           myProject?.description.slice(2).map((para, index) => (
+                                <div key={index || para?.subTitle}>  <h5 className="font-semibold">{para?.subTitle}</h5><br/>
+                                <p className="text-sm">{para?.texto}</p></div>          
+                              
+                            ))
+                           
+                     }
+                        <div className="my-4 italic text-gray-600 py-3 text-sm">
+                            {
+                                myProject?.tools ? myProject?.tools.map((tool, index) => (
+                                    <span className="mr-3" key={index}>{tool}{"  "}</span>
+                                )) : null
+                            }
                         </div>
 
-                        <div className="px-3 py-2 flex justify-end gap-3 font-sans ">
+                        <div className="px-3 py-2 flex justify-end gap-3 ">
 
                             
-                                <Link className="button-light whitespace-nowrap" href={myProject.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
+                                <Link className="button-light whitespace-nowrap" href={myProject?.page} target="_blank" rel="noopener noreferrer">View Project   </Link>                     
 
-                            <button className="button-dark cursor-pointer border rounded-lg px-4 py-2 bg-[#26658c] text-white whitespace-nowrap">View Repo</button>
+                            <button className="button-dark cursor-pointer border rounded-lg px-4 py-2 bg-white text-white whitespace-nowrap">View Repo</button>
                         </div>
 
                     </div>
                     <div>
 
-                         <div className="flex flex-col gap-3 bg-white rounded-lg py-3 px-3">
+                         <div className="flex flex-col gap-3 bg-white  rounded-lg py-3 px-3">
                             {/* <div className="grid grid-cols-2 gap-2">
                                 <div className="">
                                     <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={400} height={400} className="rounded-lg h-full" />

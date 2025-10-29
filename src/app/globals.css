@@ -40,6 +40,7 @@
 
 body{
   color: var(--main-text-color);
+  
 }
 @keyframes gradientMove {
   0% {
@@ -55,15 +56,8 @@ body{
 
 
 .animated-gradient-text {
-  background: linear-gradient(
-   120deg,
-    #F7A5A5,
-    #FFDBB6
- 
-  
-  
-   
-  );
+  background: 
+    #F7A5A5;
  
 
   -webkit-background-clip: text;
@@ -192,22 +186,22 @@ header {
   color: var(--fancy-font-color);
 }
 
-div .main-text-color{
-  
-}
+
 
 .button-dark{
-   @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold;
+   @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold font-sans;
   color: var(--button-text);
   background-color: var(--button-bg);
   border: 1px solid var(--button-text);
+font-size: 16px;
 }
 
 .button-light{
-   @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold;
+   @apply flex justify-center items-center cursor-pointer text-center text-white px-5 py-3 rounded-full font-semibold font-sans;
   color: var(--fancy-font-color);
   background-color: var(--button-text);
   border: 1px solid var(--fancy-font-color);
+font-size: 16px;
 }
 
  
@@ -265,15 +259,31 @@ font-size: 32px;
 }
 
 span, div{
-  @apply font-sans;
+  @apply font-serif ;
 
 
 }
 span{
-  font-size: 15px;
+  font-size: 16px;
+  /* @apply text-gray-400; */
+}
+
+.expand{
+  @apply text-sm font-sans cursor-pointer font-semibold border-2 py-1 px-3;
+  border: 2px solid var(--fancy-font-color);
+  color: var(--fore-ground);
+  @apply rounded-full;
+}
+
+.journey-timeline{
+ background: linear-gradient(
+  to bottom right,
+  #F7A5A5,
+  #0D1164
+ );
 }
 p{
-  font-size: 16px;
+  font-size: 14px;
  
   @apply font-serif;
 

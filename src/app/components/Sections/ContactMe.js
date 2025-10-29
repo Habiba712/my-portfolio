@@ -7,7 +7,7 @@ export default function ContactMe() {
         <section id="contact" className="w-full flex flex-col
         items-center">
 
-<SectionHeader title={"Contact Me"} description={"You can use the form bellow in case you wanted to contact me"}/>
+<SectionHeader title={"Contact Me"} description={"Have a specific idea you want to bring to life? Get in touch, and let’s make it happen!"}/>
 <div  className="desktop-about w-[60%] py-5" >
  <div className="border border-gray-300 rounded-lg bg-white p-10 ">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">

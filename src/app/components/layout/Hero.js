@@ -28,7 +28,8 @@ Ernest Hemingway
                     </div>
                    
 
-                    <div className="p-4 tracking-wide  rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white items-center ">
+                    <div className="p-4 tracking-wide  rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white
+                 items-center ">
                         <h3 className="leading-[3rem]">Hi, I'm Habiba Taliby <br/> SEO manager & Full Stack Developper</h3>
                         
                      

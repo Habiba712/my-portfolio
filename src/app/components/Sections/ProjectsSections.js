@@ -57,7 +57,9 @@ export default function ProjectsSections() {
                 
                 {
                     myProjectsList.map((item, index) => (
-                        <div className="w-[60%]">
+                        <div 
+                        key={index || item._id}
+                        className="w-[60%]">
 
                             <motion.section
                             key={index || item._id}
@@ -72,7 +74,7 @@ export default function ProjectsSections() {
                                 <div className=" h-full flex justify-center items-center">
                                     <Image
                                         alt={"homepage_desktop"}
-                                        src={item.pic[0]}
+                                        src={item?.pic[0]}
                                         className=" animate-slideInRight  rounded-lg border 
                          object-cover
                         "
@@ -86,8 +88,13 @@ export default function ProjectsSections() {
                                    
                                 >
                                     <div className="text-start">
-                                        <h3 className="">{item.name}</h3>
-                                    <span className="text-sm italic text-gray-700 ">#js #react #nextjs #tailwindcss #html #css #javascript #nodejs #expressjs</span>
+                                        <h3 className="">{item?.name}</h3>
+                              
+                                    {
+                                        item?.tools ? item?.tools.map((tool, index) => (
+                                            <span className="text-sm italic text-gray-700 " key={index}>{tool}</span>
+                                        )) : null
+                                    }
                                     <p className={`mt-4 font-sans text-gray-700
     whitespace-per-line-2 text-wrap `}
                                         style={{
@@ -99,7 +106,7 @@ export default function ProjectsSections() {
 
                                         }
                                         }
-                                    >ee backend, 
+                                    >{Array.isArray(item?.description) ? item?.description[0] : 'null'}
                                     </p>  
                                     </div>
                                   
@@ -108,11 +115,13 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer  transition-all duration-600 flex gap-3 justify-between  items-center ease-in-out button-dark hover:scale-104 ">
+                                        } className=" hover:scale-104 ">
 
 
-                                            {!expandText && <span className="">More Details</span>}
-                                            <LinkArrow className="w-5 h-5" />
+                                            {!expandText &&
+                                            
+                                            <span className="button-dark gap-2">More Details
+                                            <LinkArrow className="w-5 h-5" /></span>}
 
                                         </button>
                                     </div>
@@ -185,7 +194,11 @@ export default function ProjectsSections() {
                                     }}
                                 >
                                     <h3 className="text-center">{item.name}</h3>
-                                    <span className="text-sm italic ">#js #react #nextjs #tailwindcss #html #css #javascript #nodejs #expressjs</span>
+                                    {
+                                        item?.tools ? item?.tools.map((tool, index) => (
+                                            <span className="text-sm italic text-gray-700 " key={index}>{tool}</span>
+                                        )) : null
+                                    }
                                     <p className={`mt-4 font-sans text-gray-700
     whitespace-per-line-2 text-wrap `}
                                         style={{
@@ -205,7 +218,7 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className="cursor-pointer  transition-all duration-600 flex gap-3 justify-between  items-center ease-in-out button-dark hover:scale-104 ">
+                                        } className=" button-dark hover:scale-104 ">
 
 
                                             {!expandText && <span className="">More Details</span>}
