@@ -358,7 +358,7 @@ color: var(--fancy-font-color);
    
     nav ul li{
   @apply text-sm text-center font-semibold py-2 cursor-pointer;
-  color: var(--fore-ground);
+  color: var(--fancy-font-color);
    
    border-bottom-color:var(--button-border);
  

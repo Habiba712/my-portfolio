@@ -155,8 +155,8 @@ export default function Header() {
   >
      <nav className="font-semibold w-70"
       style={{
-                        "background": "linear-gradient(135deg,rgba (255,255,255,0.1),rgba(255,255,255,0))",
-                        "WebkitBackdropFilter": "blur(20px)",
+                        "background": "linear-gradient(135deg,#1A2A4F,#1A2A4F)",
+                        "WebkitBackdropFilter": "blur(50px)",
                         "backdropFilter": "blur(20px)",
                         "boxShadow": "0 8px 20px 0 rgba(0,0,0,0.37)",
                         "border": "1px solid rgba(255,255,255,0.18)",
