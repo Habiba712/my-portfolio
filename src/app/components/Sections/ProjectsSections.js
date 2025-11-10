@@ -221,12 +221,12 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className=" hover:scale-104 ">
+                                        } className=" hover:scale-110 transition-all duration-500 ease-in-out">
 
 
                                             {!expandText &&
                                             
-                                            <span className="button-dark gap-2">More Details
+                                            <span className="button-dark flex gap-3">More Details
                                             <LinkArrow className="w-5 h-5" /></span>}
 
                                         </button>
@@ -329,11 +329,13 @@ export default function ProjectsSections() {
                                             handleExpandText
                                             redirect(`/pages/projectss/${item._id}`)
                                         }
-                                        } className=" button-dark hover:scale-104 ">
+                                        } className=" button-dark hover:scale-110 transition-all duration-500 ease-in-out">
 
 
-                                            {!expandText && <span className="">More Details</span>}
-                                            <LinkArrow className="w-5 h-5" />
+                                            {!expandText && <span className="flex gap-3"> More Details
+                                                <LinkArrow className="w-5 h-5" />
+                                               </span>}
+                                            
 
                                         </button>
                                     </div>

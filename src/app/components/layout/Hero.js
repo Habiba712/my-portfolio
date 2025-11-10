@@ -27,10 +27,12 @@ Ernest Hemingway
                     </span>
                     </div>
                    
-
-                    <div className="p-4 tracking-wide  rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white
-                 items-center ">
-                        <h3 className="leading-[3rem]">Hi, I'm Habiba Taliby <br/> SEO manager & Full Stack Developper</h3>
+<div className="px-1 py-1 border rounded-lg  mt-6 animated-gradient-border ">
+     <div className="p-4 tracking-wide  rounded-lg shadow-lgflex flex-col gap-2 animate-dropTop bg-white 
+               ">
+                        <h3 className="leading-[3rem]">Hi, 
+                           I'm  <span className="animated-gradient-text">Habiba Taliby
+                                </span> <br/> SEO manager & Full Stack Developper</h3>
                         
                      
                            
@@ -49,6 +51,8 @@ Ernest Hemingway
                        
 
                     </div>
+</div>
+                   
 
                 </div>
 

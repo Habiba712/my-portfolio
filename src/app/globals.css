@@ -14,8 +14,8 @@
     #FFDBB6
  
   );
-  /* background-size: 400% 400%; */
-  /* animation: gradientMove 15s ease infinite; */
+  background-size: 400% 400%; 
+  animation: gradientMove 15s ease infinite;
 }
  
  :root {
@@ -56,12 +56,44 @@ body{
 
 
 .animated-gradient-text {
-  background: 
-    #F7A5A5;
+  
+  background: linear-gradient(
+    120deg,
+    #ec7878,
+    #dbb289,
+    #F7A5A5
+  );
  
+  background-size: 400% 400%; 
+  animation: gradientMove 10s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.animated-logo{
+  background: linear-gradient(
+    to right,
+    #665959,
+    #dbb289
+    
+  );
+  background-size: 400% 400%; 
+  animation: gradientMove 10s ease ;  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.animated-gradient-border{
+  background: linear-gradient(
+    120deg,
+    #ec7878,
+    #dbb289,
+    #F7A5A5
+  );
+
+  background-size: 400% 400%; 
+  animation: gradientMove 15s ease infinite;
+    
 }
 
 

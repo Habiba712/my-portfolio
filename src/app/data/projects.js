@@ -169,10 +169,10 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
         },
             {
-            _id: 104270935, name: "Park Info.",
+            _id: 104270934, name: "Park Info.",
 
             pic: [
-                 "/my_projects/parkinfo.png",
+                 "/my_projects/parkInfo.png",
                 
                 
               
@@ -223,7 +223,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
         }, 
         
         {
-            _id: 104270939, name: "Personal Budget Tracker",
+            _id: 104270935, name: "Personal Budget Tracker",
 
             pic: [
                  "/my_projects/myBudget.png",
@@ -277,7 +277,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
         },
           
         {
-            _id: 104270939, name: "Citizen Services Website",
+            _id: 104270936, name: "Citizen Services Website",
 
             pic: [
                  "/my_projects/conseilMenara.png",
