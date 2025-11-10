@@ -568,7 +568,8 @@ box-shadow: 0 8px 32px rgba(220, 134, 134, 0.3);
 
 .hero-text-mobile {
   font-size: 2rem;
- border: 1px solid red;
+
+  
   padding: 1rem 1rem 0rem 1rem;
 }
 
