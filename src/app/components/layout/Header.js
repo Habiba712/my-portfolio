@@ -60,7 +60,7 @@ export default function Header() {
         {/* <Image src={logo_white} alt="logo" width={200} height={200}className="" /> */}
        
         <div className="">
-          <h1 className="cursor-pointer animated-logo"
+          <h1 className="cursor-pointer"
             onClick={() => {
               redirect('/')
             }}
