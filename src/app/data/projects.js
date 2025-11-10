@@ -200,7 +200,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
             tools:[
                 "React.js, ",
                 "CSS, ",
-                "MySQL, "
+                "MySQL "
             
             ]
             
@@ -252,7 +252,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
             tools:[
                 "React.js, ",
                 "CSS, ",
-                "MySQL, "
+                "MySQL "
             
             ]
             

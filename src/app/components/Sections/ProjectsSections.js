@@ -92,10 +92,11 @@ export default function ProjectsSections() {
                                         <h3 className="">{item?.name}</h3>
                                         <div className="whitespace-per-line-2 text-wrap"
                                          style={{
+                                          
                                             overflowX: 'hidden',
                                             display: '-webkit-box',
                                             WebkitBoxOrient: 'vertical',
-                                            WebkitLineClamp: expandText ? 'none' : 2
+                                            WebkitLineClamp: expandText ? 'none' : 1
 
 
                                         }
@@ -104,6 +105,9 @@ export default function ProjectsSections() {
                                               {
                                         item?.tools ? item?.tools.map((tool, index) => (
                                             <span className="text-sm italic text-gray-700   "
+                                            style={{
+                                                  fontSize: '13px'
+                                            }}
                                             
                                             key={index}>{tool}</span>
                                         )) : null
@@ -215,7 +219,10 @@ export default function ProjectsSections() {
                                     <h3 className="text-center">{item.name}</h3>
                                     {
                                         item?.tools ? item?.tools.map((tool, index) => (
-                                            <span className="text-sm italic text-gray-700 " key={index}>{tool}</span>
+                                            <span 
+                                              style={{
+                                                  fontSize: '13px'
+                                            }}className="text-sm italic text-gray-700 " key={index}>{tool}</span>
                                         )) : null
                                     }
                                     <p className={`mt-4 font-sans text-gray-700
