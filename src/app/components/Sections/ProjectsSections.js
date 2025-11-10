@@ -2,12 +2,11 @@
 import SectionHeader from "../layout/SectionHeader";
 import Image from "next/image";
 import { useContext, useState, useEffect } from "react"
-import { ThemeContext } from "../../components/AppContext"
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
 import { redirect } from "next/navigation";
 import LinkArrow from "../../../../public/icons/SVG/link_arrow";
-
+import { myProjects } from "@/app/data/projects";
 const playfair = Playfair_Display({
     subsets: ["latin"],
     weight: ["400", "700"], // choose what you need
@@ -17,7 +16,7 @@ export default function ProjectsSections() {
 
     const [expandIndex, setExpandIndex] = useState(2)
     const [expandText, setExpandText] = useState(false)
-    const { myProjects } = useContext(ThemeContext)
+    // const { myProjects } = useContext(ThemeContext)
 
     const [myProjectsList, setMyProjectsList] = useState([])
 
@@ -54,12 +53,12 @@ export default function ProjectsSections() {
 
 
                 {/* <hr className="w-[60%] border border-gray-100"/> */}
-                
-                {
+                <div className="grid grid-cols-3 gap-3 w-full p-4 mx-auto">
+   {
                     myProjectsList.map((item, index) => (
                         <div 
                         key={index || item._id}
-                        className="w-[60%]">
+                        className="">
 
                             <motion.section
                             key={index || item._id}
@@ -70,16 +69,16 @@ export default function ProjectsSections() {
                             className="py-5"
 
                         >
-                            <div className=" grid grid-cols-2 min-h-[300px] items-start py-4 px-5  gap-4 bg-white h-fit mx-auto  rounded-lg">
-                                <div className=" h-full flex justify-center items-center">
+                            <div className="flex flex-col  items-center py-4 px-5  gap-4 bg-white    rounded-lg">
+                                <div className=" h-full flex justify-center items-center ">
                                     <Image
                                         alt={"homepage_desktop"}
                                         src={item?.pic[0]}
-                                        className=" animate-slideInRight  rounded-lg border 
+                                        className=" animate-slideInRight  rounded-lg  
                          object-cover
                         "
                                         width={300}
-                                        height={400}
+                                        height={300}
 
                                     />
                                 </div>
@@ -87,14 +86,31 @@ export default function ProjectsSections() {
                                 <div className="animate-slideInLeft   h-full flex flex-col items-center justify-between"
                                    
                                 >
-                                    <div className="text-start">
+                                    <div className="text-start "
+                                    
+                                    >
                                         <h3 className="">{item?.name}</h3>
-                              
-                                    {
+                                        <div className="whitespace-per-line-2 text-wrap"
+                                         style={{
+                                            overflowX: 'hidden',
+                                            display: '-webkit-box',
+                                            WebkitBoxOrient: 'vertical',
+                                            WebkitLineClamp: expandText ? 'none' : 2
+
+
+                                        }
+                                        }
+                                        >
+                                              {
                                         item?.tools ? item?.tools.map((tool, index) => (
-                                            <span className="text-sm italic text-gray-700 " key={index}>{tool}</span>
+                                            <span className="text-sm italic text-gray-700   "
+                                            
+                                            key={index}>{tool}</span>
                                         )) : null
                                     }
+                                        </div>
+                              
+                                  
                                     <p className={`mt-4 font-sans text-gray-700
     whitespace-per-line-2 text-wrap `}
                                         style={{
@@ -136,6 +152,9 @@ export default function ProjectsSections() {
                         
                     ))
                 }
+                </div>
+                
+             
 
 
 
@@ -175,7 +194,7 @@ export default function ProjectsSections() {
                                     <Image
                                         alt={"homepage_mobile"}
                                         src={item.pic[0]}
-                                        className="w-full animate-slideInRight object-cover cover[top_right] rounded-lg border
+                                        className="w-full animate-slideInRight object-cover cover[top_right] rounded-lg 
                       
                        
                         "
@@ -210,8 +229,7 @@ export default function ProjectsSections() {
 
                                         }
                                         }
-                                    >This is a food ordering app that allows users to order food from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database
-                                        and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the databaseand MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the databaseand MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database ood from restaurants and get it delivered to their doorstep. It uses React.js for the frontend, Next.js for the backend, and MongoDB for the database
+                                    >{item?.description[0]}
                                     </p>
                                       <div className="w-full mt-4 flex justify-end">
                                         <button onClick={() => {

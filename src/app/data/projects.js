@@ -1,12 +1,6 @@
 
-'use client'
 
-import { createContext, useEffect, useState } from 'react'
-
-export const ThemeContext = createContext({})
-
-export function ThemeProvider({ children }) {
-    const defautlProjects = [
+export  const myProjects = [
         {
             _id: 104270931, name: "Korean Food Ordering App", pic: [
                 "/my_projects/loptop_frame_foodordering.png",
@@ -20,7 +14,7 @@ export function ThemeProvider({ children }) {
               description:[
                 "One of the most rewarding projects I have worked on was the full redesign and optimization of Morocco Immersion, a travel agency specializing in immersive cultural tours across Morocco — with unique experiences extending to Ecuador and Peru. The site was originally created in 2016, and while it had great content, it struggled with slow loading, poor organization, and an outdated design. My goal was to bring it back to life — preserving the authenticity of the brand while making it functional, modern, and optimized for travelers who want clarity and ease when planning their adventures.",
 
-                " What I Did",
+                " What I Worked On:",
                 {
                     subTitle:"Full Redesign with Elementor",
                     texto:"Rebuilt the homepage, About Us, and Contact pages using Elementor, giving the brand a fresh and responsive design. I focused on smoother navigation, clear call-to-actions, and visual storytelling through imagery — letting Morocco’s beauty shine through every section. "
@@ -68,7 +62,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
             description:[
                 "One of the most rewarding projects I have worked on was the full redesign and optimization of Morocco Immersion, a travel agency specializing in immersive cultural tours across Morocco — with unique experiences extending to Ecuador and Peru. The site was originally created in 2016, and while it had great content, it struggled with slow loading, poor organization, and an outdated design. My goal was to bring it back to life — preserving the authenticity of the brand while making it functional, modern, and optimized for travelers who want clarity and ease when planning their adventures.",
 
-                " What I Did",
+                " What I Worked On:",
                 {
                     subTitle:"Full Redesign with Elementor",
                     texto:"Rebuilt the homepage, About Us, and Contact pages using Elementor, giving the brand a fresh and responsive design. I focused on smoother navigation, clear call-to-actions, and visual storytelling through imagery — letting Morocco’s beauty shine through every section. "
@@ -123,52 +117,160 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
 
 
+        },{
+            _id: 104270933, name: "Tanzanian Travel Agency",
+
+            pic: [
+                 "/my_projects/tanzanianTravelAgency.png",
+                
+              
+            ], page: '/',
+            description:[
+                "One of the most exciting projects I worked on was a full redesign and optimization for a Tanzanian travel company. Although the project was not launched publicly, I handled everything from layout restructuring and UI enhancements to performance optimization and responsive design. The goal was to modernize their web presence while maintaining their authentic, adventurous brand identity.",
+
+                " What I Worked On:",
+                {
+                    subTitle:"Full Redesign with Elementor",
+                    texto:"Rebuilt the homepage, About Us, and Contact pages using Elementor, giving the brand a fresh and responsive design. I focused on smoother navigation, clear call-to-actions, and visual storytelling through imagery — letting Morocco’s beauty shine through every section. "
+                },
+                {
+                    subTitle:"Advanced Itinerary Setup with WP Travel Engine",
+                    texto:"To simplify the booking and trip browsing experience, I integrated WP Travel Engine, which allows the agency to easily manage and update tour itineraries, group packages, and private trips with clear day-by-day descriptions and pricing."
+                },
+               
+                
+
+
+            ],
+            tools:[
+                "WordPress, ",
+                "Elementor, ",
+                "WP Travel Engine, ",
+              
+                "Css, ",
+                "Html"
+            ]
+            
+            
+            
+            
+         
+           
+
+
+           
+
+
+
+
+
+
+
+
+        },
+            {
+            _id: 104270935, name: "Park Info.",
+
+            pic: [
+                 "/my_projects/parkinfo.png",
+                
+                
+              
+            ], page: '/',
+            description:[
+                "Park Info was a web application developed as part of a school project to help the administration efficiently track and organize IT equipment such as laptops, keyboards, switches, and other materials. The system allowed users to register, update, and monitor assets, view their current locations, and identify which departments were using specific items.Although it was built primarily for academic evaluation and not deployed in production, the project showcased practical use of React.js for the frontend and MySQL for structured data management, along with CRUD functionalities, responsive UI design, and basic authentication features.",
+
+                " What I Worked On:",
+                {
+                subTitle: "Frontend Development",
+                texto: "I was mainly responsible for building the frontend with React.js, designing a clean, responsive interface that allowed users to easily view and update inventory data. I also set up RESTful API integration between the frontend and the MySQL database, handled form validation, and implemented CRUD operations for adding, editing, and deleting assets. "
+            },
+            {
+                subTitle: "Backend Development",
+                texto: "On the backend, I contributed to designing the database schema, ensuring each piece of equipment had clear relationships (e.g., assigned room, user, or status). I also helped with query optimization to make data retrieval faster."
+            },
+            {
+                subTitle: "Resonsivness & User Experience",
+                texto: "In addition, I focused on improving the user experience — using clear navigation, filters, and visual indicators to make it simple for admins to locate items and understand their current stock status at a glance."
+            },
+
+
+
+            ],
+            tools:[
+                "React.js, ",
+                "CSS, ",
+                "MySQL, "
+            
+            ]
+            
+            
+            
+            
+         
+           
+
+
+           
+
+
+
+
+
+
+
+
+        }, {
+            _id: 104270939, name: "Personal Budget Tracker",
+
+            pic: [
+                 "/my_projects/myBudget.png",
+                
+                
+              
+            ], page: '/',
+            description:[
+                "This project was built to help users manage their income, expenses, and savings in one clear, intuitive dashboard. It aimed to make financial tracking simple and visually insightful through interactive charts and organized transaction categories.",
+
+                " What I Worked On:",
+                {
+                subTitle: "Frontend Development",
+                texto: "I designed and developed the frontend using React.js, focusing on a responsive and minimal UI where users could easily add, edit, or delete transactions. I implemented state management for real-time balance updates and built dynamic charts using libraries like Chart.js to visualize spending trends and income distribution."
+            },
+            {
+                subTitle: "Backend Development",
+                texto: "On the backend, I worked with MySQL to structure the database for storing transaction records, categories, and user data securely. I also contributed to creating RESTful APIs for seamless communication between the frontend and backend."
+            },
+            {
+                subTitle: "More Features",
+                texto: "I added features such as date-based filtering, category summaries, and budget limit alerts, allowing users to better understand their financial habits."
+            },
+
+
+
+            ],
+            tools:[
+                "React.js, ",
+                "CSS, ",
+                "MySQL, "
+            
+            ]
+            
+            
+            
+            
+         
+           
+
+
+           
+
+
+
+
+
+
+
+
         }
     ]
-    const [myProjects, setMyProjects] = useState([])
-
-    useEffect(() => {
-        try {
-            const storedProjects = localStorage.getItem("projectsItems")
-            if (storedProjects) {
-                setMyProjects(JSON.parse(storedProjects))
-            }
-            else {
-
-                localStorage.setItem("projectsItems", JSON.stringify(defautlProjects))
-                setMyProjects(defautlProjects)
-            }
-        }
-        catch (e) {
-            console.error({ "LocalStorage error": e })
-            setMyProjects(defautlProjects)
-        }
-    }, [])
-
-    // useEffect(() => {
-    //   const storedItems = localStorage.getItem("projectsItems");
-    //   if (!storedItems) {
-    //     setMyProjects(JSON.parse());
-    //   }
-    // }, []);
-    //      useEffect(() => {
-    //     const storedItems = localStorage.getItem("projectsItems");
-    //     if (storedItems) {
-    //       setMyProjects(JSON.parse(storedItems));
-    //     }
-    //   }, []);
-    //     let  projectsItems = localStorage.getItem('projectsItems')
-    //      projectsItems = projectsItems ? JSON.parse(projectsItems) : myProjects
-    //  useEffect(()=>{
-    //     if(!localStorage.getItem('projectsItems')){
-    //       localStorage.setItem('projectsItems', JSON.stringify(projectsItems));
-    //  }
-    //   },[projectsItems]);
-    return (
-        <ThemeContext.Provider value={{
-
-            myProjects
-        }}>{children}</ThemeContext.Provider>
-
-    )
-}

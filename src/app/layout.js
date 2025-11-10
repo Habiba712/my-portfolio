@@ -3,7 +3,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
-import {ThemeProvider} from "./components/AppContext";
 import { Nunito_Sans, Open_Sans, Quicksand } from "next/font/google";
 import ScrollTop from "../../public/icons/SVG/scroll-totop";
 import ScrolltoTop from "./components/Sections/ScrollToTop";
@@ -49,7 +48,7 @@ export default function RootLayout({ children }) {
        <body
        className={`aurora-top ${nunito.variable} ${openSans.variable} ${quicksand.variable} ${geistSans.variable} ${geistMono.variable}`}
       >
-      <ThemeProvider>
+      {/* <ThemeProvider> */}
         
         <main className="relative mx-auto ">
 
@@ -67,7 +66,7 @@ export default function RootLayout({ children }) {
 
 
       
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
      </body>
     </html>
   );

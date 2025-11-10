@@ -83,7 +83,7 @@ export default function Header() {
             </li>
 
             <li className="relative group pb-5">
-              <a href="/#about">About  <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
+              <a href="/pages/about">About  <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
             </li>
 
             <li className="relative group pb-5">
@@ -170,7 +170,7 @@ export default function Header() {
             </li>
 
             <li>
-              <a href="/#about">About</a>
+              <a href="/pages/about">About</a>
             </li>
 
             <li>

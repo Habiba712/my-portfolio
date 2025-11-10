@@ -1,18 +1,19 @@
 'use client'
 
 import { useContext, useState, useEffect } from "react"
-import { ThemeContext } from "../../../components/AppContext"
+// import { ThemeContext } from "../../../components/AppContext"
 import { useParams } from "next/navigation"
 import SectionHeader from "@/app/components/layout/SectionHeader"
 import Image from "next/image"
 import Link from "next/link"
+import { myProjects } from "@/app/data/projects"
 
 
 
 
 export default function Project() {
     const { id } = useParams()
-    const { myProjects } = useContext(ThemeContext)
+    // const { myProjects } = useContext(ThemeContext)
     const [myProject, setMyProject] = useState(null)
 
     useEffect(() => {
@@ -27,7 +28,7 @@ export default function Project() {
     if (!myProject) {
         return (
             <div>
-                <h2 className="text-4xl font-bold text-center">Loading....</h2>
+                <h2 className="text-3xl text-white font-semibold text-center">Loading....</h2>
             </div>
         )
     }
@@ -47,10 +48,10 @@ export default function Project() {
       <div className="flex justify-center gap-3 bg-white rounded-lg py-3 relative">
                           
                             <div className="">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : ''} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
                             <div className="position absolute right-30 top-30 rounded-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={100} height={100} className="" style={{
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : ''} alt="project" width={100} height={100} className="" style={{
                                     'borderRadius':'15px'
                                 }} />
                             </div>
@@ -170,10 +171,10 @@ export default function Project() {
 
                             </div> */}
                             <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : ''} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
                             <div className="w-full">
-                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : myProject.pic} alt="project" width={500} height={400} className="rounded-lg" />
+                                <Image src={Array.isArray(myProject.pic) ? myProject.pic[1] : ''} alt="project" width={500} height={400} className="rounded-lg" />
                             </div>
 
                         </div>

@@ -87,7 +87,19 @@ export default function AboutMe() {
                             " />
         </div>
         <div>
-          <p className="font-normal font-sans text-sm py-3  whitespace-per-line-2 text-wrap">Hey, I'm <span className="animated-gradient-text">Habiba Taliby</span>,— a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, Next.js, Tailwind CSS, and MongoDB, and I love combining logic and design to create things that just flow.
+          <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-2 text-wrap"
+          
+          
+            style={{
+              overflow: 'hidden',
+              display: '-webkit-box',
+              WebkitBoxOrient: 'vertical',
+              WebkitLineClamp: expandText ? 'none' : 4
+
+
+            }
+            }
+          >Hey, I'm <span className="animated-gradient-text">Habiba Taliby</span>,— a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, Next.js, Tailwind CSS, and MongoDB, and I love combining logic and design to create things that just flow.
 
             I’ve always had a curiosity for how things work — whether it’s debugging a stubborn API call, cleaning up messy code, or making an interface feel more intuitive. My approach is pretty simple: write code that’s clear, scalable, and actually enjoyable to use.
 
