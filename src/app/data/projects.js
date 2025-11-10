@@ -220,7 +220,9 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
 
 
-        }, {
+        }, 
+        
+        {
             _id: 104270939, name: "Personal Budget Tracker",
 
             pic: [
@@ -254,6 +256,51 @@ texto:"I reorganized the media library, compressing and renaming images for fast
                 "CSS, ",
                 "MySQL "
             
+            ]
+            
+            
+            
+            
+         
+           
+
+
+           
+
+
+
+
+
+
+
+
+        },
+          
+        {
+            _id: 104270939, name: "Citizen Services Website",
+
+            pic: [
+                 "/my_projects/conseilMenara.png",
+                
+                
+              
+            ], page: '/',
+            description:[
+                "This project aimed to create a clean and accessible static website for a local government institution, helping citizens easily find information about administrative procedures and the documents required for various requests (such as real estate papers, certificates, and public records).",
+
+                " What I Worked On:",
+                {
+                subTitle: "Components and Structure",
+                texto: "I developed the website using React.js, structuring the content into clear, categorized sections so users could quickly locate the information they needed. I focused on intuitive navigation, mobile responsiveness, and a consistent visual hierarchy to make the experience simple and professional. I also implemented dynamic routing for different services and categories, ensuring the site felt fluid even though it was static in nature. The design prioritized accessibility and readability, reflecting the tone and trust expected from a public institution.The project was a great opportunity to refine my frontend architecture and component-based design skills while working on a real-world use case focused on usability and clarity."
+            }
+
+
+
+            ],
+            tools:[
+                "React.js ",
+                "CSS ",
+                "MySQL "
             ]
             
             

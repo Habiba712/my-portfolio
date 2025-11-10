@@ -53,7 +53,93 @@ export default function ProjectsSections() {
 
 
                 {/* <hr className="w-[60%] border border-gray-100"/> */}
-                <div className="grid grid-cols-3 gap-3 w-full p-4 mx-auto">
+                <div className="grid grid-cols-3 gap-3 w-full p-4 mx-auto"
+                
+                
+                >
+                    {/* <div 
+                    
+                    >
+                        <motion.section
+                           
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="py-5">
+                    
+                           <div    style={{
+                        "background": "linear-gradient(135deg,#1A2A4F,#1A2A4F)",
+                        "WebkitBackdropFilter": "blur(50px)",
+                        "backdropFilter": "blur(20px)",
+                        "boxShadow": "0 8px 20px 0 rgba(0, 0, 0, 0.75)",
+                        "border": "1px solid rgba(255,255,255,0.18)",
+                        "borderRadius": "5px",
+                    }}className="flex flex-col  items-center py-4 px-5  gap-4 bg-white    rounded-lg
+                           
+                           
+                           "
+                         
+                           >
+                            <h2 className="z-1 absolute">
+                                Comming Soon
+                            </h2>
+                                <div className=" flex justify-center items-center ">
+                                   <div className="bg-gray-300 rounded-lg h-[175px] w-[250px]">
+
+                                   </div>
+                                </div>
+                            
+                                <div className="animate-slideInLeft   h-full flex flex-col items-center justify-between"
+                                   
+                                >
+                                    <div className="text-start "
+                                    
+                                    >
+                                        <h3 className="">qoiruiwuq qåicu x qoi4</h3>
+                                        <div className="whitespace-per-line-2 text-wrap"
+                                       
+                                        >
+                                         
+                                            <span className="text-sm italic text-gray-700   "
+                                            style={{
+                                                  fontSize: '13px'
+                                            }}
+                                            
+                                           >oifeocq oiwe cq</span>
+                                        
+                                        </div>
+                              
+                                  
+                                    <p className={`mt-4 font-sans text-gray-700
+    whitespace-per-line-2 text-wrap `}
+                                      
+                                    >"eif cqiuepoiu pxqeou"
+                                    </p>  
+                                    </div>
+                                  
+                                    <div className="w-full mt-4 flex justify-end">
+                                        <button onClick={() => {
+                                          
+                                        }
+                                        } className=" hover:scale-104 ">
+
+
+                                            {!expandText &&
+                                            
+                                            <span className="button-dark gap-2">More Details
+                                            <LinkArrow className="w-5 h-5" /></span>}
+
+                                        </button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                               </motion.section>
+                    </div> */}
+                  
    {
                     myProjectsList.map((item, index) => (
                         <div 
@@ -89,7 +175,7 @@ export default function ProjectsSections() {
                                     <div className="text-start "
                                     
                                     >
-                                        <h3 className="">{item?.name}</h3>
+                                        <h3 className="whitespace-per-line-2 text-nowrap">{item?.name}</h3>
                                         <div className="whitespace-per-line-2 text-wrap"
                                          style={{
                                           
