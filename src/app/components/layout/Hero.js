@@ -12,108 +12,130 @@ const playfair = Playfair_Display({
 export default function Hero() {
     return (
         <>
-        {/* deskptop version */}
-            <div className="desktop-hero flex flex-row justify-between items-center w-full px-5 py-5 main-text-color mb-6 ">
-                <div className={`w-60 h-100 flex flex-col items-center   justify-center grow italic px-8 font-bold text-center overflowX-auto ${playfair.className}`}>
-                    <div className="quote-text flex flex-col items-center justify-center p-4">
-                         <h4 className="leading-[3rem] tracking-wide  animate-slideInLeft ">
-                       ❝ We are all apprentices in a craft where no one ever becomes a master❞
-
-                     
-
-                    </h4>
-                    <span className="italic font-light text-end w-full">
-Ernest Hemingway
-                    </span>
-                    </div>
-                   
-<div className="px-1 py-1 border rounded-lg  mt-6 animated-gradient-border ">
-     <div className="p-4 tracking-wide  rounded-lg shadow-lgflex flex-col gap-2 animate-dropTop bg-white 
-               ">
-                        <h3 className="leading-[3rem]">Hi, 
-                           I'm  <span className="animated-gradient-text">Habiba Taliby
-                                </span> <br/> SEO manager & Full Stack Developper</h3>
-                        
-                     
-                           
-
-                                <div className="flex gap-3 w-full">
-                                    <button 
-                                        className="button-light whitespace-nowrap w-50"
-                                    >Hire Me</button>
-                                    <button className="button-dark  whitespace-nowrap w-50">
-                                        Download CV
-                                    </button>
-                                </div>
+            {/* deskptop version */}
+            <div className="desktop-hero mt-6 mb-6">
+                <div className="hero grid grid-cols-2 w-full pt-5 h-fit">
 
 
+                    <div className={`  
+                     grow italic  font-bold w-full overflowX-auto ${playfair.className}`}>
+                        <div class="hero-tag">👋 Welcome to my portfolio</div>
 
-                       
+
+                        <h1 className="hero-text leading-[3rem] text-start font-sans">
+                            Building <span className="highlight font-sans">digital experiences</span> that blend creativity & code</h1>
+
+
+                        <p className="hero-subtitle ">
+                            SEO Manager & Full Stack Developer specializing in React, Next.js, and performance-optimized web solutions.
+                        </p>
 
                     </div>
-</div>
-                   
+
+                    <div className="hero-image h-fit">
+
+                        {/* an edited photo of me */}
+                        <div className="animate-fadeIn image-container flex justify-center items-center w-full h-full">
+                            <Image src={profile_pic} alt="me" width={400} height={400} className="w-full h-full rounded-full 
+                "/>
+                        </div>
+
+                        <div className="floating-element badge-1 animate-dropTop  px-4 py-2">
+                            <p className="badge-title">
+                                experience
+                            </p>
+                            <span className="badge-value">1+ Years</span>
+                        </div>
+                        <div className="floating-element animate-dropTop badge-2 px-4 py-2">
+                            <p className="badge-title">
+                                Projects
+                            </p>
+                            <span className="badge-value">7+ Done</span>
+                        </div>
+
+
+
+
+                    </div>
+
+
 
                 </div>
-
-                <div className="w-40 mr-8 flex grow items-start  h-100">
-                    {/* an edited photo of me */}
-                    <Image src={profile_pic} alt="me" width={500} height={300} className="rounded-full 
-                animate-fadeIn
-                
-                " />
-
+                <div className="w-full flex flex-col justify-center items-center">
+                    <div className="cta-buttons w-full flex justify-center items-center">
+                        <button className="btn btn-primary w-[20%] ">Let's Work Together</button>
+                        <button className="btn btn-secondary w-[20%]">Download CV</button>
+                    </div>
+                    <div className="quote-section">
+                        <p className="quote-text">
+                            "We are all apprentices in a craft where no one ever becomes a master"
+                        </p>
+                        <span className="quote-author">
+                            — Ernest Hemingway
+                        </span>
+                    </div>
                 </div>
-
-
-
             </div>
 
+
+
+
+
+
+
+
+
+
+
             {/* mobile version */}
-            <div className="mobile-hero main-text-color flex flex-col justify-center items-center w-full ">
-                <div className="w-[90%]">
-                       <div className="py-4 tracking-wide text-sm rounded-lg shadow-lg mt-6 flex flex-col gap-2 animate-dropTop bg-white justify-center ">
-                    <h3 className="leading-[3rem] text-sm text-center">Habiba Taliby <br/> SEO manager & Full Stack Developper</h3>
-                   
-                   
-                            <div className="flex gap-3 w-full justify-center ">
-                                <button 
-                                    className="button-light w-40 whitespace-nowrap "
-                                >Hire Me</button>
-                                <button className="button-dark w-40 button  whitespace-nowrap">
-                                    Download CV
-                                </button>
-                            </div>
+            <div className="mobile-hero main-text-color flex flex-col justify-center items-center w-full mt-10 mb-10">
 
+                <div className="hero-image-mobile w-full  mt-10">
 
-                       
-
-                </div>
-<div className={`w-full px-2 mt-8 mb-8 grow italic items-center justify-between font-bold ${playfair.className}`}>
-                     <div className="quote-text w-full flex flex-col items-center justify-center p-4">
-                         <h4 className="quote-text leading-[3rem] text-center tracking-wide  animate-slideInLeft ">
-                       ❝ We are all apprentices in a craft where no one ever becomes a master❞
-
-                     
-
-                    </h4>
-                    <span className="italic text-end w-full font-light">
-Ernest Hemingway
-                    </span>
+                    {/* an edited photo of me */}
+                    <div className="animate-fadeIn image-container-mobile flex justify-center items-center w-[50%] h-full ">
+                        <Image src={profile_pic} alt="me" width={200} height={200} className=" rounded-full w-full h-full object-cover 
+                "/>
                     </div>
 
-                   
-                    
 
 
 
                 </div>
+                <div className="flex flex-col items-center justify-center mt-3">
+                    <div class="hero-tag">👋 Welcome to my portfolio</div>
 
+
+                    <h1 className="hero-text-mobile leading-[3rem] text-center font-sans">
+                        Building <span className="highlight-mobile font-sans">digital experiences</span> that blend creativity & code</h1>
+
+                    <p className="hero-subtitle-mobile">
+                        SEO Manager & Full Stack Developer specializing in React, Next.js, and performance-optimized web solutions.
+                    </p>
+
+                    <div className="cta-buttons-mobile">
+                        <button className="btn-mobile btn-primary w-full">Lets Work Together</button>
+                        <button className="btn-mobile btn-secondary w-full">Download CV</button>
+                    </div>
+                    <div className="quote-section-mobile">
+                        <p className="quote-text">
+                            "We are all apprentices in a craft where no one ever becomes a master"
+                        </p>
+                        <span className="quote-author">
+                            — Ernest Hemingway
+                        </span>
+                    </div>
                 </div>
 
-             
+
+
+
+
+
             </div>
         </>
 
     )
 }
+
+

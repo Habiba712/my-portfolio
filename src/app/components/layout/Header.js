@@ -14,6 +14,9 @@ import { useEffect, useRef } from "react";
 import HamburgerMenu from '../../../../public/icons/SVG/hamburgerMenu.js'
 import { useState } from "react";
 import CloseMenu from "../../../../public/icons/SVG/closeMenu";
+import GitHub from "public/icons/SVG/gitHub";
+import EmailIcon from "public/icons/SVG/email";
+import LinkedIn from "public/icons/SVG/linkedIn";
 
 
 
@@ -55,60 +58,62 @@ export default function Header() {
     <>
     
     {/* for desktop */}
-    <header className="desktop-header project-title w-full flex items-center justify-between  py-6 px-10">
-      <div className="text-4xl font-bold  text-start ">
-        {/* <Image src={logo_white} alt="logo" width={200} height={200}className="" /> */}
+    <header className="desktop-header project-title w-full grid grid-cols-3 items-center justify-between  px-10 border-b border-[navy] shadow-lg border-opacity-50">
+      <div className="text-4xl h-full font-bold">
        
-        <div className="">
-          <h1 className="cursor-pointer"
+       
+          <h1 className="logo w-full h-full flex items-center justify-start  w-fit "
             onClick={() => {
               redirect('/')
             }}
-            >VexAura
+            >Habiba Taliby
           </h1>
-        </div>
+        
 
       </div>
-      <div className="relative -bottom-4">
+      <div className=" flex items-center justify-center">
         <nav className="menu-items-nav">
-          <ul className="flex gap-4">
-            <li className="relative group pb-5">
+          <ul className="flex gap-4 ">
+            <li className="">
               <a href="/#projects">Projects
-              <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"
-             
-              
-              ></span>
+            
               </a>
               
             </li>
 
-            <li className="relative group pb-5">
-              <a href="/pages/about">About  <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span> </a>
+            <li className=" ">
+              <a href="/pages/about">About  </a>
             </li>
 
-            <li className="relative group pb-5">
+            <li className=" ">
               <a href="/#contact">Contact 
-               <span className="absolute left-0 bottom-1 h-1 w-0 animated-gradient rounded-full transition-all duration-500 group-hover:w-full"></span>
+              
               </a>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div className="menu-items-socials flex gap-3 items-center ">
+      <div className="menu-items-socials flex gap-3 items-center justify-end ">
         <Link href="https://github.com/Habiba712" target="blank">
-          <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
+          <GitHub className="fill-[#F7A5A5] rounded-full w-8 h-8 cursor-pointer 
+          hover:scale-130 hover:transform hover:translate-y-3 transition-all ease-in-out duration-500 hover:fill-[#FFDBB6] 
+          " />
         </Link>
         <a
           target="blank"
           href={`mailto:habiba.taliby@gmail.com?subject=${encodeURIComponent('Hello from your site')}&body=${encodeURIComponent('Hi Habiba,\n\nI saw your portfolio and...')}`}
           className="text-blue-600 hover:underline"
         >
-          <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
+          <EmailIcon  className="w-8 h-8  cursor-pointer fill-[#F7A5A5]
+          hover:scale-130 hover:transform hover:translate-y-3 transition-all ease-in-out duration-500 hover:fill-[#FFDBB6]
+          " />
         </a>
 
         <Link target="blank" href="https://www.linkedin.com/in/habiba-taliby/">
-          <img src="/icons/linkedin1.png" alt="linkedin1" width={30} height={30} className="rounded-full" />
+          <LinkedIn className="w-8 h-8 cursor-pointer fill-[#F7A5A5]
+          hover:scale-130 hover:transform hover:translate-y-3 transition-all ease-in-out duration-500 hover:fill-[#FFDBB6]
+          " />
         </Link>
 
       </div>
@@ -118,21 +123,19 @@ export default function Header() {
 
     </header>
 {/* for mobile */}
-<header className="mt-5 mobile-menu px-6">
+<header className=" mobile-menu ">
   <div className="flex flex-col">
-  <div className="flex w-full justify-between">
-      <div className="text-4xl font-bold text-start w-50">
-        <div className="">
-        <h1 className="cursor-pointer"
+  <div className="flex justify-between ">
+      <div className="text-4xl font-bold text-start ">
+       <h1 className="logo w-full h-full flex items-center justify-start "
             onClick={() => {
               redirect('/')
             }}
-            >VexAura
+            >Habiba Taliby
           </h1>
-        </div>
 
       </div>
-      <div className="w-50 flex justify-end">
+      <div className="flex justify-end ">
         <button  onClick={()=>{handleShowMenu()}} className="transition-all ease-in-out duration-700">
          
         {
@@ -153,7 +156,7 @@ export default function Header() {
         `}
   
   >
-     <nav className="font-semibold w-70"
+     <nav className="mobile font-semibold w-70"
       style={{
                         "background": "linear-gradient(135deg,#1A2A4F,#1A2A4F)",
                         "WebkitBackdropFilter": "blur(50px)",
@@ -164,9 +167,9 @@ export default function Header() {
                     }}
      
      >
-          <ul className="flex flex-col p-5 gap-4" >
-            <li>
-              <a href="/#projects">Projects</a>
+          <ul className="flex flex-col gap-4" >
+            <li className="">
+              <a  href="/#projects">Projects</a>
             </li>
 
             <li>

@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function ToolSlider({tools}) {
 
-const duplicated = [...tools, ...tools];
+
 
   const settings = {
     infinite: true,
@@ -36,34 +36,48 @@ const duplicated = [...tools, ...tools];
 
   return (
     <>
-     <div className="bg-white py-5 desktop-skills w-full overflow-hidden">
-      <Slider {...settings}>
-        {duplicated.map((tool, i) => (
-          <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">
-            {/* use plain img for slider stability; swap to next/image if you need optimization */}
-            <div className='flex justify-center '>
-               <img src={tool.logo} alt={tool.name} className="w-16 h-16 object-contain mb-2" />
-            </div>
-           
-            <p className="tool-names text-center">{tool.name}</p>
+     <div className="tools-grid py-5 desktop-skills w-full flex overflow-hidden">
+     {
+tools.map((tool, index)=>{
+  return(
+    <div className="tool-card">
+      <div className="flex flex-col items-center justify-between p-4 ">
+        <div className='flex justify-center'>
+          <img src={tool.logo} alt={tool.name} className="w-16 h-16 object-contain mb-2" />
+        </div>
+        <div>
+           <h3 className="text-center">{tool.name}</h3>
+        <p>descripq foiqfr coqi</p>
           </div>
-        ))}
-      </Slider>
+       
+
+      </div>
+    </div>
+  )
+})
+     }
     </div>
 
-    <div className="mobile-skills bg-white w-full overflow-hidden">
-      <Slider {...{...settings, slidesToShow: 4}}>
-        {duplicated.map((tool, i) => (
-          <div key={`${tool.name}-${i}`} className="flex flex-col items-center justify-center p-4 ">
-            {/* use plain img for slider stability; swap to next/image if you need optimization */}
-            <div className='flex justify-center '>
-               <img src={tool.logo} alt={tool.name} className="w-16 h-16 object-contain mb-2" />
-            </div>
-           
-            <p className="tool-names text-center">{tool.name}</p>
+    <div className="tools-grid-mobile mobile-skills  w-full overflow-hidden ">
+      {
+tools.map((tool, index)=>{
+  return(
+    <div className="tool-card">
+      <div className="flex flex-col items-center justify-between p-4 ">
+        <div className='flex justify-center'>
+          <img src={tool.logo} alt={tool.name} className="w-16 h-16 object-contain mb-2" />
+        </div>
+        <div>
+           <h3 className="text-center">{tool.name}</h3>
+        <p>descripq foiqfr coqi</p>
           </div>
-        ))}
-      </Slider>
+       
+
+      </div>
+    </div>
+  )
+})
+     }
     </div>
     </>
    

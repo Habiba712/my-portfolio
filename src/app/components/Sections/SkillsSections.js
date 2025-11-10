@@ -16,14 +16,13 @@ export default function SkillsSections() {
         {_id:8, name: "MySQL", logo: "./icons/mysql.svg" },
 
         {_id:10, name: "Github", logo: "./icons/github-2.svg" },
-        {_id:11, name: "Figma", logo: "./icons/figma-icon.svg" },
-        {_id:12, name: "Adobe Illustrator", logo: "./icons/adobe-illustrator.svg" },    
+        {_id:11, name: "Figma", logo: "./icons/figma-icon.svg" }
     
     ])
 
     return (
         <>
-         <section className="overflow-hidden" 
+         <section className="overflow-hidden px-2 md:px-10" 
        >
             <SectionHeader title={'My Tools'} description={'Here are some of my skills and technologies I work with.'} />
 
