@@ -20,7 +20,7 @@ export default function AboutMe() {
     <section id="about" className="w-full flex flex-col items-center">
 
       <SectionHeader title={"About Me"} description={"A little sneak peek into who I am"} />
-      <div className="desktop-about w-[60%] py-5 flex items-center font-serif ">
+      <div className="desktop-about w-[60%] py-5 flex items-center">
 
         <div className="h-full rounded-lg bg-white p-5 " >
 
@@ -46,17 +46,17 @@ export default function AboutMe() {
 
 
           </p>
-<div className=" w-full text-end py-3">
+<div className=" w-full flex justify-end py-3">
    <button onClick={() => {
             handleExpandText
             redirect(`/pages/about`)
           }
-          } className=" hover:scale-104 ">
+          } className="about-link">
 
 
             {!expandText &&
 
-              <span className="button-dark gap-2">Read More
+              <span className="flex justify-between gap-3 text-nowrap">Read More
                 <LinkArrow className="w-5 h-5" /></span>}
 
           </button>

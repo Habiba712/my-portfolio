@@ -41,12 +41,12 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
             ],
             tools:[
-                "Next.js, ",
-                "Tailwind CSS, ",
-                "MongoDB, ",
-                "Git, ",
-                "Stripe, ",
-                "OAuth, ",
+                "Next.js",
+                "Tailwind CSS",
+                "MongoDB",
+                "Git",
+                "Stripe",
+                "OAuth",
                 "Vercel"
             ]
         },
@@ -89,15 +89,15 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
             ],
             tools:[
-                "WordPress, ",
-                "Elementor, ",
-                "WP Travel Engine, ",
-                "Gravity Forms, ",
-                "Meta Metrics, ",
-                "Yoast SEO Premium, ",
-                "SEMrush, ",
-                "WP Optimizer, ",
-                "Css, ",
+                "WordPress",
+                "Elementor",
+                "WP Travel Engine",
+                "Gravity Forms",
+                "Meta Metrics",
+                "Yoast SEO Premium",
+                "SEMrush",
+                "WP Optimizer",
+                "Css",
                 "Html"
             ]
             
@@ -147,7 +147,7 @@ texto:"I reorganized the media library, compressing and renaming images for fast
                 "Elementor, ",
                 "WP Travel Engine, ",
               
-                "Css, ",
+                "Css",
                 "Html"
             ]
             
@@ -198,9 +198,9 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
             ],
             tools:[
-                "React.js, ",
-                "CSS, ",
-                "MySQL "
+                "React.js",
+                "CSS",
+                "MySQL"
             
             ]
             
@@ -252,9 +252,9 @@ texto:"I reorganized the media library, compressing and renaming images for fast
 
             ],
             tools:[
-                "React.js, ",
-                "CSS, ",
-                "MySQL "
+                "React.js",
+                "CSS",
+                "MySQL"
             
             ]
             

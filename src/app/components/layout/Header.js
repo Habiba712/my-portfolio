@@ -62,7 +62,7 @@ export default function Header() {
       <div className="text-4xl h-full font-bold">
        
        
-          <h1 className="logo w-full h-full flex items-center justify-start  w-fit "
+          <h1 className="logo w-full h-full flex items-center justify-start cursor-pointer w-fit "
             onClick={() => {
               redirect('/')
             }}
