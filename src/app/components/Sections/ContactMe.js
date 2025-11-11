@@ -8,8 +8,8 @@ export default function ContactMe() {
         items-center">
 
 <SectionHeader title={"Contact Me"} description={"Have a specific idea you want to bring to life? Get in touch, and let’s make it happen!"}/>
-<div  className="desktop-about w-[60%] py-5" >
- <div className="border border-gray-300 rounded-lg bg-white p-10 ">
+<div  className="desktop-about contact-section w-[60%] py-5" >
+ 
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
@@ -43,17 +43,17 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="button-dark w-full animate-shake" type="submit">Send</button>
+                    <button className="contact-link" type="submit">Send</button>
                 </div>
                 
             </form>
             </div>
            
-        </div>
+       
 
         
 </div>
-        <div className="mobile-about w-[90%] p-3 border border-gray-300 rounded-lg bg-white">
+        <div className="mobile-about contact-section-mobile ">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
@@ -87,7 +87,7 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="button-dark w-full animate-shake" type="submit">Send</button>
+                    <button className="contact-link" type="submit">Send</button>
                 </div>
                 
             </form>

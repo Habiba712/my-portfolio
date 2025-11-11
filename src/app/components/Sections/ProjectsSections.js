@@ -77,7 +77,16 @@ export default function ProjectsSections() {
                                     <div className="project-card w-full">
                                         
                                         <div className="project-card-image">
- <div class="project-overlay">
+
+
+                                            <Image
+                                                alt={"homepage_desktop"}
+                                                src={item?.pic[0]}
+                                                className="img rounded-lg object-cover "
+                                                width={300}
+                                                height={300}
+
+                                            /> <div class="project-overlay">
                         <div class="project-links">
                               <button onClick={() => {
                                                     handleExpandText
@@ -96,15 +105,6 @@ export default function ProjectsSections() {
                         </div>
                     </div>
 
-
-                                            <Image
-                                                alt={"homepage_desktop"}
-                                                src={item?.pic[0]}
-                                                className="img rounded-lg object-cover "
-                                                width={300}
-                                                height={300}
-
-                                            />
                                         </div>
 
                                     <div className="project-card-content">

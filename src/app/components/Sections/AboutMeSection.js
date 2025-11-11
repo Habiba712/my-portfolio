@@ -20,9 +20,9 @@ export default function AboutMe() {
     <section id="about" className="w-full flex flex-col items-center">
 
       <SectionHeader title={"About Me"} description={"A little sneak peek into who I am"} />
-      <div className="desktop-about w-[60%] py-5 flex items-center">
+      <div className="desktop-about about-section">
 
-        <div className="h-full rounded-lg bg-white p-5 " >
+        <div className="h-full rounded-lg p-5 " >
 
           <p className="font-normal  whitespace-per-line-2 text-wrap"
 
@@ -56,7 +56,7 @@ export default function AboutMe() {
 
             {!expandText &&
 
-              <span className="flex justify-between gap-3 text-nowrap">Read More
+              <span className="flex justify-between items-center gap-3 text-nowrap">Read More
                 <LinkArrow className="w-5 h-5" /></span>}
 
           </button>
@@ -79,13 +79,8 @@ export default function AboutMe() {
 
       </div>
 
-      <div className="mobile-about w-[90%] p-2 h-full border border-gray-300 rounded-lg bg-white items-center">
-        <div>
-          <Image src={profile_pic} alt="me" width={500} height={300} className="
-                            animate-fadeIn rounded-lg
-                            
-                            " />
-        </div>
+      <div className="mobile-about about-section-mobile ">
+       
         <div>
           <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-2 text-wrap"
           
@@ -106,6 +101,22 @@ export default function AboutMe() {
             I also have experience working with SEO optimization, site performance, and even the occasional WordPress project when it makes sense for the client (Elementor, Yoast SEO, caching tools — the whole stack). Recently, I redesigned a full travel agency website from 2016, giving it a modern structure, improved SEO, and better mobile usability.
 
             When I’m not coding, you’ll probably find me experimenting with new UI ideas, reading about cybersecurity and OSINT, or just having coffee while breaking something in my dev environment (and then fixing it, obviously). </p>
+            <div className=" w-full flex justify-end py-3">
+   <button onClick={() => {
+            handleExpandText
+            redirect(`/pages/about`)
+          }
+          } className="about-link">
+
+
+            {!expandText &&
+
+              <span className="flex justify-between items-center gap-3 text-nowrap">Read More
+                <LinkArrow className="w-5 h-5" /></span>}
+
+          </button>
+
+</div>
           <div className="flex justify-center items-end gap-3 mt-3  ">
             <Link href="/my-portfolio">
               <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
