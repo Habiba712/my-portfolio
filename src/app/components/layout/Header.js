@@ -58,7 +58,7 @@ export default function Header() {
     <>
     
     {/* for desktop */}
-    <header className="desktop-header project-title w-full grid grid-cols-3 items-center justify-between  px-10 border-b border-[navy] shadow-lg border-opacity-50">
+    <header className="desktop-header project-title w-full grid grid-cols-3 items-center justify-between   border-b border-[navy] shadow-lg border-opacity-50">
       <div className="text-4xl h-full font-bold">
        
        
@@ -122,12 +122,14 @@ export default function Header() {
 
 
     </header>
+
+
 {/* for mobile */}
-<header className=" mobile-menu ">
+<header className="mobile-menu w-full">
   <div className="flex flex-col">
   <div className="flex justify-between ">
       <div className="text-4xl font-bold text-start ">
-       <h1 className="logo w-full h-full flex items-center justify-start "
+       <h1 className="logo  h-full flex items-center justify-start "
             onClick={() => {
               redirect('/')
             }}
@@ -139,7 +141,7 @@ export default function Header() {
         <button  onClick={()=>{handleShowMenu()}} className="transition-all ease-in-out duration-700">
          
         {
-          showMenu ? <CloseMenu  width={20} height={20} className="cursor-pointer w-10 h-10 felx"/> : <HamburgerMenu alt="hamburger menu" width={20} height={20} className="cursor-pointer w-10 h-10 felx"
+          showMenu ? <CloseMenu  width={20} height={20} className="cursor-pointer w-10 h-10 flex flex text-[#F7A5A5]"/> : <HamburgerMenu alt="hamburger menu"className="cursor-pointer w-10 h-10 flex text-[#F7A5A5]"
       
         />
         }
@@ -148,19 +150,20 @@ export default function Header() {
       </div>
     
   </div>
-  {
+   {
     showMenu && (
        <div ref={menuRef} 
-       className={`fixed z-100 top-10 right-10 text-white mx-auto  text-sm w-full flex justify-end transition-all duration-700 ease-in-out
+       className={`fixed z-100 top-10 right-10 text-white mx-auto  text-sm w-full flex justify-end transition-all duration-900 ease-in-out
         ${showMenu ? 'translate-y-0 opacity-100':'-translate-y-full opacity-0'}
         `}
   
   >
      <nav className="mobile font-semibold w-70"
       style={{
-                        "background": "linear-gradient(135deg,#1A2A4F,#1A2A4F)",
-                        "WebkitBackdropFilter": "blur(50px)",
-                        "backdropFilter": "blur(20px)",
+                          "background": "linear-gradient(135deg, #1a2847 0%, #2d4263 100%)",
+
+                        "WebkitBackdropFilter": "blur(10px)",
+                        "backdropFilter": "blur(10px)",
                         "boxShadow": "0 8px 20px 0 rgba(0,0,0,0.37)",
                         "border": "1px solid rgba(255,255,255,0.18)",
                         "borderRadius": "5px",
@@ -184,8 +187,7 @@ export default function Header() {
   </div>
     )
   }
- 
- 
+
 </div>
 </header>
 

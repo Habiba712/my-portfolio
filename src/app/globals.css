@@ -5,13 +5,13 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap'); */
 
 * {
-
-  box-sizing: border-box;
+ 
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  width: fit-content;
+  overflow-x: hidden;
   background: linear-gradient(135deg, #1a2847 0%, #2d4263 100%);
   color: #fff;
 }
@@ -209,10 +209,10 @@ body {
 header {
   background: rgba(26, 40, 71, 0.95);
   backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 10;
   border-bottom: 1px solid rgba(206, 37, 37, 0.1);
   position: fixed;
-  width: 100%;
+ 
   top: 0;
   padding: 10px 10px 10px 10px;
 
@@ -261,7 +261,7 @@ header {
 
 .hero-subtitle-mobile {
   font-size: 1rem;
-  width: 90%;
+  
   @apply font-sans text-center;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2rem;
@@ -280,8 +280,7 @@ header {
 }
 
 .cta-buttons-mobile {
-
-  width: 80%;
+ 
   gap: 1rem;
   @apply flex justify-between;
   margin-bottom: 3rem;
@@ -346,7 +345,7 @@ header {
 }
 
 .quote-section-mobile {
-  @apply flex flex-col items-center py-2 px-4 border-t-3 border-[#ff9a9e] w-[80%];
+  @apply flex flex-col items-center  border-t-3 border-[#ff9a9e] w-[80%];
 
 }
 
@@ -419,6 +418,16 @@ header {
 }
 
 .image-container::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  opacity: 0.2;
+  filter: blur(20px);
+  z-index: -1;
+}
+.image-container-mobile::before {
   content: '';
   position: absolute;
   inset: -20px;
@@ -517,7 +526,7 @@ header {
             color: rgba(255, 255, 255, 0.6);
         }
 .tool-card:hover{
-  z-index: 10;
+ 
 transform: translateY(-10px);
 border: rgba(220, 134, 134, 0.832) 1px solid;
 box-shadow: 0 8px 32px rgba(220, 134, 134, 0.3);
@@ -569,8 +578,7 @@ box-shadow: 0 8px 32px rgba(220, 134, 134, 0.3);
 .hero-text-mobile {
   font-size: 2rem;
 
-  
-  padding: 1rem 1rem 0rem 1rem;
+ 
 }
 
 
@@ -668,9 +676,20 @@ label {
 
 }
 
-.mobile ul {
+.mobile ul a{
   padding: 20px;
+  text-align: center;
   width: 100%;
+  color: #F7A5A5;
+
+
+}
+nav .mobile{
+    /* background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem 1.5rem; */
 
 }
 
@@ -818,12 +837,9 @@ h2 {
 }
 
 @media (max-width: 639px) {
-  nav {
-    @apply py-6;
-  }
-
+  
   nav ul li {
-    @apply text-sm text-center font-semibold py-2 cursor-pointer;
+    @apply text-sm text-center font-semibold py-5 cursor-pointer;
     color: var(--fancy-font-color);
 
     border-bottom-color: var(--button-border);

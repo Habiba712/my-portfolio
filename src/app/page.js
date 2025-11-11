@@ -10,15 +10,17 @@ export default function Home() {
   return (
     // <div className="font-sans w-max-5xl mx-auto ">
     //   <section className="w-fit">
-    <div className="w-full">
-    <Hero/>
+   <> 
+   <Hero/>
         <SkillsSections/>
         <ProjectsSections/>
 <AboutMe/>
         <ContactMe/>
         
+   </>
+   
         
-    </div>
+  
          
       // </section>
      

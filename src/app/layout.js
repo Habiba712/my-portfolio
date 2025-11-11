@@ -50,17 +50,17 @@ export default function RootLayout({ children }) {
       >
       {/* <ThemeProvider> */}
         
-        <main className="relative mx-auto ">
+        <main className="relative">
 
           <Header />
           {children}
          
         <ScrolltoTop/>
-          <footer
+          {/* <footer
             className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center justify-center w-full p-6 border-t border-[#F7A5A5]"
           >
             VexAura © 2025
-          </footer>
+          </footer> */}
         </main>
 
 

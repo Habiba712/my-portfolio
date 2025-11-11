@@ -58,7 +58,7 @@ tools.map((tool, index)=>{
      }
     </div>
 
-    <div className="tools-grid-mobile mobile-skills  w-full overflow-hidden ">
+    <div className="tools-grid-mobile mobile-skills  w-full overflow-hidden p-4">
       {
 tools.map((tool, index)=>{
   return(

@@ -14,7 +14,7 @@ export default function Hero() {
         <>
             {/* deskptop version */}
             <div className="desktop-hero mt-6 mb-6">
-                <div className="hero grid grid-cols-2 w-full pt-5 h-fit">
+                <div className="hero grid grid-cols-2 w-fit pt-5 h-fit">
 
 
                     <div className={`  
@@ -88,12 +88,12 @@ export default function Hero() {
 
 
             {/* mobile version */}
-            <div className="mobile-hero main-text-color flex flex-col justify-center items-center w-full mt-10 mb-10">
+            <div className="mobile-hero  flex flex-col justify-center items-center w-full mb-6 mt-10">
 
-                <div className="hero-image-mobile w-full  mt-10">
+                <div className="hero-image-mobile w-full">
 
                     {/* an edited photo of me */}
-                    <div className="animate-fadeIn image-container-mobile flex justify-center items-center w-[50%] h-full ">
+                    <div className="animate-fadeIn image-container-mobile flex justify-center items-center w-[50%] h-full mt-10 mb-6">
                         <Image src={profile_pic} alt="me" width={200} height={200} className=" rounded-full w-full h-full object-cover 
                 "/>
                     </div>
@@ -102,7 +102,7 @@ export default function Hero() {
 
 
                 </div>
-                <div className="flex flex-col items-center justify-center mt-3">
+                <div className="flex flex-col items-center justify-center ">
                     <div class="hero-tag">👋 Welcome to my portfolio</div>
 
 
@@ -137,5 +137,4 @@ export default function Hero() {
 
     )
 }
-
 
