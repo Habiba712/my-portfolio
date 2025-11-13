@@ -1,4 +1,5 @@
 'use client';
+import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
 import AboutMe from "./components/Sections/AboutMeSection";
 import ContactMe from "./components/Sections/ContactMe";
@@ -11,6 +12,8 @@ export default function Home() {
     // <div className="font-sans w-max-5xl mx-auto ">
     //   <section className="w-fit">
    <> 
+          <Header/>
+
    <Hero/>
         <SkillsSections/>
         <ProjectsSections/>

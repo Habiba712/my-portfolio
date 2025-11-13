@@ -210,6 +210,25 @@ header {
   padding: 10px 10px 10px 10px;
 
 }
+
+.btn-back{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 0.5rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-back:hover{
+  color:  #ff9a9e;
+  transform: translateX(-10px);
+   /* text-shadow: 2px 0px 10px rgba(255, 154, 158, 0.4); */
+
+}
 .section-header{
   display: flex;
    flex-direction: column;
@@ -337,6 +356,11 @@ header {
 
 
 .btn-primary {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
   background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
   color: #1a2847;
   box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
@@ -348,11 +372,18 @@ header {
 }
 
 .btn-secondary {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2.5rem;
   background: transparent;
-  color: #fff;
+  color:rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
-
+.btn-secondary .icon{
+  fill: rgba(255, 255, 255, 0.8);
+}
 .btn-secondary:hover {
   border-color: #ff9a9e;
   background: rgba(255, 154, 158, 0.1);
@@ -684,6 +715,48 @@ header {
   overflow: hidden;
   position: relative;
 }
+.project-page-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  
+  /* roughly 3 lines worth */
+  overflow: hidden;
+  position: relative;
+}
+.project-page-tags .tag-2 {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 154, 158, 0.15);
+  border: 1px solid rgba(255, 154, 158, 0.3);
+  border-radius: 50px;
+  height: fit-content;
+  font-size: 0.85rem;
+  color: #ff9a9e;
+  font-weight: 500;
+  /* margin: 1rem 1rem 1rem 1rem; */
+}
+
+.project-page-cta{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+ 
+  justify-content: start;
+  align-items: center;
+
+}
+.project-page-cta .cta-1, .cta-2{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  max-height: 4rem;
+  justify-content: start;
+  font-size: 1rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+
+}
 .project-tags-mobile {
   display: flex;
   flex-wrap: wrap;
@@ -825,8 +898,68 @@ header {
   background: #1a2847;
   transform: scale(1.05);
 }
+.project-bradcrumps{
+  display: flex;
+  font-size: 1rem;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.project-bradcrumps a, span{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+   
+  transition: color 0.3s;
+ 
+}
+.project-bradcrumps active a {
+  color:  rgba(255, 154, 158, 0.9);
+  
+ 
+}
+.project-bradcrumps span{
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.project-page-title{
+font-size: 3rem;
+  line-height: 1.2;
+  padding: 1rem 1rem 0rem 1rem;
 
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  @apply font-sans;
+}
 
+.project-info{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding:0rem 0rem 1rem 0rem;
+  align-items: center;
+}
+.project-info .info-item{
+  display: flex;
+  font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+
+ 
+}
+.project-info .info-item .icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke-width: 2;
+}
 .animate-slideLeft {
   display: flex;
   animation: slideLeft 20s linear infinite;
@@ -1167,17 +1300,17 @@ h2 {
 
   }
 
-  .project-title {
+  /* .project-title {
     text-align: left;
 
-  }
+  } */
 
-  .project-title {
+  /* .project-title {
     border: 1px solid green;
     text-align: center;
     font-size: 1.75rem;
-    /* 28px */
-  }
+    /* 28px 
+  } */
 
   .menu-items-nav {
     display: none;

@@ -52,7 +52,6 @@ export default function RootLayout({ children }) {
         
         <main className="relative">
 
-          <Header />
           {children}
          
         <ScrolltoTop/>
