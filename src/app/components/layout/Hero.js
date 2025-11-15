@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profile_pic from "../../../../public/profile.jpeg";
 import { Playfair_Display } from "next/font/google";
-
+import { motion } from "framer-motion";
 const playfair = Playfair_Display({
     subsets: ["latin"],
     weight: ["400", "700"], // choose what you need
@@ -13,7 +13,16 @@ export default function Hero() {
     return (
         <>
             {/* deskptop version */}
-            <div className="desktop-hero mt-6 mb-6">
+               <motion.section
+                                   
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.3 }}
+                                    className="py-5"
+
+                                >
+                                  <div className="desktop-hero mt-6 mb-6">
                 <div className="hero grid grid-cols-2 w-fit pt-5 h-fit">
 
 
@@ -75,19 +84,12 @@ export default function Hero() {
                         </span>
                     </div>
                 </div>
-            </div>
+            </div>   
 
 
 
 
-
-
-
-
-
-
-
-            {/* mobile version */}
+             {/* mobile version */}
             <div className="mobile-hero  flex flex-col justify-center items-center w-full mb-6 mt-10">
 
                 <div className="hero-image-mobile w-full">
@@ -133,6 +135,20 @@ export default function Hero() {
 
 
             </div>
+                                </motion.section>
+           
+
+
+
+
+
+
+
+
+
+
+
+           
         </>
 
     )

@@ -12,7 +12,7 @@ export default function ScrolltoTop() {
 
   <div className="overflow-x-hidden w-full flex justify-end py-3 px-6">
           <button onClick={()=>handleScrolltoTop()} className="w-full flex justify-center items-center">
-             <ScrollTop className="cursor-pointer  p-2 w-10 h-10 flex bg-[#F7A5A5] text-white rounded-full " />
+             <ScrollTop className="scroll-top-btn w-15 h-15 " />
           </button>
          
          </div>

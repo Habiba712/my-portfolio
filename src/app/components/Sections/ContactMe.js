@@ -1,10 +1,21 @@
 'use client'
 
 import SectionHeader from "../layout/SectionHeader"
+import { motion } from "framer-motion";
 
 export default function ContactMe() {
     return(
-        <section id="contact" className="w-full flex flex-col
+
+           <motion.section
+                                   
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.3 }}
+                                    className="py-5"
+
+                                >
+ <section id="contact" className="w-full flex flex-col
         items-center">
 
 <SectionHeader title={"Contact Me"} description={"Have a specific idea you want to bring to life? Get in touch, and let’s make it happen!"}/>
@@ -96,5 +107,8 @@ export default function ContactMe() {
         </div>
 
 </section>
+
+                                </motion.section>
+       
     )
 }

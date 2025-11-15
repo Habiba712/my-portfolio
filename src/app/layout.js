@@ -55,11 +55,11 @@ export default function RootLayout({ children }) {
           {children}
          
         <ScrolltoTop/>
-          {/* <footer
-            className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center justify-center w-full p-6 border-t border-[#F7A5A5]"
+          <footer
+            className="absolute top-[100%] flex gap-[24px] left-[0px] text-white flex-wrap items-center justify-center w-full p-6"
           >
-            VexAura © 2025
-          </footer> */}
+            Habiba Taliby © 2025
+          </footer>
         </main>
 
 

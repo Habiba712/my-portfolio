@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import LinkArrow from "../../../../public/icons/SVG/link_arrow";
 import { redirect } from "next/navigation";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
 
@@ -17,12 +18,22 @@ export default function AboutMe() {
     setExpandText(!expandText)
   }
   return (
-    <section id="about" className="w-full flex flex-col items-center">
+    <motion.section
 
-      <SectionHeader title={"About Me"} description={"A little sneak peek into who I am"} />
-      <div className="desktop-about about-section">
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.3 }}
+      className="py-5"
 
-        <div className="h-full rounded-lg p-5 " >
+    >
+
+      <section id="about" className="w-full flex flex-col items-center">
+
+        <SectionHeader title={"About Me"} description={"A little sneak peek into who I am"} />
+        <div className="desktop-about about-section">
+
+
 
           <p className="font-normal  whitespace-per-line-2 text-wrap"
 
@@ -46,25 +57,25 @@ export default function AboutMe() {
 
 
           </p>
-<div className=" w-full flex justify-end py-3">
-   <button onClick={() => {
-            handleExpandText
-            redirect(`/pages/about`)
-          }
-          } className="about-link">
+          <div className=" w-full flex justify-end py-2">
+            <button onClick={() => {
+              handleExpandText
+              redirect(`/pages/about`)
+            }
+            } className="about-link">
 
 
-            {!expandText &&
+              {!expandText &&
 
-              <span className="flex justify-between items-center gap-3 text-nowrap">Read More
-                <LinkArrow className="w-5 h-5" /></span>}
+                <span className="flex justify-between items-center gap-3 text-nowrap">Read More
+                  <LinkArrow className="w-5 h-5" /></span>}
 
-          </button>
+            </button>
 
-</div>
-         
+          </div>
 
-          <div className="flex justify-center  items-start gap-3   ">
+
+          <div className="mt-5 flex justify-center  items-end gap-3 ">
             <Link href="/my-portfolio">
               <img src="/icons/git1.png" alt="github" width={30} height={30} className="rounded-full" />
             </Link>
@@ -75,62 +86,63 @@ export default function AboutMe() {
             </Link>
 
           </div>
+
         </div>
 
-      </div>
+        <div className="mobile-about about-section-mobile ">
 
-      <div className="mobile-about about-section-mobile ">
-       
-        <div>
-          <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-2 text-wrap"
-          
-          
-            style={{
-              overflow: 'hidden',
-              display: '-webkit-box',
-              WebkitBoxOrient: 'vertical',
-              WebkitLineClamp: expandText ? 'none' : 4
+          <div>
+            <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-2 text-wrap"
 
 
-            }
-            }
-          >Hey, I'm <span className="animated-gradient-text">Habiba Taliby</span>,— a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, Next.js, Tailwind CSS, and MongoDB, and I love combining logic and design to create things that just flow.
+              style={{
+                overflow: 'hidden',
+                display: '-webkit-box',
+                WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: expandText ? 'none' : 4
 
-            I’ve always had a curiosity for how things work — whether it’s debugging a stubborn API call, cleaning up messy code, or making an interface feel more intuitive. My approach is pretty simple: write code that’s clear, scalable, and actually enjoyable to use.
 
-            I also have experience working with SEO optimization, site performance, and even the occasional WordPress project when it makes sense for the client (Elementor, Yoast SEO, caching tools — the whole stack). Recently, I redesigned a full travel agency website from 2016, giving it a modern structure, improved SEO, and better mobile usability.
+              }
+              }
+            >Hey, I'm <span className="animated-gradient-text">Habiba Taliby</span>,— a web developer who enjoys building clean, functional, and detail-oriented projects with a strong focus on user experience. I work mainly with React, Next.js, Tailwind CSS, and MongoDB, and I love combining logic and design to create things that just flow.
 
-            When I’m not coding, you’ll probably find me experimenting with new UI ideas, reading about cybersecurity and OSINT, or just having coffee while breaking something in my dev environment (and then fixing it, obviously). </p>
+              I’ve always had a curiosity for how things work — whether it’s debugging a stubborn API call, cleaning up messy code, or making an interface feel more intuitive. My approach is pretty simple: write code that’s clear, scalable, and actually enjoyable to use.
+
+              I also have experience working with SEO optimization, site performance, and even the occasional WordPress project when it makes sense for the client (Elementor, Yoast SEO, caching tools — the whole stack). Recently, I redesigned a full travel agency website from 2016, giving it a modern structure, improved SEO, and better mobile usability.
+
+              When I’m not coding, you’ll probably find me experimenting with new UI ideas, reading about cybersecurity and OSINT, or just having coffee while breaking something in my dev environment (and then fixing it, obviously). </p>
             <div className=" w-full flex justify-end py-3">
-   <button onClick={() => {
-            handleExpandText
-            redirect(`/pages/about`)
-          }
-          } className="about-link">
+              <button onClick={() => {
+                handleExpandText
+                redirect(`/pages/about`)
+              }
+              } className="about-link">
 
 
-            {!expandText &&
+                {!expandText &&
 
-              <span className="flex justify-between items-center gap-3 text-nowrap">Read More
-                <LinkArrow className="w-5 h-5" /></span>}
+                  <span className="flex justify-between items-center gap-3 text-nowrap">Read More
+                    <LinkArrow className="w-5 h-5" /></span>}
 
-          </button>
+              </button>
 
-</div>
-          <div className="flex justify-center items-end gap-3 mt-3  ">
-            <Link href="/my-portfolio">
-              <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
-            </Link>
-            <Link href="/my-portfolio">
-              <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
-            </Link>  <Link href="/my-portfolio">
-              <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
-            </Link>
+            </div>
+            <div className="flex justify-center items-end gap-3 mt-3">
+              <Link href="/my-portfolio">
+                <img src="/icons/git1.png" alt="git" width={30} height={30} className="rounded-full" />
+              </Link>
+              <Link href="/my-portfolio">
+                <img src="/icons/email1.png" alt="email" width={30} height={30} className="rounded-full" />
+              </Link>  <Link href="/my-portfolio">
+                <img src="/icons/linkedin1.png" alt="linkedin" width={30} height={30} className="rounded-full" />
+              </Link>
 
+            </div>
           </div>
-        </div>
 
-      </div>
-    </section>
+        </div>
+      </section>
+    </motion.section>
+
   )
 }
