@@ -90,7 +90,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.3 }}
-                    className="w-full flex flex-col items-center justify-center py-6"
+                    className="w-full flex flex-col items-center justify-center"
                 >
                     <SectionHeader title={"About Me"} description={"Get to know more about my journey and what I do"} />
                     <div className="about-page-container">
@@ -118,7 +118,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.3 }}
-                    className="w-full flex flex-col items-center justify-center py-6"
+                    className="w-full flex flex-col items-center justify-center"
                 >
 
                     <SectionHeader title={"My Journey"} description={"Here's a look at my academic journey"} />
@@ -183,7 +183,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.3 }}
-                    className="w-full flex flex-col items-center justify-center py-6"
+                    className="w-full flex flex-col items-center justify-center"
                 >
                     <SectionHeader title={"My Main Tech Stack"} description={"The MERN stack is where I feel most at home — here's how I use it"} />
 
@@ -278,7 +278,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.3 }}
-                    className="w-full flex flex-col items-center justify-center py-6"
+                    className="w-full flex flex-col items-center justify-center"
                 >
                     <SectionHeader title={"Skills & Expertise"} description={"Beyond the MERN stack, here's what else I bring to the table"} />
                     <div className="main-skills-container">
