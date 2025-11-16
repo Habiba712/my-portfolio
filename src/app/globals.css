@@ -1655,9 +1655,8 @@ h2 {
 }
 
 .journey-timeline {
-  background: linear-gradient(to bottom right,
-      #F7A5A5,
-      #0D1164);
+      background: linear-gradient(135deg, #f97b7f 0%, #fecfef 100%);
+
 }
 
 
@@ -1956,7 +1955,9 @@ padding: 1rem;
     background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 4px solid rgba(220, 134, 134, 1);
+   border-left: #ff9a9e  4px solid;
+
+
   border-radius: 20px;
   padding: 2rem 1.5rem;
   line-height: 2.5rem;
@@ -1966,7 +1967,7 @@ padding: 1rem;
 }
 .journey-card h3{
   font-size: 1.5rem;
-  color: rgba(220, 134, 134, 1);
+  color: rgb(255, 243, 243);
   @apply font-sans;
 }
 .journey-card p{
