@@ -52,7 +52,7 @@ export default function ProjectsSections() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
                                     viewport={{ once: false, amount: 0.3 }}
-                                    className="py-5"
+                                    className=""
 
                                 >
             <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
@@ -179,7 +179,7 @@ export default function ProjectsSections() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
                                     viewport={{ once: false, amount: 0.3 }}
-                                    className="py-5"
+                                    className=""
 
                                 >
                             <div key={index || item._id} className="">                               

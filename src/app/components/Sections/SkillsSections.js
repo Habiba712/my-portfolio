@@ -29,7 +29,7 @@ export default function SkillsSections() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 viewport={{ once: false, amount: 0.3 }}
-                className="py-5"
+                className=""
 
             >   <section className="overflow-hidden px-2 md:px-10"
             >
