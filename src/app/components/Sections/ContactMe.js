@@ -70,7 +70,7 @@ export default function ContactMe() {
                 </br>
                 Get in touch 👋
             </h2> */}
-            <div className="">
+            <div className="contact-section-content">
                  <form className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                     <label>Name</label>

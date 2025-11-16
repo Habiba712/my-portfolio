@@ -45,7 +45,7 @@ export default function ProjectsSections() {
     }
     console.log('expandText', expandText)
     return (
-        <div className="w-full py-4 px-10">
+        <div className="w-full py-4 md:px-10">
  <motion.section
                                    
                                     initial={{ opacity: 0, y: 40 }}
@@ -55,7 +55,7 @@ export default function ProjectsSections() {
                                     className="py-5"
 
                                 >
-            <SectionHeader title={'My Projects'} overview={'Here are some of my recent projects'} />
+            <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
             <section id="projects" className="desktop-projects w-full  flex flex-col items-center smooth-scroll transition-all duration-500 ease-in-out">
 
 
@@ -168,7 +168,7 @@ export default function ProjectsSections() {
 
             {/* mobile version */}
             <div className="mobile-about flex w-full justify-center">  
-            <section id="projects" className="flex flex-col items-end justify-end  psmooth-scroll transition-all duration-500 ease-in-out  w-[90%]">                <div className="projects-grid-mobile">
+            <section id="projects" className="flex flex-col items-end justify-end smooth-scroll transition-all duration-500 ease-in-out">                <div className="projects-grid-mobile">
 
 
                     {

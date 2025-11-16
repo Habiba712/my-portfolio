@@ -91,15 +91,15 @@ export default function AboutMe() {
 
         <div className="mobile-about about-section-mobile ">
 
-          <div>
-            <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-2 text-wrap"
+          <div className="about-section-content">
+            <p className="font-normal font-sans text-sm pt-3 whitespace-per-line-4 text-wrap"
 
 
               style={{
                 overflow: 'hidden',
                 display: '-webkit-box',
                 WebkitBoxOrient: 'vertical',
-                WebkitLineClamp: expandText ? 'none' : 4
+                WebkitLineClamp: expandText ? 'none' : 6
 
 
               }

@@ -116,8 +116,8 @@ export default function Hero() {
                     </p>
 
                     <div className="cta-buttons-mobile">
-                        <button className="btn-mobile btn-primary w-full">Lets Work Together</button>
-                        <button className="btn-mobile btn-secondary w-full">Download CV</button>
+                        <button className="btn-mobile btn-primary ">Lets Work Together</button>
+                        <button className="btn-mobile btn-secondary ">Download CV</button>
                     </div>
                     <div className="quote-section-mobile">
                         <p className="quote-text">
