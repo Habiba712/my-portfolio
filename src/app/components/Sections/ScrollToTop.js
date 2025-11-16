@@ -10,9 +10,9 @@ export default function ScrolltoTop() {
         items-center">
 
 
-  <div className="overflow-x-hidden w-full flex justify-end py-3 px-6">
-          <button onClick={()=>handleScrolltoTop()} className="w-full flex justify-center items-center">
-             <ScrollTop className="scroll-top-btn w-15 h-15 " />
+  <div className="absolute bottom-10 overflow-x-hidden w-full flex justify-end py-3 px-6">
+          <button onClick={()=>handleScrolltoTop()} className="w-fit flex justify-end items-center">
+             <ScrollTop className="scroll-top-btn w-10 h-10 " />
           </button>
          
          </div>

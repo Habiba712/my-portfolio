@@ -100,7 +100,7 @@ export default function Project() {
 
             <section className=" w-full max-w-4xl p-4 mt-20 mx-auto">
                 {/* deskptop version */}
-                <div className=" desktop-hero rounded-lg font-sans  w-full ">
+                <div className=" desktop-hero rounded-lg font-sans  w-full">
 
                     <div>
                         {/* //bradcrumps part */}
@@ -341,6 +341,40 @@ export default function Project() {
 
                         )}
 
+{/* //next project */}
+<motion.section 
+
+initial={{ opacity: 0, y: 40 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.5, ease: 'easeOut' }}
+viewport={{ once: false, amount: 0.3 }}
+className="">
+    {
+        myProjects.find(item => item._id === myProject?._id + 1) && 
+         <div className="next-project-container">
+        <div className="next-project-content">
+           
+            <span>  Next Project  
+          
+           
+</span> <h3>
+             { myProjects.find(item => item._id === myProject?._id + 1) &&  myProjects.find(item => item._id === myProject?._id + 1)?.name}
+            </h3>
+            <div className="next-project-button-container">
+                    <button className="next-project-button"
+                    onClick={()=>{
+                        redirect(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
+                    }}
+                    >
+                    View Project <LinkArrow className="w-5 h-5" /> 
+                    </button>
+            </div>
+
+        </div>
+    </div>
+    }
+   
+</motion.section>
 
 
 
@@ -350,7 +384,7 @@ export default function Project() {
 
 
                 {/* mobile version */}
-                <div className="rounded-lg mobile-hero w-full flex flex-col justify-center gap-4 ">
+                <div className="rounded-lg mobile-hero w-full flex flex-col justify-center gap-4">
 
 
                     <div>
@@ -568,10 +602,10 @@ export default function Project() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
                                 viewport={{ once: false, amount: 0.3 }}
-                                className="py-5"
+                                className=""
 
                             >
-                                {/* <div className="technology-stack-container-mobile">
+                                <div className="technology-stack-container-mobile">
                                     <h3 className="project-page-title-mobile">Technology Stack</h3>
                                     <div className={`technology-grid-mobile`}>
                                         {
@@ -585,7 +619,31 @@ export default function Project() {
                                             ))
                                         }
                                     </div>
-                                </div> */}
+                                </div>
+                                  {
+        myProjects.find(item => item._id === myProject?._id + 1) && 
+         <div className="next-project-container">
+        <div className="next-project-content">
+           
+            <span>  Next Project  
+          
+           
+</span> <h3>
+             { myProjects.find(item => item._id === myProject?._id + 1) &&  myProjects.find(item => item._id === myProject?._id + 1)?.name}
+            </h3>
+            <div className="next-project-button-container">
+                    <button className="next-project-button"
+                    onClick={()=>{
+                        redirect(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
+                    }}
+                    >
+                    View Project <LinkArrow className="w-5 h-5" /> 
+                    </button>
+            </div>
+
+        </div>
+    </div>
+    }
                             </motion.section>
 
 
@@ -593,6 +651,9 @@ export default function Project() {
 
                         )}
 
+
+  
+   
 
 
 

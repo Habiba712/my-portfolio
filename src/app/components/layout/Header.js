@@ -86,7 +86,7 @@ export default function Header() {
             </li>
 
             <li className=" ">
-              <a href="/#contact">Contact 
+              <a href="/pages/contact">Contact 
               
               </a>
             </li>
@@ -170,7 +170,7 @@ export default function Header() {
                     }}
      
      >
-          <ul className="flex flex-col gap-4" >
+          <ul className="flex flex-col items-start gap-4" >
             <li className="">
               <a  href="/#projects">Projects</a>
             </li>
@@ -180,7 +180,7 @@ export default function Header() {
             </li>
 
             <li>
-              <a href="/#contact">Contact</a>
+              <a href="/pages/contact">Contact</a>
             </li>
           </ul>
         </nav>

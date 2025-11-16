@@ -82,7 +82,7 @@ export default function About() {
 
                 </div>
             </header>
-            <section className="mt-15 w-full flex flex-col items-center justify-center py-6">
+            <section className="mt-15  w-full flex flex-col items-center justify-center py-6">
 
 
                 <motion.section

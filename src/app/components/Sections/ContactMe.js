@@ -12,7 +12,7 @@ export default function ContactMe() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
                                     viewport={{ once: false, amount: 0.3 }}
-                                    className="py-5"
+                                    className=""
 
                                 >
  <section id="contact" className="w-full flex flex-col
@@ -21,11 +21,6 @@ export default function ContactMe() {
 <SectionHeader title={"Contact Me"} description={"Have a specific idea you want to bring to life? Get in touch, and let’s make it happen!"}/>
 <div  className="desktop-about contact-section w-[60%] py-5" >
  
-            {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
-                Love to hear from you. <br>
-                </br>
-                Get in touch 👋
-            </h2> */}
             <div className="">
                  <form className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
@@ -54,7 +49,7 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="contact-link" type="submit">Send</button>
+                    <button className="contact-link2" type="submit">Send</button>
                 </div>
                 
             </form>
@@ -64,7 +59,7 @@ export default function ContactMe() {
 
         
 </div>
-        <div className="mobile-about contact-section-mobile ">
+        <div className="mobile-about contact-section-mobile mb-20">
             {/* <h2 className="text-center font-sans text-4xl h-full flex justify-start items-center text-gray-400 text-start ">
                 Love to hear from you. <br>
                 </br>
@@ -98,7 +93,7 @@ export default function ContactMe() {
             </div> 
                 </div>
                 <div className="w-full ">
-                    <button className="contact-link" type="submit">Send</button>
+                    <button className="contact-link2" type="submit">Send</button>
                 </div>
                 
             </form>
