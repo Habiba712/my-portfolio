@@ -127,11 +127,12 @@ export default function Hero() {
                         </p>
 
                         <div className="cta-buttons-mobile">
-                            <a
-                                href="mailto:yourname@email.com?subject=Project%20Collaboration&body=Hi%20Ahn,%20I%20want%20to%20work%20with%20you..."
-                                className="btn-mobile btn-primary"
+                             <a
+                                href="/habiba-taliby-cv.pdf"
+                                download
+                                className="btn-mobile btn-secondary"
                             >
-                                Let's Work Together
+                                Download CV
                             </a>
                             <button className="btn-mobile btn-secondary ">Download CV</button>
                         </div>
