@@ -2,7 +2,7 @@
 
 import { useContext, useState, useEffect } from "react"
 // import { ThemeContext } from "../../../components/AppContext"
-import { redirect, useParams } from "next/navigation"
+import { redirect, useParams, useRouter } from "next/navigation"
 import SectionHeader from "@/app/components/layout/SectionHeader"
 import Image from "next/image"
 import Link from "next/link"
@@ -26,6 +26,7 @@ import { motion } from "framer-motion";
 
 export default function Project() {
     const { id } = useParams()
+    const router = useRouter()
     // const { myProjects } = useContext(ThemeContext)
     const [myProject, setMyProject] = useState(null)
 
@@ -169,7 +170,7 @@ export default function Project() {
 
                                 <button className={`${myProject?.page ? 'btn-mobile btn-primary ' : 'btn-primary-disabled'}`}
                                     onClick={() => {
-                                        redirect(`${myProject.page}`)
+                                        router.push(`${myProject.page}`)
                                     }}
                                 ><LinkArrow className=" w-5 h-5" /> View Project</button>
 
@@ -449,7 +450,7 @@ className="">
                                 <div className="project-page-cta-mobile w-full">
                                     <button className={`${myProject?.page ? 'btn-primary-mobile ' : 'btn-primary-mobile-disabled'}`}
                                         onClick={() => {
-                                            redirect(`${myProject.page}`)
+                                            router.push(`${myProject.page}`)
                                         }}
                                     ><LinkArrow className=" w-5 h-5" /> View Project</button>
 
