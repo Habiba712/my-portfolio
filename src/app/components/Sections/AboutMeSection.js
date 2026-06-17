@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import SectionHeader from "../layout/SectionHeader"
-import profile_pic from "../../../../public/profile.jpeg";
+import profile_pic from "../../../../public/profile.png";
 import Link from "next/link";
 import { useState } from "react";
 import LinkArrow from "../../../../public/icons/SVG/link_arrow";
