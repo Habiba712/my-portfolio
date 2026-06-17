@@ -55,7 +55,7 @@ export default function Project() {
 
                     <h1 className="logo w-full h-full flex items-center justify-start cursor-pointer w-fit "
                         onClick={() => {
-                            redirect('/')
+                            router.push('/')
                         }}
                     >Habiba Taliby
                     </h1>
@@ -81,7 +81,7 @@ export default function Project() {
                         <div className="text-4xl font-bold text-start ">
                             <h1 className="logo  h-full flex items-center justify-start text-nowrap"
                                 onClick={() => {
-                                    redirect('/')
+                                    router.push('/')
                                 }}
                             >Habiba Taliby
                             </h1>
@@ -364,7 +364,7 @@ className="">
             <div className="next-project-button-container">
                     <button className="next-project-button"
                     onClick={()=>{
-                        redirect(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
+                        router.push(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
                     }}
                     >
                     View Project <LinkArrow className="w-5 h-5" /> 
@@ -635,7 +635,7 @@ className="">
             <div className="next-project-button-container">
                     <button className="next-project-button"
                     onClick={()=>{
-                        redirect(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
+                        router.push(`/pages/projectss/${myProjects &&  myProjects.find(item => item._id === myProject?._id + 1)?._id}`)
                     }}
                     >
                     View Project <LinkArrow className="w-5 h-5" /> 

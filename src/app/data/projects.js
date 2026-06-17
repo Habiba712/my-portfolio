@@ -2,109 +2,99 @@
 
 export const myProjects = [
     {
-        _id: 104270931,
-        name: "Korean Food Ordering App",
-        pic: [
-            "/my_projects/loptop_frame_foodordering.png",
-            "/my_projects/food_ordering-app-login.png"
-        ],
-        role: "Full Stack Developer",
-        completed: "September 2025",
-        duration: "3 months",
-        features: [
-            {
-                title: "Smart Cart System",
-                description: "Persistent shopping cart with real-time price calculations and quantity management",
-                icon: "cart"
-            }, {
-                title: "Stripe Integration",
-                description: "Secure payment processing with multiple payment methods and automatic receipts",
-                icon: "credit_card"
-            }, {
-                title: "User Authentication",
-                description: "Secure login system with JWT tokens and role-based access control",
-                icon: "users"
-
-            }, {
-                title: "Responsive Design",
-                description: "Fully responsive interface optimized for mobile, tablet, and desktop",
-                icon: "responsive"
-            },
-
-        ],
-        technologyStack: [
-            {
-                title: "Frontend",
-                description: [
-                    "Next.js",
-                    "Tailwind CSS",
-                    "React.js",
-
-                ]
-            },
-            {
-                title: "Backend",
-                description: [
-                    "Node.js",
-                    "Express.js",
-                    "MongoDB"]
-            },
-            {
-                title: "Integrations",
-                description: [
-                    "Stripe",
-                    "JWT authentication",
-                    "Cloudinary (images)",
-
-                ]
-            }, {
-                title: "Deployment",
-                description: [
-                    "Vercel",
-                    "MongoDB Atlas",
-                    "GitHub"
-                ]
-            }
-
-        ],
-        page: 'https://food-ordering-app-zeta-pearl-86.vercel.app/',
-        overview: "One of the most rewarding projects I have worked on was the full redesign and optimization of Morocco Immersion, a travel agency specializing in immersive cultural tours across Morocco — with unique experiences extending to Ecuador and Peru. The site was originally created in 2016, and while it had great content, it struggled with slow loading, poor organization, and an outdated design. My goal was to bring it back to life — preserving the authenticity of the brand while making it functional, modern, and optimized for travelers who want clarity and ease when planning their adventures.",
-        tasks: [
-            {
-                subTitle: "Full Redesign with Elementor",
-                texto: "I was mainly responsible for building the frontend with React.js, designing a clean, responsive interface that allowed users to easily view and update inventory data. I also set up RESTful API integration between the frontend and the MySQL database, handled form validation, and implemented CRUD operations for adding, editing, and deleting assets."
-            },
-            {
-                subTitle: "Advanced Itinerary Setup with WP Travel Engine",
-                texto: "To simplify the booking and trip browsing experience, I integrated WP Travel Engine, which allows the agency to easily manage and update tour itineraries, group packages, and private trips with clear day-by-day descriptions and pricing."
-            },
-            {
-                subTitle: "SEO & Performance Optimization",
-                texto: "Using Yoast SEO Premium and SEMrush, I conducted internal audits, restructured metadata, refined keyword usage, and improved link hierarchy — making sure the content performs better in search results.                  I also implemented WP Optimizer to improve caching, minimize load times, and enhance overall performance."
-            }, {
-                subTitle: "Media & Content Organization",
-                texto: "I reorganized the media library, compressing and renaming images for faster loading and better SEO. It might sound minor, but for a travel website that relies heavily on visuals, it makes a massive difference in both speed and user experience."
-            }, {
-                subTitle: "Smart Form Integration",
-                texto: "Gravity Forms — setting up dynamic contact, booking, and guest forms, as well as a digital waiver form with e-signature support, which streamlined their client onboarding process."
-            }, {
-                subTitle: "Analytics & Monitoring",
-                texto: "Finally, I connected the site with Meta Metrics to monitor performance, track indexing issues, and keep an eye on engagement metrics post-launch."
-            }
-
-
-
-        ],
-        tools: [
-            "Next.js",
-            "Tailwind CSS",
-            "MongoDB",
-            "Git",
-            "Stripe",
-            "OAuth",
-            "Vercel"
-        ]
-    },
+    _id: 104270931,
+    name: "Food Ordering App",
+    pic: [
+        "/my_projects/loptop_frame_foodordering.png",
+        "/my_projects/food_ordering-app-login.png"
+    ],
+    role: "Full Stack Developer",
+    completed: "September 2025",
+    duration: "3 months",
+    features: [
+        {
+            title: "Smart Cart System",
+            description: "Persistent shopping cart with real-time price calculations and quantity management",
+            icon: "cart"
+        }, {
+            title: "Stripe Integration",
+            description: "Secure payment processing with multiple payment methods and automatic receipts",
+            icon: "credit_card"
+        }, {
+            title: "User Authentication",
+            description: "Secure login system with JWT tokens and role-based access control",
+            icon: "users"
+        }, {
+            title: "Responsive Design",
+            description: "Fully responsive interface optimized for mobile, tablet, and desktop",
+            icon: "responsive"
+        }
+    ],
+    technologyStack: [
+        {
+            title: "Frontend",
+            description: [
+                "Next.js",
+                "Tailwind CSS",
+                "React.js"
+            ]
+        },
+        {
+            title: "Backend",
+            description: [
+                "Node.js",
+                "Express.js",
+                "MongoDB"
+            ]
+        },
+        {
+            title: "Integrations",
+            description: [
+                "Stripe API",
+                "JWT authentication",
+                "Cloudinary (images)"
+            ]
+        }, {
+            title: "Deployment",
+            description: [
+                "Vercel",
+                "MongoDB Atlas",
+                "GitHub"
+            ]
+        }
+    ],
+    page: 'https://food-ordering-app-zeta-pearl-86.vercel.app/',
+    overview: "An immersive, production-ready full-stack food ordering application built to optimize client transactions and streamline administrative workflows. The platform handles end-to-end user experiences from responsive product browsing and deep cart customizability down to structural role-based layout access. Engineered with secure transaction flows, persistent state management, and real-time database lookups, the platform provides a cohesive interface for both digital foodies and backend administrators.",
+    tasks: [
+        {
+            subTitle: "Role-Based Administrative Control System",
+            texto: "Engineered secure middleware access rules validating user properties. Users with Admin permissions are dynamically routed to control boards where they can instantiate, modify, or delete database values for menu categories and individual food items."
+        },
+        {
+            subTitle: "Dynamic Menu Management & Media Pipelines",
+            texto: "Built complete CRUD administrative interfaces linked to product schemas. Integrated data flows allowing administrators to edit user profiles, configure core pricing matrices, and manage image uploads utilizing automated cloud media streams."
+        },
+        {
+            subTitle: "State-Driven Variations & Shopping Cart",
+            texto: "Designed a state-driven persistent shopping cart infrastructure processing mathematical calculations on the fly. Enabled full client-side configurability allowing users to seamlessly append item sizes, custom modifications, or extra toppings directly into their orders."
+        }, {
+            subTitle: "Secure Financial Gateway Implementation",
+            texto: "Integrated Stripe merchant APIs to establish automated invoice routing and processing pipelines. Handled server-side response payloads to secure client checkouts, issue checkout forms, and confirm successful customer transaction receipts."
+        }, {
+            subTitle: "Client Self-Service Dashboards",
+            texto: "Configured individual client routing schemas enabling standard users to easily manage their authentication profiles, audit historical order logs, and modify active cart states before checking out."
+        }
+    ],
+    tools: [
+        "Next.js",
+        "Tailwind CSS",
+        "MongoDB",
+        "Git",
+        "Stripe",
+        "OAuth",
+        "Vercel"
+    ]
+},
     {
         _id: 104270932,
         name: "Moroccan Travel Agency",
