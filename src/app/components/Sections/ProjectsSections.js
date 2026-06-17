@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useContext, useState, useEffect } from "react"
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import LinkArrow from "../../../../public/icons/SVG/link_arrow";
 import { myProjects } from "@/app/data/projects";
 const playfair = Playfair_Display({
@@ -16,6 +16,7 @@ export default function ProjectsSections() {
 
     const [expandIndex, setExpandIndex] = useState(2)
     const [expandText, setExpandText] = useState(false)
+    const router = useRouter()
     // const { myProjects } = useContext(ThemeContext)
 
     const [myProjectsList, setMyProjectsList] = useState([])
@@ -82,11 +83,10 @@ export default function ProjectsSections() {
                                                 height={300} />
                                             <div class="project-overlay">
                                                 <div class="project-links">
-                                                    <button onClick={() => {
-                                                        handleExpandText
-                                                        redirect(`/pages/projectss/${item._id}`)
-                                                    }
-                                                    } className="project-link">
+                                                   <button onClick={() => {
+    console.log('iteeem', item._id);
+    router.push(`/pages/projectss/${item._id}`); // Correct client-side push
+}} className="project-link">
                                                         {!expandText &&
 
                                                             <span className="flex justify-between items-center gap-3 text-nowrap">More Details
