@@ -188,11 +188,10 @@ export default function ProjectsSections() {
                                         <div className="project-card-image-mobile">
                                             <div class="project-overlay-mobile">
                                                 <div class="project-links-mobile">
-                                                    <button onClick={() => {
-                                                        handleExpandText
-                                                        redirect(`/pages/projectss/${item._id}`)
-                                                    }
-                                                    } className="project-link">
+                                                      <button onClick={() => {
+    console.log('iteeem', item._id);
+    router.push(`/pages/projectss/${item._id}`); // Correct client-side push
+}} className="project-link">
 
 
                                                         {!expandText &&
