@@ -2,6 +2,119 @@
 
 export const myProjects = [
     {
+    _id: 104270930,
+    name: "ECBI – Everybody Can Be Influencer",
+    pic: [
+        "/my_projects/ecbi.png",
+        
+    ],
+    role: "Full Stack Developer",
+    completed: "May 2026",
+    duration: "8 months",
+    features: [
+        {
+            title: "QR-Based Visit System",
+            description: "QR code-based restaurant visits allowing clients to check in, earn points, and automatically update their visit history",
+            icon: "qr_code"
+        },
+        {
+            title: "Points & Rewards System",
+            description: "Gamified loyalty system that rewards clients with points for visits and activities, with redeemable rewards managed by restaurant owners",
+            icon: "star"
+        },
+        {
+            title: "Role-Based Dashboards",
+            description: "Separate client and restaurant-owner experiences with protected routes, permissions, statistics, and dedicated management tools",
+            icon: "users"
+        },
+        {
+            title: "Restaurant Analytics",
+            description: "Owner dashboard providing statistics on visits, clients, reviews, points, and overall restaurant activity",
+            icon: "chart"
+        }
+    ],
+    technologyStack: [
+        {
+            title: "Frontend",
+            description: [
+                "Next.js",
+                "React.js",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            title: "Backend",
+            description: [
+                "Node.js",
+                "Express.js",
+                "MongoDB"
+            ]
+        },
+        {
+            title: "Authentication & Security",
+            description: [
+                "JWT authentication",
+                "Role-based authorization",
+                "Protected API routes"
+            ]
+        },
+        {
+            title: "Deployment & Tools",
+            description: [
+                "Vercel",
+                "MongoDB Atlas",
+                "Git",
+                "GitHub"
+            ]
+        }
+    ],
+    page: "https://ecbi.vercel.app/",
+    overview: "A full-stack digital loyalty and engagement platform designed to connect restaurants with their customers through a gamified points system. ECBI allows clients to earn points by visiting participating restaurants, scanning QR codes, and interacting with the platform, while restaurant owners can manage their establishment, monitor customer activity, track visits and reviews, and analyze engagement through a dedicated dashboard. The application combines role-based access control, real-time database interactions, QR-based workflows, and data-driven dashboards into a unified experience.",
+    tasks: [
+        {
+            subTitle: "Role-Based Access & Dashboard Architecture",
+            texto: "Designed and implemented separate experiences for clients and restaurant owners using role-based authentication and protected routes. Developed dedicated dashboards with features and data tailored to each type of user."
+        },
+        {
+            subTitle: "QR-Based Restaurant Visit Tracking",
+            texto: "Implemented a QR-based check-in workflow allowing clients to validate restaurant visits and automatically update their visit history and rewards. Connected the scanning process to backend validation and user-specific activity records."
+        },
+        {
+            subTitle: "Points & Loyalty Management",
+            texto: "Developed the core points system allowing users to earn rewards through restaurant visits and platform activities. Implemented backend logic for securely updating balances, tracking earned points, and maintaining user activity history."
+        },
+        {
+            subTitle: "Restaurant Owner Management Dashboard",
+            texto: "Built an administrative dashboard allowing restaurant owners to monitor customer activity, manage their point-of-sale information, view visits and reviews, and access statistics related to their establishment."
+        },
+        {
+            subTitle: "Client Activity & Visit History",
+            texto: "Created personalized client dashboards displaying earned points, visit history, reviews, notifications, and account information, providing users with a clear overview of their activity and rewards."
+        },
+        {
+            subTitle: "Reviews & Customer Engagement",
+            texto: "Integrated a restaurant review workflow connecting customer feedback with restaurant profiles and owner dashboards, creating an additional engagement layer within the loyalty platform."
+        },
+        {
+            subTitle: "Secure API & Database Architecture",
+            texto: "Designed RESTful API endpoints with Express.js and MongoDB for users, restaurants, visits, reviews, points, notifications, and authentication. Implemented validation, authorization middleware, and protected data flows across the application."
+        }
+    ],
+    tools: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MongoDB Atlas",
+        "JWT",
+        "Git",
+        "GitHub",
+        "Vercel"
+    ]
+},
+    {
     _id: 104270931,
     name: "Food Ordering App",
     pic: [
@@ -424,4 +537,5 @@ export const myProjects = [
         ]
 
     }
+
 ]

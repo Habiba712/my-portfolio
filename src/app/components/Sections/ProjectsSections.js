@@ -47,29 +47,29 @@ export default function ProjectsSections() {
     console.log('expandText', expandText)
     return (
         <div className="w-full py-4 md:px-10">
- <motion.section
-                                   
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.3 }}
-                                    className=""
+            <motion.section
 
-                                >
-            <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
-            <section id="projects" className="desktop-projects w-full  flex flex-col items-center smooth-scroll transition-all duration-500 ease-in-out">
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: false, amount: 0.3 }}
+                className=""
+
+            >
+                <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
+                <section id="projects" className="desktop-projects w-full  flex flex-col items-center smooth-scroll transition-all duration-500 ease-in-out">
 
 
 
-                {/* <hr className="w-[60%] border border-gray-100"/> */}
-                <div className="projects-grid">
-                    {
-                        myProjectsList.map((item, index) => (
-                            <div
-                                key={index || item._id}
-                                className="">
+                    {/* <hr className="w-[60%] border border-gray-100"/> */}
+                    <div className="projects-grid">
+                        {
+                            myProjectsList.map((item, index) => (
+                                <div
+                                    key={index || item._id}
+                                    className="">
 
-                               
+
                                     <div className="project-card w-full">
 
                                         <div className="project-card-image">
@@ -83,10 +83,10 @@ export default function ProjectsSections() {
                                                 height={300} />
                                             <div class="project-overlay">
                                                 <div class="project-links">
-                                                   <button onClick={() => {
-    console.log('iteeem', item._id);
-    router.push(`/pages/projectss/${item._id}`); // Correct client-side push
-}} className="project-link">
+                                                    <button onClick={() => {
+                                                        console.log('iteeem', item._id);
+                                                        router.push(`/pages/projectss/${item._id}`); // Correct client-side push
+                                                    }} className="project-link">
                                                         {!expandText &&
 
                                                             <span className="flex justify-between items-center gap-3 text-nowrap">More Details
@@ -100,7 +100,7 @@ export default function ProjectsSections() {
                                         </div>
 
                                         <div className="project-card-content">
-                                            <h3 className="project-card-title whitespace-per-line-2 text-nowrap">{item?.name}</h3>
+                                            <h3 className="project-card-title whitespace-per-line-2 text-wrap min-h-[70px]">{item?.name}</h3>
                                             <p className={`whitespace-per-line-2 text-wrap `}
                                                 style={{
                                                     overflow: 'hidden',
@@ -150,48 +150,48 @@ export default function ProjectsSections() {
 
                                     </div>
 
-                           
-                            </div>
 
-                        ))
-                    }
-                </div>
+                                </div>
 
-
+                            ))
+                        }
+                    </div>
 
 
 
 
 
-            </section>
-</motion.section>
+
+
+                </section>
+            </motion.section>
 
             {/* mobile version */}
-            <div className="mobile-about flex w-full justify-center">  
-            <section id="projects" className="flex flex-col items-end justify-end smooth-scroll transition-all duration-500 ease-in-out">                <div className="projects-grid-mobile">
+            <div className="mobile-about flex w-full justify-center">
+                <section id="projects" className="flex flex-col items-end justify-end smooth-scroll transition-all duration-500 ease-in-out">                <div className="projects-grid-mobile">
 
 
                     {
                         myProjectsList.map((item, index) => (
                             <motion.section
-                                   
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.3 }}
-                                    className=""
 
-                                >
-                            <div key={index || item._id} className="">                               
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.3 }}
+                                className=""
+
+                            >
+                                <div key={index || item._id} className="">
                                     <div className="project-card-mobile w-full">
 
                                         <div className="project-card-image-mobile">
                                             <div class="project-overlay-mobile">
                                                 <div class="project-links-mobile">
-                                                      <button onClick={() => {
-    console.log('iteeem', item._id);
-    router.push(`/pages/projectss/${item._id}`); // Correct client-side push
-}} className="project-link">
+                                                    <button onClick={() => {
+                                                        console.log('iteeem', item._id);
+                                                        router.push(`/pages/projectss/${item._id}`); // Correct client-side push
+                                                    }} className="project-link">
 
 
                                                         {!expandText &&
@@ -246,23 +246,23 @@ export default function ProjectsSections() {
 
 
 
-                                    
+
 
                                     </div>
 
-                               
-                            </div>
 
-                       </motion.section> ))
+                                </div>
+
+                            </motion.section>))
                     }
                 </div>
 
 
 
-            </section>
+                </section>
 
             </div>
-                 
+
         </div>
 
     )
