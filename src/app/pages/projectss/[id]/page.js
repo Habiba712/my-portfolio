@@ -213,7 +213,7 @@ export default function Project() {
                                 <h3 className="project-page-title">Project Overview</h3>
                                 <div className="project-page-card">
 
-                                    <p>{myProject?.overview}</p>
+                                    <p className="whitespace-pre-line text-gray-600 leading-relaxed">{myProject?.overview}</p>
 
                                 </div>
                             </div>

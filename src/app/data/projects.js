@@ -69,7 +69,7 @@ export const myProjects = [
         }
     ],
     page: "https://ecbi.vercel.app/",
-    overview: "A full-stack digital loyalty and engagement platform designed to connect restaurants with their customers through a gamified points system. ECBI allows clients to earn points by visiting participating restaurants, scanning QR codes, and interacting with the platform, while restaurant owners can manage their establishment, monitor customer activity, track visits and reviews, and analyze engagement through a dedicated dashboard. The application combines role-based access control, real-time database interactions, QR-based workflows, and data-driven dashboards into a unified experience.",
+    overview: 'A full-stack digital loyalty and engagement platform designed to connect restaurants with their customers through a gamified points system. ECBI allows clients to earn points by visiting participating restaurants, scanning QR codes, and interacting with the platform, while restaurant owners can manage their establishment, monitor customer activity, track visits and reviews, and analyze engagement through a dedicated dashboard. The application combines role-based access control, real-time database interactions, QR-based workflows, and data-driven dashboards into a unified experience. \n For testing as a client, you can access the website url on your mobile device and use the following credentials : \n Email: demo01@gmail.com \n Password: 12345 \n For testing as a restaurant owner, you can use the following credentials: \n Email: davimiller@gmail.com \n Password: 12345',
     tasks: [
         {
             subTitle: "Role-Based Access & Dashboard Architecture",
