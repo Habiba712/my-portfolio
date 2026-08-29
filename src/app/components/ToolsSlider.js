@@ -47,7 +47,7 @@ tools.map((tool, index)=>{
         </div>
         <div>
            <h3 className="text-center">{tool.name}</h3>
-        <p>descripq foiqfr coqi</p>
+       
           </div>
        
 
@@ -69,7 +69,7 @@ tools.map((tool, index)=>{
         </div>
         <div>
            <h3 className="text-center">{tool.name}</h3>
-        <p>descripq foiqfr coqi</p>
+       
           </div>
        
 
