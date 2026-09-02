@@ -193,7 +193,7 @@ export default function Project() {
 
                             >
                                <div className="w-full project-page-image-container">
-                            <Image src={Array.isArray(myProject.pic) ? myProject.pic[0] : ''} alt="project" width={500} height={400} className="object-cover w-full rounded-lg" />
+                            <Image src={myProject.pic[0]} alt="project" width={300} height={150} className="object-cover w-full rounded-lg" />
                         </div>  
                             </motion.section>
                         <motion.section

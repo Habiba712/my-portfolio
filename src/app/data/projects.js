@@ -2,7 +2,259 @@
 
 export const myProjects = [
     {
-    _id: 104270930,
+    _id: 104270931,
+    name: "MemoryOS – Mobile App",
+    pic: [
+        "/my_projects/memoryOsmobile.png",
+    ],
+    role: "Full Stack Developer",
+    completed: "2026",
+    duration: "Ongoing",
+    features: [
+        {
+            title: "Mobile Memory Library",
+            description: "Provides a mobile-first interface for browsing, organizing, and accessing the content stored in a user's personal MemoryOS library",
+            icon: "smartphone"
+        },
+        {
+            title: "AI-Powered Search",
+            description: "Allows users to search their saved memories from their phone using natural language and quickly retrieve relevant content",
+            icon: "search"
+        },
+        {
+            title: "Social Media Import",
+            description: "Provides guided workflows for importing previously saved content from platforms such as Instagram and Pinterest into the user's MemoryOS library",
+            icon: "download"
+        },
+        {
+            title: "Cross-Platform Memory Access",
+            description: "Extends the MemoryOS experience from desktop to mobile, allowing users to access their personal memory library wherever they are",
+            icon: "layers"
+        }
+    ],
+    technologyStack: [
+        {
+            title: "Mobile Frontend",
+            description: [
+                "React Native",
+                "Expo",
+                "Expo Router",
+                "TypeScript"
+            ]
+        },
+        {
+            title: "Backend",
+            description: [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Mongoose"
+            ]
+        },
+        {
+            title: "AI & Content Processing",
+            description: [
+                "Google Gemini",
+                "AI-generated metadata",
+                "Semantic embeddings",
+                "Video processing",
+                "yt-dlp & FFmpeg"
+            ]
+        },
+        {
+            title: "Storage & Infrastructure",
+            description: [
+                "Cloudinary",
+                "MongoDB Atlas",
+                "REST APIs",
+                "Git",
+                "GitHub"
+            ]
+        }
+    ],
+    page: "https://www.linkedin.com/posts/habiba-taliby_reactnative-expo-ai-activity-7498416303729319936-h9UH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErO7fkBV0y-o8tO089XPM8gNC1MikPcQ8A",
+
+    overview: 'The MemoryOS mobile application extends the AI-powered second brain experience to mobile devices, giving users convenient access to their saved content wherever they are. The application provides a mobile-first interface for browsing and searching personal memories while introducing dedicated workflows for importing saved content from social platforms. Users can import their existing Instagram data or other supported content sources and make that information searchable inside their MemoryOS library. The mobile application connects to the same backend and AI processing infrastructure, creating a unified experience across desktop and mobile.',
+
+    tasks: [
+        {
+            subTitle: "Mobile Application Architecture",
+            texto: "Designed and implemented the MemoryOS mobile application using React Native and Expo, with a navigation architecture optimized for accessing the main MemoryOS features from a mobile device."
+        },
+        {
+            subTitle: "Mobile Memory Library",
+            texto: "Built mobile interfaces for browsing recently saved content, exploring the memory library, and accessing individual files and imported content."
+        },
+        {
+            subTitle: "Mobile AI Search",
+            texto: "Implemented the mobile search experience allowing users to retrieve saved content using natural language without manually navigating through large collections."
+        },
+        {
+            subTitle: "Instagram Import Workflow",
+            texto: "Designed a guided import workflow helping users export their Instagram data and import the resulting archive into MemoryOS for processing and organization."
+        },
+        {
+            subTitle: "Social Content Ingestion",
+            texto: "Integrated mobile workflows for bringing externally saved content into the MemoryOS ecosystem, allowing imported posts and videos to be processed by the existing backend and AI pipeline."
+        },
+        {
+            subTitle: "Cross-Platform Backend Integration",
+            texto: "Connected the React Native application to the MemoryOS backend APIs for authentication, file retrieval, uploads, imports, and AI-processed content."
+        },
+        {
+            subTitle: "Mobile-First UX",
+            texto: "Designed a simplified mobile experience focused on quick access, clear navigation, content discovery, and convenient interaction with a user's personal memory library."
+        }
+    ],
+
+    tools: [
+        "React Native",
+        "Expo",
+        "Expo Router",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Google Gemini",
+        "Cloudinary",
+        "yt-dlp",
+        "FFmpeg",
+        "MongoDB Atlas",
+        "Git",
+        "GitHub"
+    ]
+},
+    {
+    _id: 104270932,
+    name: "MemoryOS – AI-Powered Second Brain",
+    pic: [
+        "/my_projects/memoryosDashDeskTop.png",
+
+    ],
+    role: "Full Stack Developer",
+    completed: "2026",
+    duration: "Ongoing",
+    features: [
+        {
+            title: "AI-Powered File Organization",
+            description: "Automatically analyzes uploaded files and generates titles, descriptions, summaries, tags, and categories to make personal content easier to organize and retrieve",
+            icon: "brain"
+        },
+        {
+            title: "Natural Language Search",
+            description: "Allows users to search their saved content using natural language instead of manually browsing through folders and filenames",
+            icon: "search"
+        },
+        {
+            title: "Multi-Format Content Management",
+            description: "Supports personal files and saved online content including images, PDFs, documents, videos, and imported URLs within a unified memory library",
+            icon: "files"
+        },
+        {
+            title: "Desktop-Centered Workflow",
+            description: "Designed as a convenient web experience for uploading, organizing, and searching personal content from a desktop environment",
+            icon: "monitor"
+        }
+    ],
+    technologyStack: [
+        {
+            title: "Frontend",
+            description: [
+                "Next.js",
+                "React.js",
+                "TypeScript",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            title: "Backend",
+            description: [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Mongoose"
+            ]
+        },
+        {
+            title: "AI & Processing",
+            description: [
+                "Google Gemini",
+                "AI-generated summaries",
+                "AI-generated tags",
+                "Vector embeddings",
+                "Video processing with yt-dlp & FFmpeg"
+            ]
+        },
+        {
+            title: "Storage & Deployment",
+            description: [
+                "Cloudinary",
+                "MongoDB Atlas",
+                "Vercel",
+                "Render",
+                "Git",
+                "GitHub"
+            ]
+        }
+    ],
+    page: "https://www.linkedin.com/posts/habiba-taliby_ai-machinelearning-javascript-activity-7488714406546198529-sYc1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErO7fkBV0y-o8tO089XPM8gNC1MikPcQ8A",
+
+    overview: 'MemoryOS is an AI-powered second brain designed to help users find and understand content they have previously saved. Instead of relying on folders, filenames, or manually organized collections, MemoryOS analyzes personal content and makes it searchable through natural language. The web application provides a convenient desktop-oriented experience for uploading files, importing online content, and managing a centralized personal memory library. AI processing generates meaningful metadata such as titles, descriptions, summaries, tags, categories, and semantic representations, allowing users to retrieve content based on what they remember rather than where they stored it.',
+
+    tasks: [
+        {
+            subTitle: "AI-Powered Content Processing",
+            texto: "Designed and implemented an AI processing pipeline that analyzes uploaded and imported content to generate titles, descriptions, summaries, tags, categories, and searchable semantic representations."
+        },
+        {
+            subTitle: "Natural Language Search",
+            texto: "Developed a search experience allowing users to describe what they remember about a file or saved piece of content instead of relying exclusively on filenames or traditional folder navigation."
+        },
+        {
+            subTitle: "File Upload & Management",
+            texto: "Implemented the desktop file upload workflow and integrated cloud storage for managing personal images, PDFs, documents, videos, and other supported content."
+        },
+        {
+            subTitle: "URL & Video Content Import",
+            texto: "Built a content ingestion workflow capable of processing online video URLs and extracting relevant information before passing the content through the AI analysis pipeline."
+        },
+        {
+            subTitle: "AI Metadata & Semantic Representation",
+            texto: "Implemented automated metadata generation and vector embedding creation to enrich stored content and prepare MemoryOS for semantic retrieval."
+        },
+        {
+            subTitle: "Backend & Database Architecture",
+            texto: "Designed RESTful API endpoints with Express.js and MongoDB for authentication, file management, content processing, search, and user-specific data flows."
+        },
+        {
+            subTitle: "Desktop-Focused User Experience",
+            texto: "Designed the web application around a fast desktop workflow where users can quickly upload content, browse their memory library, and retrieve previously saved information."
+        }
+    ],
+
+    tools: [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Google Gemini",
+        "Cloudinary",
+        "yt-dlp",
+        "FFmpeg",
+        "MongoDB Atlas",
+        "Vercel",
+        "Render",
+        "Git",
+        "GitHub"
+    ]
+},
+    {
+    _id: 104270933,
     name: "ECBI – Everybody Can Be Influencer",
     pic: [
         "/my_projects/ecbi.png",
@@ -115,7 +367,7 @@ export const myProjects = [
     ]
 },
     {
-    _id: 104270931,
+    _id: 104270934,
     name: "Food Ordering App",
     pic: [
         "/my_projects/loptop_frame_foodordering.png",
@@ -209,7 +461,7 @@ export const myProjects = [
     ]
 },
     {
-        _id: 104270932,
+        _id: 104270935,
         name: "Moroccan Travel Agency",
         pic: [
             "/my_projects/laptop_frame_travelagency.png",
@@ -319,7 +571,7 @@ export const myProjects = [
         ]
     },
     {
-        _id: 104270933,
+        _id: 104270936,
         name: "Tanzanian Travel Agency",
 
         pic: [
@@ -375,7 +627,7 @@ export const myProjects = [
         ]
     },
     {
-        _id: 104270934, name: "Park Info.",
+        _id: 104270937, name: "Park Info.",
 
         pic: [
             "/my_projects/parcinfo-login.png",
@@ -440,7 +692,7 @@ export const myProjects = [
     },
 
     {
-        _id: 104270935, name: "Personal Budget Tracker",
+        _id: 104270938, name: "Personal Budget Tracker",
 
         pic: [
             "/my_projects/prbudg.png",
@@ -493,7 +745,7 @@ export const myProjects = [
     },
 
     {
-        _id: 104270936, name: "Citizen Services Website",
+        _id: 104270939, name: "Citizen Services Website",
 
         pic: [
             "/my_projects/conseilMenara.png",
