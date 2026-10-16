@@ -8,7 +8,7 @@ export const myProjects = [
             "/my_projects/optic.png",
         ],
         role: "Full Stack Developer",
-        completed: "2026",
+        completed: "October, 2026",
         duration: "1 Day",
 
         technologyStack: [

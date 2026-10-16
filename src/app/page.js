@@ -9,24 +9,15 @@ import SkillsSections from "./components/Sections/SkillsSections";
 
 export default function Home() {
   return (
-    // <div className="font-sans w-max-5xl mx-auto ">
-    //   <section className="w-fit">
-   <> 
-          <Header/>
 
-   <Hero/>
-        <SkillsSections/>
-        <ProjectsSections/>
-<AboutMe/>
-        <ContactMe/>
-        
-   </>
-   
-        
-  
-         
-      // </section>
-     
-    // </div>
+    <>
+      <Header />
+      <Hero />
+      <SkillsSections />
+      <ProjectsSections />
+      <AboutMe />
+      <ContactMe />
+
+    </>
   );
 }

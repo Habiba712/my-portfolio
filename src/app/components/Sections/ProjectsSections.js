@@ -47,15 +47,12 @@ export default function ProjectsSections() {
     console.log('expandText', expandText)
     return (
         <div className="w-full py-4 md:px-10">
-            <motion.section
-
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                viewport={{ once: false, amount: 0.3 }}
-                className=""
-
-            >
+           <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true, amount: "some" }}
+>
                 <SectionHeader title={'My Projects'} description={'Here are some of my recent projects'} />
                 <section id="projects" className="desktop-projects w-full  flex flex-col items-center smooth-scroll transition-all duration-500 ease-in-out">
 
